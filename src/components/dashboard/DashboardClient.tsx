@@ -1,5 +1,5 @@
-
 "use client";
+export const dynamic = "force-dynamic";
 
 import * as React from "react";
 import type { Lesson } from "@/lib/types";
@@ -45,10 +45,8 @@ export function DashboardClient({ lessons }: DashboardClientProps) {
 
   const handleSelectLesson = (lessonId: string) => {
     setActiveLessonId(lessonId);
-    // Update URL without reloading the page
     router.push(`/dashboard?lesson=${lessonId}`, { scroll: false });
   };
-
 
   const activeLesson = React.useMemo(
     () => lessons.find((lesson) => lesson.id === activeLessonId) || null,

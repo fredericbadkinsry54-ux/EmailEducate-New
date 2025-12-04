@@ -8,6 +8,9 @@ import { Footer } from '@/components/layout/Footer';
 export const metadata: Metadata = {
   title: 'EmailEducate',
   description: 'Bite-sized email marketing lessons to grow your skills.',
+  verification: {
+    google: 'google5b466ffc8c3f7b9e',
+  },
 };
 
 const inter = Inter({

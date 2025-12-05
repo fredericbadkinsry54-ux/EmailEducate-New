@@ -22,7 +22,12 @@ export default function AffiliateDisclosurePage() {
       <main className="flex-1">
         <div className="page">
           <h1>Affiliate Disclosure</h1>
-          <p>I may earn a small commission when you sign up through some links on this website. It costs you nothing extra. I only recommend tools I personally use and trust.</p>
+          <p className="text-lg leading-8 text-gray-700">
+            This website may contain affiliate links, meaning we could earn a small 
+            commission at no extra cost to you if you choose to make a purchase. 
+            These links support the platform and help us continue producing free, 
+            high-quality educational content.
+          </p>
         </div>
       </main>
     </div>

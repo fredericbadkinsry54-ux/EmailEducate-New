@@ -255,7 +255,7 @@ export default function TagsVsSegmentsDifferenceArticle() {
             <h2 className="text-xl font-bold text-green-900 mb-3">Next Steps — Clean & Structure Your CRM</h2>
             <p>Email Educate provides ready-made tag structures, segmentation templates, and automation frameworks designed specifically for Brevo users.</p>
             <div className="flex gap-4 flex-wrap mt-4">
-              <Link href="/contact/" className="inline-block bg-green-600 text-white py-3 px-4 rounded-xl no-underline font-bold">Get CRM Structure Templates</Link>
+              <Link href="/legal/contact-us/" className="inline-block bg-green-600 text-white py-3 px-4 rounded-xl no-underline font-bold">Get CRM Structure Templates</Link>
               <Link href="/articles/brevo-crm-contacts/" className="inline-block border-2 border-green-600 text-green-900 py-2.5 px-4 rounded-xl no-underline font-bold bg-transparent">More CRM Guides</Link>
             </div>
             <div className="text-sm text-gray-500 mt-2">Pro tip: Tag behavior. Segment logic. Keep them separate for maximum clarity.</div>

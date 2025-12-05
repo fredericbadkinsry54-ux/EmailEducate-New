@@ -32,20 +32,20 @@ export function Footer() {
                         <h3 className="font-semibold text-foreground mb-4">Platform</h3>
                         <ul className="space-y-2 text-sm">
                             <li><Link href="/blogs" className="hover:text-primary transition-colors">Blogs</Link></li>
-                            <li><Link href="/about" className="hover:text-primary transition-colors">About Us</Link></li>
-                            <li><Link href="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
+                            <li><Link href="/legal/about-us" className="hover:text-primary transition-colors">About Us</Link></li>
+                            <li><Link href="/legal/contact-us" className="hover:text-primary transition-colors">Contact</Link></li>
                         </ul>
                     </div>
 
                     <div className="footer-legal">
                         <h3>Legal</h3>
                         <ul>
-                            <li><Link href="/about">About Me</Link></li>
-                            <li><Link href="/affiliate-disclosure">Affiliate Disclosure</Link></li>
-                            <li><Link href="/contact">Contact Me</Link></li>
-                            <li><Link href="/disclaimer">Disclaimer</Link></li>
-                            <li><Link href="/privacy-policy">Privacy Policy</Link></li>
-                            <li><Link href="/terms">Terms of Service</Link></li>
+                            <li><Link href="/legal/about-us">About Me</Link></li>
+                            <li><Link href="/legal/affiliate-disclosure">Affiliate Disclosure</Link></li>
+                            <li><Link href="/legal/contact-us">Contact Me</Link></li>
+                            <li><Link href="/legal/disclaimer">Disclaimer</Link></li>
+                            <li><Link href="/legal/privacy-policy">Privacy Policy</Link></li>
+                            <li><Link href="/legal/terms-of-service">Terms of Service</Link></li>
                         </ul>
                     </div>
 

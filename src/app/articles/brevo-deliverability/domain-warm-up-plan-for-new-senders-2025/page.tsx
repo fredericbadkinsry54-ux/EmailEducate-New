@@ -257,7 +257,7 @@ export default function DomainWarmUpPlanArticle() {
             <h2 className="text-xl font-bold text-green-900 mb-3">Next Steps — Build a Healthy Sender Reputation</h2>
             <p>Email Educate offers structured warm-up calendars, checklists, and Brevo automation templates to help you stay on track.</p>
             <div className="flex gap-3 flex-wrap mt-4">
-              <Link href="/contact/" className="inline-block bg-green-600 text-white py-3 px-4 rounded-xl no-underline font-bold">Get Warm-Up Templates</Link>
+              <Link href="/legal/contact-us/" className="inline-block bg-green-600 text-white py-3 px-4 rounded-xl no-underline font-bold">Get Warm-Up Templates</Link>
               <Link href="/articles/brevo-deliverability/" className="inline-block border-2 border-green-600 text-green-900 py-2.5 px-4 rounded-xl no-underline font-bold bg-transparent">More Brevo Deliverability Guides</Link>
             </div>
             <div className="text-xs text-gray-500 mt-2">Pro tip: If engagement dips for 3 days, pause scaling until metrics improve.</div>

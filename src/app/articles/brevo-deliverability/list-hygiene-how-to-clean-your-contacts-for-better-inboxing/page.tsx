@@ -276,7 +276,7 @@ export default function ListHygieneArticle() {
             <h2 className="text-xl font-bold text-green-900 mb-3">Next Steps — Keep Your List Clean Automatically</h2>
             <p>Email Educate provides complete templates for re-engagement workflows, list cleanup routines, and Brevo automation logic to keep your contacts healthy year-round.</p>
             <div className="flex gap-4 flex-wrap mt-4">
-              <Link href="/contact/" className="inline-block bg-green-600 text-white py-3 px-4 rounded-xl no-underline font-bold">Get List Hygiene Templates</Link>
+              <Link href="/legal/contact-us/" className="inline-block bg-green-600 text-white py-3 px-4 rounded-xl no-underline font-bold">Get List Hygiene Templates</Link>
               <Link href="/articles/brevo-deliverability/" className="inline-block border-2 border-green-600 text-green-900 py-2.5 px-4 rounded-xl no-underline font-bold bg-transparent">More Deliverability Guides</Link>
             </div>
             <div className="text-sm text-gray-500 mt-2">Pro tip: If bounce rate exceeds 2%, or spam complaints exceed 0.1%, clean your list immediately.</div>

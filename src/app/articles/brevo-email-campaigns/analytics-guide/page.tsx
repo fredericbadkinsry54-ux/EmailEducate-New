@@ -60,7 +60,7 @@ export default function BrevoAnalyticsGuideArticle() {
 
             <h4 className="font-bold mt-4">Click-Through Rate (CTR)</h4>
             <p><strong>What it is:</strong> The percentage of delivered emails where recipients clicked at least one tracked link.</p>
-            <p><strong>Why it matters:</strong> CTR measures content relevance and CTA clarity. CTR moves closer to user intent than opens and is a stronger predictor of conversion.</p>
+            <p><strong>Why it matters:</strong> CTR moves closer to user intent than opens and is a stronger predictor of conversion.</p>
 
             <h4 className="font-bold mt-4">Click-to-Open Rate (CTOR)</h4>
             <p><strong>What it is:</strong> The percentage of opened emails that generated at least one click (clicks / opens).</p>
@@ -293,7 +293,7 @@ export default function BrevoAnalyticsGuideArticle() {
             <h2 className="text-xl font-bold text-green-900 mb-3">Next Steps — Make Analytics Work for You</h2>
             <p>Email Educate can provide a downloadable analytics checklist and a spreadsheet template to log tests, metrics, and results. Start by tagging links with UTMs and defining your primary conversion. Measure for four full campaign cycles before making large structural changes.</p>
             <div className="flex gap-3 flex-wrap mt-4">
-              <Link href="/contact/" className="inline-block bg-green-600 text-white py-3 px-4 rounded-xl no-underline font-bold">Get the Analytics Checklist</Link>
+              <Link href="/legal/contact-us/" className="inline-block bg-green-600 text-white py-3 px-4 rounded-xl no-underline font-bold">Get the Analytics Checklist</Link>
               <Link href="/articles/brevo-email-campaigns/" className="inline-block border-2 border-green-600 text-green-900 py-2.5 px-4 rounded-xl no-underline font-bold bg-transparent">Explore More Brevo Guides</Link>
             </div>
             <div className="text-xs text-gray-500 mt-2">Pro tip: Always combine email analytics with on-site behavior to understand the full conversion path.</div>

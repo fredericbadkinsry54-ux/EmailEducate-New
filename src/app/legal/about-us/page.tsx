@@ -21,8 +21,13 @@ export default function AboutPage() {
       </header>
       <main className="flex-1">
         <div className="page">
-          <h1>About Me</h1>
-          <p>I’m an independent creator sharing email marketing knowledge, tutorials, and practical tools. I’m not a company or agency — just one person building useful resources for others.</p>
+          <h1>About Us</h1>
+          <p className="text-lg leading-8 text-gray-700">
+            Welcome to our platform. We create clear and honest educational content 
+            designed to help users understand technology, marketing tools, and 
+            digital workflows. Our goal is to simplify complex topics and provide 
+            trustworthy knowledge for everyone.
+          </p>
         </div>
       </main>
     </div>

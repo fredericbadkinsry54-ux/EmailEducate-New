@@ -1,10 +1,5 @@
 
 import { Logo } from "@/components/Logo";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
 import Link from "next/link";
 
 export default function ContactPage() {
@@ -25,31 +20,11 @@ export default function ContactPage() {
         </div>
       </header>
       <main className="flex-1 flex items-center justify-center py-12 px-4 relative">
-         <div className="absolute top-0 left-0 w-72 h-72 bg-primary/10 blur-3xl rounded-full -translate-x-1/2 -translate-y-1/2"></div>
-         <div className="absolute bottom-0 right-0 w-80 h-80 bg-primary/20 blur-3xl rounded-full translate-x-1/2 translate-y-1/2"></div>
-        <Card className="w-full max-w-lg z-10">
-            <CardHeader className="text-center">
-                <CardTitle className="text-3xl">Contact Us</CardTitle>
-                <CardDescription>Have questions? We'd love to hear from you.</CardDescription>
-            </CardHeader>
-            <CardContent>
-                <form className="space-y-4">
-                    <div className="space-y-2">
-                        <Label htmlFor="name">Full Name</Label>
-                        <Input id="name" placeholder="John Doe" />
-                    </div>
-                     <div className="space-y-2">
-                        <Label htmlFor="email">Email</Label>
-                        <Input id="email" type="email" placeholder="john@example.com" />
-                    </div>
-                     <div className="space-y-2">
-                        <Label htmlFor="message">Message</Label>
-                        <Textarea id="message" placeholder="Your message..." />
-                    </div>
-                    <Button type="submit" className="w-full button-animated"><span>Send Message</span></Button>
-                </form>
-            </CardContent>
-        </Card>
+         <div className="page">
+            <h1>Contact Me</h1>
+            <p>You can reach me anytime at:</p>
+            <p><strong>Email:</strong> support@yourdomain.com</p>
+          </div>
       </main>
     </div>
   );

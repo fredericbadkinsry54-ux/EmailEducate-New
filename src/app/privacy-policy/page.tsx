@@ -2,7 +2,7 @@
 import { Logo } from "@/components/Logo";
 import Link from "next/link";
 
-export default function AboutPage() {
+export default function PrivacyPolicyPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="sticky top-0 z-10 flex h-16 items-center gap-4 border-b bg-background/80 px-4 backdrop-blur-sm md:px-6">
@@ -21,8 +21,8 @@ export default function AboutPage() {
       </header>
       <main className="flex-1">
         <div className="page">
-          <h1>About Me</h1>
-          <p>I’m an independent creator sharing email marketing knowledge, tutorials, and practical tools. I’m not a company or agency — just one person building useful resources for others.</p>
+            <h1>Privacy Policy</h1>
+            <p>I do not sell personal data. Basic analytics may be collected to improve the content experience.</p>
         </div>
       </main>
     </div>

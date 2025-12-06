@@ -39,11 +39,11 @@ export function Marketplace() {
     <section className="py-16 px-6 bg-[#f3faf7]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-3">
-            Welcome to EmailEducate Marketplace
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-4">
+            Upgrade Your Stack With <span className="text-[#00b894]">Brevo Integrations</span>
           </h2>
-          <p className="text-center text-gray-600">
-            Integrate your favorite tools with <span className="brevo-inline-large"><span className="brevo-auto">Brevo</span></span> — from CMS to ecommerce and workflow automation.
+          <p className="text-base sm:text-lg text-gray-600 text-center max-w-2xl mx-auto">
+            Discover seamless connections between Brevo and top platforms — helping you automate faster and manage your business with clarity.
           </p>
         </div>
 

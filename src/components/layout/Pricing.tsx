@@ -67,10 +67,10 @@ export function Pricing() {
     return (
         <section className="py-16 px-5 bg-green-50/50">
             <h2 className="text-center text-3xl font-bold text-green-900 mb-2">
-                Email Marketing Pricing (<span className="brevo-auto">Brevo</span> Style)
+                Brevo Pricing Explained Simply
             </h2>
             <p className="text-center text-green-800/90 mb-10 text-lg max-w-2xl mx-auto">
-                Choose the plan that fits your business — powered by <span className="brevo-auto">Brevo</span>’s real features & pricing.
+                A clear, easy breakdown of Brevo’s pricing and core features — helping you choose the right plan for your email marketing, automation, and CRM needs.
             </p>
 
             <div className="flex flex-nowrap justify-start md:justify-center gap-[35px] w-full overflow-x-auto pb-2.5 max-w-6xl mx-auto px-4">

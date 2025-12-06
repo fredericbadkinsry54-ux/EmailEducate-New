@@ -6,8 +6,8 @@ import { Inter } from 'next/font/google'
 import { Footer } from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
-  title: 'EmailEducate',
-  description: 'Bite-sized email marketing lessons to grow your skills.',
+  title: 'Learn Email Marketing Faster, Using Brevo’s Best Features',
+  description: 'Clear, practical lessons that help you understand campaigns, segmentation, automation, and CRM inside Brevo — without complexity or technical confusion.',
   verification: {
     google: 'google5b466ffc8c3f7b9e',
   },

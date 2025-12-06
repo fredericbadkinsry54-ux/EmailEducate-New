@@ -19,10 +19,13 @@ export default function TermsPage() {
             </nav>
         </div>
       </header>
-      <main className="flex-1">
-        <div className="page">
-            <h1>Terms of Service</h1>
-            <p>By using this site, you agree to use the content responsibly and without misuse. This is an individual-run website, not an agency.</p>
+      <main className="flex-1 bg-muted/20">
+        <div className="legal-container">
+            <h1 className="legal-title">Terms of Service</h1>
+            <p className="legal-subtitle">By using this site, you agree to the following terms.</p>
+            <div className="legal-card">
+              <p>By using this site, you agree to use the content responsibly and without misuse. This is an individual-run website, not an agency.</p>
+            </div>
         </div>
       </main>
     </div>

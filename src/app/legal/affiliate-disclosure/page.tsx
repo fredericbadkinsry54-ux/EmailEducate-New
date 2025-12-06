@@ -20,72 +20,72 @@ export default function AffiliateDisclosurePage() {
         </div>
       </header>
       <main className="flex-1 bg-muted/20">
-        <div className="max-w-4xl mx-auto py-16 px-6">
+        <div className="legal-container">
 
-          {/* Heading */}
-          <h1 className="text-4xl font-bold mb-6">Affiliate Disclosure</h1>
-
-          {/* Intro */}
-          <p className="text-lg leading-8 text-gray-700 mb-6">
+          <h1 className="legal-title">Affiliate Disclosure</h1>
+           <p className="legal-subtitle">
             At <span className="font-semibold">EmailEducate</span>, transparency matters.
-            I believe you deserve to know exactly how this website earns money and how
-            recommendations are made.
           </p>
 
-          {/* Section */}
-          <h2 className="text-2xl font-bold mt-10 mb-3">How This Website Earns</h2>
-          <p className="text-lg leading-8 text-gray-700 mb-6">
-            Some articles, guides, and pages on this website may contain affiliate links.
-            This means that if you click a link and make a purchase, I may earn a small commission
-            — at no extra cost to you.
-          </p>
 
-          {/* Section */}
-          <h2 className="text-2xl font-bold mt-10 mb-3">My Recommendation Policy</h2>
-          <p className="text-lg leading-8 text-gray-700 mb-6">
-            I only recommend tools and platforms that I personally test, use, and trust.
-            Recommendations are based on:
-          </p>
+          <div className="legal-card">
+            <h2>How This Website Earns</h2>
+            <p>
+              Some articles, guides, and pages on this website may contain affiliate links.
+              This means that if you click a link and make a purchase, I may earn a small commission
+              — at no extra cost to you.
+            </p>
+          </div>
 
-          <ul className="list-disc pl-6 text-lg leading-8 text-gray-700 mb-6">
-            <li>Real-world testing and hands-on experience</li>
-            <li>Honesty, accuracy, and long-term reliability</li>
-            <li>Features that genuinely help users grow</li>
-            <li>No sponsored reviews or paid promotions</li>
-          </ul>
+          <div className="legal-card">
+            <h2>My Recommendation Policy</h2>
+            <p>
+              I only recommend tools and platforms that I personally test, use, and trust.
+              Recommendations are based on:
+            </p>
+            <ul>
+              <li>Real-world testing and hands-on experience</li>
+              <li>Honesty, accuracy, and long-term reliability</li>
+              <li>Features that genuinely help users grow</li>
+              <li>No sponsored reviews or paid promotions</li>
+            </ul>
+          </div>
 
-          {/* Section */}
-          <h2 className="text-2xl font-bold mt-10 mb-3">Brevo Disclosure</h2>
-          <p className="text-lg leading-8 text-gray-700 mb-6">
-            I frequently recommend{" "}
-            <span className="text-green-700 font-semibold">Brevo</span> because it is one
-            of the most reliable and transparent platforms for email marketing, automation,
-            CRM, and deliverability.
-          </p>
-          <p className="text-lg leading-8 text-gray-700 mb-6">
-            Whether I earn a commission or not, my goal is always to provide unbiased,
-            experience-based guidance that genuinely helps you improve your marketing.
-          </p>
+          <div className="legal-card">
+            <h2>Brevo Disclosure</h2>
+            <p>
+              I frequently recommend{" "}
+              <span className="text-green-700 font-semibold">Brevo</span> because it is one
+              of the most reliable and transparent platforms for email marketing, automation,
+              CRM, and deliverability.
+            </p>
+            <p>
+              Whether I earn a commission or not, my goal is always to provide unbiased,
+              experience-based guidance that genuinely helps you improve your marketing.
+            </p>
+          </div>
 
-          {/* Section */}
-          <h2 className="text-2xl font-bold mt-10 mb-3">Your Trust Comes First</h2>
-          <p className="text-lg leading-8 text-gray-700 mb-6">
-            Affiliate commissions help support the time and effort it takes to create
-            free tutorials, guides, comparisons, and resources. But they never influence
-            my opinions or recommendations.
-          </p>
+          <div className="legal-card">
+            <h2>Your Trust Comes First</h2>
+            <p>
+              Affiliate commissions help support the time and effort it takes to create
+              free tutorials, guides, comparisons, and resources. But they never influence
+              my opinions or recommendations.
+            </p>
+          </div>
 
-          {/* Section */}
-          <h2 className="text-2xl font-bold mt-10 mb-3">If You Have Questions</h2>
-          <p className="text-lg leading-8 text-gray-700 mb-12">
-            If anything is unclear or you’d like to know more about how affiliate links are used,
-            feel free to reach out anytime through the{" "}
-            <Link href="/legal/contact-us" className="text-green-700 font-semibold underline">
-              Contact Page
-            </Link>.
-          </p>
+          <div className="legal-card">
+            <h2>If You Have Questions</h2>
+            <p>
+              If anything is unclear or you’d like to know more about how affiliate links are used,
+              feel free to reach out anytime through the{" "}
+              <Link href="/legal/contact-us" className="text-green-700 font-semibold underline">
+                Contact Page
+              </Link>.
+            </p>
+          </div>
 
-          <p className="text-sm text-gray-600 italic">
+          <p className="text-sm text-center text-gray-500 mt-8 italic">
             Last updated: {new Date().getFullYear()}
           </p>
         </div>

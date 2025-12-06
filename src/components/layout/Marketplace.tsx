@@ -32,6 +32,11 @@ const integrations = [
     description: 'CMS + Email Sync. Use Brevo analytics for better segmentation.',
     link: 'https://www.brevo.com/integrations/emailoctopus/',
   },
+  {
+    name: 'HubSpot',
+    description: 'Two-way CRM + Marketing Sync. Connect HubSpot with Brevo for automated contact updates and smarter campaigns.',
+    link: 'https://www.brevo.com/integrations/hubspot/',
+  },
 ];
 
 export function Marketplace() {
@@ -40,10 +45,10 @@ export function Marketplace() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-4">
-            Upgrade Your Stack With <span className="text-[#00b894]">Brevo Integrations</span>
+            Upgrade Your Stack With <span className="brevo-animated">Brevo</span> Integrations
           </h2>
           <p className="text-base sm:text-lg text-gray-600 text-center max-w-2xl mx-auto">
-            Discover seamless connections between Brevo and top platforms — helping you automate faster and manage your business with clarity.
+            Discover seamless connections between <span className="brevo-animated">Brevo</span> and top platforms — helping you automate faster and manage your business with clarity.
           </p>
         </div>
 
@@ -57,9 +62,11 @@ export function Marketplace() {
               rel="noopener noreferrer"
             >
               <div>
-                <span className="brevo-pill"><span className="brevo-auto">BREVO</span></span>
-                <h3 className="title mt-2">{item.name}</h3>
-                <p className="desc">{item.description}</p>
+                <p className="text-xs font-semibold text-gray-400 mb-1">BREVO</p>
+                <h3 className="text-lg font-semibold">{item.name}</h3>
+                <p className="text-sm text-gray-600">
+                  {item.description}
+                </p>
               </div>
             </Link>
           ))}
@@ -72,7 +79,7 @@ export function Marketplace() {
             rel="noopener noreferrer"
             className="main-btn no-underline"
           >
-            Explore All <span className="brevo-auto">Brevo</span> Integrations →
+            Explore All <span className="brevo-animated">Brevo</span> Integrations →
           </Link>
         </div>
       </div>

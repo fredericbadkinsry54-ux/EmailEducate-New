@@ -1,8 +1,72 @@
 
+'use client'
+
+import { useState } from "react";
 import { Logo } from "@/components/Logo";
 import Link from "next/link";
+import { ChevronDown } from "lucide-react";
+import { cn } from "@/lib/utils";
+
+const faqData = [
+    {
+      question: "What is EmailEducate?",
+      answer: "EmailEducate is a simple educational platform that helps you learn email marketing, automation, and CRM using Brevo’s real features."
+    },
+    {
+      question: "What makes this platform different?",
+      answer: "We focus on clear, practical training based on real tools like Brevo — no theory, no fluff, just step-by-step guidance."
+    },
+    {
+      question: "Do you promote affiliate or sponsored tools?",
+      answer: "No. All recommendations are based on actual testing and experience — not sponsorships."
+    },
+    {
+      question: "Can I trust the reviews and comparisons?",
+      answer: "Yes. Everything is tested hands-on using real business workflows, so the reviews reflect practical usage — not paid opinions."
+    },
+    {
+      question: "Who creates the content?",
+      answer: "All content is created by EmailEducate — based on real experiments, marketing execution, and automation setups done within Brevo."
+    },
+    {
+      question: "How can I collaborate?",
+      answer: "You can reach out through the Contact page for collaborations, partnerships, or content requests."
+    },
+    {
+        question: "What’s the long-term vision?",
+        answer: "To be the most trusted, practical resource for mastering email marketing and automation, with a strong focus on the Brevo ecosystem."
+    }
+  ];
+
+function FaqItem({ item, isOpen, onClick }: { item: typeof faqData[0], isOpen: boolean, onClick: () => void }) {
+    return (
+        <div className="border-b">
+            <button
+                className="w-full text-left py-4 flex justify-between items-center"
+                onClick={onClick}
+            >
+                <span className="text-lg font-medium text-gray-800">{item.question}</span>
+                <ChevronDown className={cn("text-xl transition-transform", isOpen ? "rotate-180" : "")} />
+            </button>
+            <div
+                className={cn(
+                "overflow-hidden transition-all duration-300 ease-in-out",
+                isOpen ? "max-h-screen" : "max-h-0"
+                )}
+            >
+                <p className="pb-4 text-gray-600">{item.answer}</p>
+            </div>
+        </div>
+    )
+}
 
 export default function AboutMePage() {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  const handleFaqClick = (index: number) => {
+    setOpenFaq(openFaq === index ? null : index);
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
       <header className="sticky top-0 z-10 flex h-16 items-center gap-4 border-b bg-background/80 px-4 backdrop-blur-sm md:px-6">
@@ -121,15 +185,16 @@ export default function AboutMePage() {
 
           <div className="legal-card">
             <h2>Frequently Asked Questions</h2>
-            <ul className="space-y-4">
-              <li className="font-medium text-gray-800">What is this platform about?</li>
-              <li className="font-medium text-gray-800">What makes this different from other sites?</li>
-              <li className="font-medium text-gray-800">Do you promote affiliate or sponsored tools?</li>
-              <li className="font-medium text-gray-800">Can I trust the reviews and comparisons?</li>
-              <li className="font-medium text-gray-800">Who creates the content?</li>
-              <li className="font-medium text-gray-800">How can I collaborate?</li>
-              <li className="font-medium text-gray-800">What’s the long-term vision?</li>
-            </ul>
+            <div>
+              {faqData.map((item, index) => (
+                <FaqItem
+                  key={index}
+                  item={item}
+                  isOpen={openFaq === index}
+                  onClick={() => handleFaqClick(index)}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </main>

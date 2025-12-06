@@ -24,8 +24,8 @@ export function BrevoRecommendation() {
           </h2>
           <p className="text-gray-700 text-lg leading-relaxed mb-8">
             <span className="brevo-auto">Brevo</span> gives you automation, CRM, deliverability, segmentation,
-            and analytics in one powerful system. EmailEducate shows you
-            exactly how to use these features to achieve long-term, scalable
+            and analytics in one powerful system. EmailEducate shows you exactly how to
+            use these features to achieve long-term, scalable
             results — without complexity.
           </p>
           <ul className="space-y-4 text-gray-800 text-[17px] leading-relaxed text-left inline-block">
@@ -56,11 +56,24 @@ export function BrevoRecommendation() {
         </div>
 
         {/* RIGHT DECORATIVE VISUAL */}
-        <div className="brevo-side-visual hidden md:block">
-          <div className="brevo-wave"></div>
-          <div className="brevo-icon icon-1">⚡</div>
-          <div className="brevo-icon icon-2">📊</div>
-          <div className="brevo-icon icon-3">🎯</div>
+        <div className="brevo-feature-cards hidden md:grid">
+          <div className="feature-card">
+            <div className="icon-box">⚡</div>
+            <h3>Smart Automation</h3>
+            <p>Create automated journeys, triggers, and workflows that scale effortlessly.</p>
+          </div>
+
+          <div className="feature-card">
+            <div className="icon-box">📊</div>
+            <h3>Inbox Performance</h3>
+            <p>Improve deliverability with warm-up tools, dedicated IPs, and inbox analytics.</p>
+          </div>
+
+          <div className="feature-card">
+            <div className="icon-box">👥</div>
+            <h3>CRM & Segmentation</h3>
+            <p>Organize contacts, build smart segments, and personalize communication.</p>
+          </div>
         </div>
       </div>
     </section>

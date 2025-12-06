@@ -58,19 +58,19 @@ export function BrevoRecommendation() {
         {/* RIGHT DECORATIVE VISUAL */}
         <div className="brevo-feature-cards hidden md:grid">
           <div className="feature-card">
-            <div className="icon-box">⚡</div>
+            
             <h3>Smart Automation</h3>
             <p>Create automated journeys, triggers, and workflows that scale effortlessly.</p>
           </div>
 
           <div className="feature-card">
-            <div className="icon-box">📊</div>
+            
             <h3>Inbox Performance</h3>
             <p>Improve deliverability with warm-up tools, dedicated IPs, and inbox analytics.</p>
           </div>
 
           <div className="feature-card">
-            <div className="icon-box">👥</div>
+            
             <h3>CRM & Segmentation</h3>
             <p>Organize contacts, build smart segments, and personalize communication.</p>
           </div>

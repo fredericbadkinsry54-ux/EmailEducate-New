@@ -49,11 +49,12 @@ export function BrevoCategories() {
     <section id="brevo-categories" className="py-14 px-4 bg-green-50/50">
       <div className="max-w-7xl mx-auto">
         <header className="text-center mb-7">
-          <h2 className="text-3xl font-bold text-green-900 leading-tight">
-            Learn Email Marketing — The <span className="brevo-auto">Brevo</span> Way
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-3">
+            Structured Email Marketing Education, Built on
+            <span className="text-[#00B894] brevo-highlight">Brevo</span>
           </h2>
-          <p className="mt-2.5 text-green-800/90 max-w-3xl mx-auto">
-            Focused learning paths centered on <span className="brevo-auto">Brevo</span> features: campaigns, automation, deliverability, and CRM. Each category contains step-by-step lessons and practical examples.
+          <p className="text-base sm:text-lg text-gray-600 text-center max-w-2xl mx-auto">
+            Learn every major Brevo capability through organized categories that simplify complex topics into practical, actionable steps.
           </p>
         </header>
 

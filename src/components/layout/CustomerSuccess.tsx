@@ -34,12 +34,13 @@ export function CustomerSuccess() {
   return (
     <section className="w-full py-20 bg-[#f4fff8]">
       <div className="max-w-5xl mx-auto text-center mb-14 px-4">
-        <h2 className="text-4xl font-bold text-[#0f5132] mb-3">
-          Customer Success Stories Powered by <span className="text-green-600"><span className="brevo-auto">Brevo</span></span>
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
+          How Businesses Grow Faster With 
+          <span className="text-[#00B894] brevo-highlight"> Brevo</span>
         </h2>
-        <p className="text-gray-600 text-lg">
-          Real businesses achieving better engagement, automation, and growth using <span className="brevo-auto">Brevo</span>’s 
-          all-in-one marketing tools.
+        <p className="text-base sm:text-lg text-gray-600 text-center max-w-2xl mx-auto">
+          Explore real examples of brands using Brevo automation, segmentation, and CRM 
+          features to boost performance and scale smarter.
         </p>
       </div>
 

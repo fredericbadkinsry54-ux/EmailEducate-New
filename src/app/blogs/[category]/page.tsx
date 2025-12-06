@@ -58,14 +58,7 @@ export default function CategoryPage({ params }: CategoryPageParams) {
                     const placeholderId = (lesson.id.charCodeAt(0) + index) % 10 + 1;
                     return (
                         <Link href={`/blogs/${kebabCaseCategory}/${lesson.slug}`} key={lesson.id} className="category-lesson-item large group bg-card p-4 rounded-xl border-2 border-transparent hover:border-primary/30 hover:bg-card">
-                            <Image
-                                src={`https://picsum.photos/seed/${placeholderId}/150/150`}
-                                alt={lesson.title}
-                                width={100}
-                                height={100}
-                                className="rounded-lg object-cover"
-                                data-ai-hint="lesson topic"
-                            />
+                            
                             <div className="flex-1">
                                 <h2 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">{lesson.title}</h2>
                                 <div className="text-md text-muted-foreground flex items-center gap-2 mt-2">

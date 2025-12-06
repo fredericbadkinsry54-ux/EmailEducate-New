@@ -37,7 +37,7 @@ export default function ArticlePage({ params }: ArticlePageParams) {
         <h1 className="text-3xl md:text-4xl font-bold text-[#064e3b] mb-2">{lesson.title}</h1>
         <div className="flex items-center justify-center gap-4 text-sm text-muted-foreground mt-4">
             <div className="flex items-center gap-3">
-                <Image src="https://picsum.photos/seed/author/45/45" alt="Author" width={45} height={45} className="rounded-full" data-ai-hint="author photo"/>
+                
                 <div>
                     <span className="font-semibold text-[#1e293b]">Jane Doe</span>
                     <p className="text-xs">Updated June 12, 2024</p>

@@ -52,14 +52,7 @@ export default function BlogsPage() {
                                             const placeholderId = (lesson.id.charCodeAt(0) + index) % 10 + 1;
                                             return (
                                               <Link href={`/blogs/${kebabCaseCategory}/${lesson.slug}`} key={lesson.id} className="category-lesson-item group">
-                                                  <Image
-                                                      src={`https://picsum.photos/seed/${placeholderId}/100/100`}
-                                                      alt={lesson.title}
-                                                      width={60}
-                                                      height={60}
-                                                      className="rounded-lg object-cover"
-                                                      data-ai-hint="lesson topic"
-                                                  />
+                                                  
                                                   <div className="flex-1">
                                                       <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">{lesson.title}</h4>
                                                       <div className="text-sm text-muted-foreground flex items-center gap-2 mt-1">

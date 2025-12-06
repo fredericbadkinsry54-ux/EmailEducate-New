@@ -23,7 +23,7 @@ export default function AboutMePage() {
         <div className="max-w-4xl mx-auto py-16 px-6">
 
           {/* Heading */}
-          <h1 className="text-4xl font-bold mb-4">About Me</h1>
+          <h1 className="text-4xl font-bold mb-4">About EmailEducate</h1>
 
           {/* Intro */}
           <p className="text-lg leading-8 text-gray-700 mb-6">

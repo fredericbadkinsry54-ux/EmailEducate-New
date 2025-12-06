@@ -47,7 +47,7 @@ export default function ContactMe() {
               </p>
 
               <p className="text-lg font-semibold text-green-700 mb-4">
-                support@emailservicehub.online
+                support@emaileducate.online
               </p>
 
               <p className="text-gray-600 mb-10 text-lg leading-7">
@@ -73,7 +73,7 @@ export default function ContactMe() {
               </p>
 
               <p className="text-lg font-semibold text-green-700">
-                For collaborations: support@emailservicehub.online
+                For collaborations: support@emaileducate.online
               </p>
             </section>
 

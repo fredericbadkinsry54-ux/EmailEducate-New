@@ -14,12 +14,12 @@ const integrations = [
   },
   {
     name: 'Shopify',
-    description: 'Ecommerce + Automation. Trigger personalized campaigns via Brevo.',
+    description: 'Ecommerce + Automation. Trigger personalized campaigns via <span className="brevo-animated">Brevo</span>.',
     link: 'https://www.brevo.com/integrations/shopify/',
   },
   {
     name: 'BigCommerce',
-    description: 'Scale your store with advanced workflows connected to Brevo.',
+    description: 'Scale your store with advanced workflows connected to <span className="brevo-animated">Brevo</span>.',
     link: 'https://www.brevo.com/integrations/bigcommerce/',
   },
   {
@@ -28,13 +28,8 @@ const integrations = [
     link: 'https://www.brevo.com/integrations/pandadoc/',
   },
   {
-    name: 'EmailOctopus',
-    description: 'CMS + Email Sync. Use Brevo analytics for better segmentation.',
-    link: 'https://www.brevo.com/integrations/emailoctopus/',
-  },
-  {
     name: 'HubSpot',
-    description: 'Two-way CRM + Marketing Sync. Connect HubSpot with Brevo for automated contact updates and smarter campaigns.',
+    description: 'Two-way CRM + Marketing Sync. Connect HubSpot with <span className="brevo-animated">Brevo</span> for automated contact updates and smarter campaigns.',
     link: 'https://www.brevo.com/integrations/hubspot/',
   },
 ];
@@ -64,9 +59,7 @@ export function Marketplace() {
               <div>
                 <p className="text-xs font-semibold text-gray-400 mb-1">BREVO</p>
                 <h3 className="text-lg font-semibold">{item.name}</h3>
-                <p className="text-sm text-gray-600">
-                  {item.description}
-                </p>
+                <p className="text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: item.description }} />
               </div>
             </Link>
           ))}

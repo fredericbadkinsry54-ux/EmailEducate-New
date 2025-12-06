@@ -28,29 +28,25 @@ export function Footer() {
                         </div>
                     </div>
 
-                    <div>
-                        <h3 className="font-semibold text-foreground mb-4">Platform</h3>
-                        <ul className="space-y-2 text-sm">
-                            <li><Link href="/blogs" className="hover:text-primary transition-colors">Blogs</Link></li>
-                            <li><Link href="/legal/about-us" className="hover:text-primary transition-colors">About Us</Link></li>
-                            <li><Link href="/legal/contact-us" className="hover:text-primary transition-colors">Contact</Link></li>
-                        </ul>
+                    <div className="footer-column">
+                        <h3 className="footer-heading">Platform</h3>
+                        <Link href="/blogs" className="footer-link">Blogs</Link>
+                        <Link href="/legal/about-us" className="footer-link">About Us</Link>
+                        <Link href="/legal/contact-us" className="footer-link">Contact</Link>
                     </div>
 
-                    <div className="footer-legal">
-                        <h3>Legal</h3>
-                        <ul>
-                            <li><Link href="/legal/about-us">About Me</Link></li>
-                            <li><Link href="/legal/affiliate-disclosure">Affiliate Disclosure</Link></li>
-                            <li><Link href="/legal/contact-us">Contact Me</Link></li>
-                            <li><Link href="/legal/disclaimer">Disclaimer</Link></li>
-                            <li><Link href="/legal/privacy-policy">Privacy Policy</Link></li>
-                            <li><Link href="/legal/terms-of-service">Terms of Service</Link></li>
-                        </ul>
+                    <div className="footer-column">
+                        <h3 className="footer-heading">Legal</h3>
+                        <Link href="/legal/about-us" className="footer-link">About Me</Link>
+                        <Link href="/legal/affiliate-disclosure" className="footer-link">Affiliate Disclosure</Link>
+                        <Link href="/legal/contact-us" className="footer-link">Contact Me</Link>
+                        <Link href="/legal/disclaimer" className="footer-link">Disclaimer</Link>
+                        <Link href="/legal/privacy-policy" className="footer-link">Privacy Policy</Link>
+                        <Link href="/legal/terms-of-service" className="footer-link">Terms of Service</Link>
                     </div>
 
                     <div>
-                        <h3 className="font-semibold text-foreground mb-4">Stay Updated</h3>
+                        <h3 className="footer-heading">Stay Updated</h3>
                         <p className="text-sm mb-3">Get weekly lessons and tutorials in your inbox.</p>
                         <form className="flex">
                             <Input type="email" placeholder="Enter your email" className="rounded-r-none focus:!ring-0 text-foreground bg-background" required />

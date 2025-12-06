@@ -100,32 +100,34 @@
   color: #0a7f42;
 }
 
-.footer-legal h3 {
-  color: #0a7f42;
-  margin-bottom: 10px;
+.footer-link {
+  color: #0a7c59;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  display: inline-block;
+  padding: 2px 0;
+}
+
+.footer-link:hover {
+  color: #066547;
+  transform: translateX(3px);
+  text-decoration: underline;
+}
+
+/* Footer Headings Consistency */
+.footer-heading {
   font-size: 18px;
   font-weight: 700;
+  margin-bottom: 10px;
+  color: #0a7c59;
 }
 
-.footer-legal ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.footer-legal ul li {
-  margin-bottom: 6px;
-}
-
-.footer-legal a {
-  color: #0a7f42; 
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.2s;
-}
-
-.footer-legal a:hover {
-  color: #04bf68;
+/* Consistent Column Spacing */
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .legal-container {

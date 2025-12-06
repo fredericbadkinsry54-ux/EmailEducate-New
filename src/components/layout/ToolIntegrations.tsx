@@ -49,12 +49,15 @@ export function ToolIntegrations() {
     <section className="bg-background text-foreground py-20 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Smarter Email Marketing Starts With <span className="brevo-auto">Brevo</span>
-          </h2>
-          <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            EmailEducate helps you master <span className="brevo-auto">Brevo</span>’s powerful tools — from campaigns to automation, segmentation, and deliverability. See how <span className="brevo-auto">Brevo</span> compares with other platforms and why it remains the most flexible choice for growing businesses.
-          </p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
+              Top Email Marketing Tools Compared With 
+              <span className="text-[#00B894] brevo-highlight">Brevo</span>
+            </h2>
+            <p className="text-base sm:text-lg text-gray-600 text-center max-w-2xl mx-auto">
+              A clear comparison between Brevo and other leading email marketing platforms — 
+              helping you understand where Brevo excels in automation, deliverability, 
+              and usability.
+            </p>
         </div>
         <div className="mt-24 flex justify-center">
           <div className="relative flex items-center justify-center w-96 h-96">

@@ -42,10 +42,8 @@ export default function Home() {
             <main className="flex-1">
             <section id="hero" className="relative flex flex-col items-center justify-center text-center py-24 text-foreground overflow-hidden bg-[hsl(165,56%,95%)]">
                 <div className="max-w-3xl mx-auto px-6 z-10">
-                    <h1 className="hero-clean-title">
-                      Learn Email Marketing Faster,
-                      <br />
-                      Using <span className="brevo-highlight">Brevo’s</span> Best Features
+                    <h1 className="hero-title-2line">
+                        Learn Email Marketing Faster Using <span className="brevo-highlight">Brevo’s Best Features</span>
                     </h1>
                     <p className="hero-clean-sub">
                       Clear, practical lessons that help you understand campaigns, segmentation, automation,  

@@ -382,17 +382,14 @@
   100% { transform: translateY(0); opacity: .18; }
 }
 
-.hero-clean-title {
-  font-size: 3.2rem;
-  line-height: 1.15;
+.hero-title-2line {
+  font-size: 3.1rem;
+  line-height: 1.25;
   font-weight: 800;
   text-align: center;
   color: #102a43;
-  margin-bottom: 1rem;
-}
-
-.hero-clean-title span {
-  display: block;
+  max-width: 900px;
+  margin: 0 auto 1.5rem auto;
 }
 
 .hero-clean-sub {
@@ -406,7 +403,7 @@
 
 .brevo-highlight {
   color: #0BB47A;
-  font-weight: 800;
+  font-weight: 900;
   text-shadow: 0 0 12px rgba(11, 180, 122, 0.35);
 }
 

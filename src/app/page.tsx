@@ -40,30 +40,19 @@ export default function Home() {
                 </div>
             </header>
             <main className="flex-1">
-            <section id="hero" className="relative flex flex-col items-center justify-center text-center py-24 text-foreground overflow-hidden bg-[hsl(165,56%,95%)]">
-                <div className="max-w-3xl mx-auto px-6 z-10">
-                    <h1 className="hero-title-2line">
-                        Learn Email Marketing Faster Using <span className="brevo-highlight">Brevo’s Best Features</span>
+            <section className="hero">
+                <div className="hero-container">
+                    <h1 className="hero-title">
+                    Learn Email Marketing Faster Using
+                    <span className="hero-highlight"> Brevo’s Best Features</span>
                     </h1>
-                    <p className="hero-clean-sub">
-                      Clear, practical lessons that help you understand campaigns, segmentation, automation,  
-                      and CRM inside <span className="brevo-highlight">Brevo</span> — without complexity or technical confusion.
+                    <p className="hero-subtitle">
+                    Clear, practical lessons that help you understand campaigns, segmentation,
+                    automation, and CRM inside <strong>Brevo</strong> — without complexity
+                    or technical confusion.
                     </p>
-                    <div className="flex justify-center">
-                        <Button
-                          asChild
-                          size="lg"
-                          className="h-12 button-animated">
-                          <Link href="https://www.brevo.com/?r=t" target="_blank" rel="noopener noreferrer">
-                            <span>Visit <span className="brevo-auto">Brevo</span></span>
-                          </Link>
-                        </Button>
-                    </div>
+                    <a href="https://www.brevo.com" target="_blank" rel="noopener noreferrer" className="hero-btn">Visit Brevo</a>
                 </div>
-
-                {/* Decorative background shapes */}
-                <div className="absolute -top-10 -left-10 w-72 h-72 bg-primary/10 blur-3xl rounded-full"></div>
-                <div className="absolute -bottom-16 -right-16 w-80 h-80 bg-primary/20 blur-3xl rounded-full"></div>
             </section>
             
             <BrevoEnterprise />

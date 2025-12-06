@@ -62,7 +62,7 @@ export function BrevoCategories() {
           {brevoCategories.map((category, index) => (
             <article
               key={index}
-              className="bg-white rounded-xl p-5 shadow-md border border-green-900/5 transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg group"
+              className="bg-white rounded-xl p-5 shadow-md border border-green-200/80 transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg group"
             >
               <Link href={category.link} className="no-underline text-inherit block h-full">
                 <div className="flex flex-col h-full">

@@ -42,12 +42,13 @@ export default function Home() {
             <main className="flex-1">
             <section id="hero" className="relative flex flex-col items-center justify-center text-center py-24 text-foreground overflow-hidden bg-[hsl(165,56%,95%)]">
                 <div className="max-w-3xl mx-auto px-6 z-10">
-                    <h1 className="text-5xl md:text-6xl font-bold mb-4 leading-tight drop-shadow-lg text-slate-800">
-                        Learn Email Marketing Faster,
-                        <span className="block">Using <span className="brevo-auto">Brevo’s</span> Best Features</span>
+                    <h1 className="hero-clean-title">
+                      Learn Email Marketing Faster  
+                      <span>Using <span className="brevo-highlight">Brevo’s</span> Best Features</span>
                     </h1>
-                    <p className="text-lg md:text-xl mb-8 text-slate-600 max-w-2xl mx-auto">
-                        Clear, practical lessons that help you understand campaigns, segmentation, automation, and CRM inside <span className="brevo-auto">Brevo</span> — without complexity or technical confusion.
+                    <p className="hero-clean-sub">
+                      Clear, practical lessons that help you understand campaigns, segmentation, automation,  
+                      and CRM inside <span className="brevo-highlight">Brevo</span> — without complexity or technical confusion.
                     </p>
                     <div className="flex justify-center">
                         <Button

@@ -100,6 +100,7 @@
   color: #0a7f42;
 }
 
+/* Universal Footer Button Styling – EmailEducate */
 .footer-link {
   color: #0a7c59;
   font-weight: 500;
@@ -379,6 +380,34 @@
   0% { transform: translateY(0); opacity: .18; }
   50% { transform: translateY(-10px); opacity: .27; }
   100% { transform: translateY(0); opacity: .18; }
+}
+
+.hero-clean-title {
+  font-size: 3.2rem;
+  line-height: 1.15;
+  font-weight: 800;
+  text-align: center;
+  color: #102a43;
+  margin-bottom: 1rem;
+}
+
+.hero-clean-title span {
+  display: block;
+}
+
+.hero-clean-sub {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  text-align: center;
+  color: #3a4750;
+  max-width: 680px;
+  margin: 0 auto 2rem auto;
+}
+
+.brevo-highlight {
+  color: #0BB47A;
+  font-weight: 800;
+  text-shadow: 0 0 12px rgba(11, 180, 122, 0.35);
 }
 
 

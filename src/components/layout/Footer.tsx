@@ -48,6 +48,9 @@ export function Footer() {
                             <li><a href="/legal/disclaimer">Disclaimer</a></li>
                             <li><a href="/legal/privacy-policy">Privacy Policy</a></li>
                             <li><a href="/legal/terms-of-service">Terms of Service</a></li>
+                            <li>
+                              <a href="/legal/cookie-policy" className="footer-links">Cookie Policy</a>
+                            </li>
                         </ul>
                     </div>
 

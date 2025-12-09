@@ -24,24 +24,6 @@ export function AppHeader() {
             </Link>
 
             <div className="ee-dropdown">
-              <button className="ee-drop-btn">Insights ▾</button>
-              <div className="ee-drop-menu">
-                <Link href="/blogs" className="ee-drop-item">
-                  Email Marketing
-                </Link>
-                <Link href="/articles/brevo-marketing-automation" className="ee-drop-item">
-                  Automation
-                </Link>
-                <Link href="/articles/brevo-crm-contacts" className="ee-drop-item">
-                  CRM & Contacts
-                </Link>
-                <Link href="/articles/brevo-deliverability" className="ee-drop-item">
-                  Deliverability
-                </Link>
-              </div>
-            </div>
-
-            <div className="ee-dropdown">
               <button className="ee-drop-btn">Tools Comparison ▾</button>
               <div className="ee-drop-menu">
                 <Link
@@ -68,16 +50,6 @@ export function AppHeader() {
                 >
                   Brevo vs GetResponse
                 </Link>
-              </div>
-            </div>
-
-            <div className="ee-dropdown">
-              <button className="ee-drop-btn">Integrations ▾</button>
-              <div className="ee-drop-menu">
-                <a href="https://www.brevo.com/integrations/wordpress" target="_blank" rel="noopener noreferrer" className="ee-drop-item">WordPress</a>
-                <a href="https://www.brevo.com/integrations/woocommerce" target="_blank" rel="noopener noreferrer" className="ee-drop-item">WooCommerce</a>
-                <a href="https://www.brevo.com/integrations/shopify" target="_blank" rel="noopener noreferrer" className="ee-drop-item">Shopify</a>
-                <a href="https://www.brevo.com/integrations/zapier/" target="_blank" rel="noopener noreferrer" className="ee-drop-item">Zapier</a>
               </div>
             </div>
 
@@ -132,5 +104,3 @@ export function AppHeader() {
     </>
   );
 }
-
-    

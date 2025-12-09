@@ -4,6 +4,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 import { Inter } from 'next/font/google'
 import { Footer } from '@/components/layout/Footer';
+import { CookieConsentCard } from '@/components/layout/CookieConsentCard';
 
 export const metadata: Metadata = {
   title: 'Learn Email Marketing Faster, Using Brevo’s Best Features',
@@ -38,6 +39,7 @@ export default function RootLayout({
           <Footer />
         </div>
         <Toaster />
+        <CookieConsentCard />
       </body>
     </html>
   );

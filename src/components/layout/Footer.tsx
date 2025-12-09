@@ -28,21 +28,27 @@ export function Footer() {
                         </div>
                     </div>
 
-                    <div className="footer-column">
-                        <h3 className="footer-heading">Platform</h3>
-                        <Link href="/blogs" className="footer-link">Blogs</Link>
-                        <Link href="/legal/about-us" className="footer-link">About Us</Link>
-                        <Link href="/legal/contact-us" className="footer-link">Contact</Link>
+                    <div className="footer-col">
+                        <h3 className="footer-heading">Categories</h3>
+                        <ul className="footer-links">
+                            <li><a href="/articles/brevo-email-campaigns">Email Campaigns</a></li>
+                            <li><a href="/articles/brevo-marketing-automation">Marketing Automation</a></li>
+                            <li><a href="/articles/brevo-deliverability">Inbox & Deliverability</a></li>
+                            <li><a href="/articles/brevo-crm-contacts">CRM & Contacts</a></li>
+                            <li><a href="/articles/tools-comparison">Tools Comparison</a></li>
+                        </ul>
                     </div>
 
-                    <div className="footer-column">
+                    <div className="footer-col">
                         <h3 className="footer-heading">Legal</h3>
-                        <Link href="/legal/about-us" className="footer-link">About Me</Link>
-                        <Link href="/legal/affiliate-disclosure" className="footer-link">Affiliate Disclosure</Link>
-                        <Link href="/legal/contact-us" className="footer-link">Contact Me</Link>
-                        <Link href="/legal/disclaimer" className="footer-link">Disclaimer</Link>
-                        <Link href="/legal/privacy-policy" className="footer-link">Privacy Policy</Link>
-                        <Link href="/legal/terms-of-service" className="footer-link">Terms of Service</Link>
+                        <ul className="footer-links">
+                            <li><a href="/legal/about-us">About Me</a></li>
+                            <li><a href="/legal/affiliate-disclosure">Affiliate Disclosure</a></li>
+                            <li><a href="/legal/contact-us">Contact Me</a></li>
+                            <li><a href="/legal/disclaimer">Disclaimer</a></li>
+                            <li><a href="/legal/privacy-policy">Privacy Policy</a></li>
+                            <li><a href="/legal/terms-of-service">Terms of Service</a></li>
+                        </ul>
                     </div>
 
                     <div>

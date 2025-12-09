@@ -1023,3 +1023,62 @@ a.card-link {
     color: inherit;
 }
     
+/* NEW FOOTER EXPANDED SECTIONS */
+.footer-expanded {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid #e6f2eb;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.footer-row ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #0a6847; /* Green dark */
+  margin-bottom: 12px;
+}
+
+.footer-row li {
+  margin: 6px 0;
+}
+
+.footer-row a {
+  font-size: .9rem;
+  color: #2d4a43;
+  text-decoration: none;
+  transition: .25s ease;
+}
+
+.footer-row a:hover {
+  color: #008964;
+  padding-left: 4px;
+}
+
+.trust-badges li {
+  font-size: .85rem;
+  color: #244d3c;
+  margin-bottom: 6px;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  background: #e8f7ef;
+  color: #008964;
+  transition: .25s ease;
+}
+
+.footer-social a:hover {
+  background: #008964;
+  color: #ffffff;
+}

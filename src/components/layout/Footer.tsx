@@ -58,47 +58,6 @@ export function Footer() {
                     </div>
                 </div>
 
-                <div className="footer-expanded">
-
-                  {/* LEARNING HUBS */}
-                  <div className="footer-row">
-                    <h4 className="footer-title">Learning Hubs</h4>
-                    <ul>
-                      <li><a href="/blogs">Email Marketing</a></li>
-                      <li><a href="/blogs">Automation & Workflows</a></li>
-                      <li><a href="/blogs">CRM & Contacts</a></li>
-                      <li><a href="/blogs">Inbox & Deliverability</a></li>
-                      <li><a href="/blogs">Tools & SaaS</a></li>
-                      <li><a href="/blogs">Comparison Hub</a></li>
-                    </ul>
-                  </div>
-
-                  {/* QUICK RESOURCES */}
-                  <div className="footer-row">
-                    <h4 className="footer-title">Quick Resources</h4>
-                    <ul>
-                      <li><a href="/blogs">Email Templates</a></li>
-                      <li><a href="/blogs">Automation Flow Examples</a></li>
-                      <li><a href="/blogs">Deliverability Checklist</a></li>
-                      <li><a href="/blogs">CRM Setup Guides</a></li>
-                      <li><a href="/pricing">Pricing Breakdown</a></li>
-                      <li><a href="/blogs">Brevo Tutorials Hub</a></li>
-                    </ul>
-                  </div>
-
-                  {/* TRUST + CONNECT */}
-                  <div className="footer-row">
-                    <h4 className="footer-title">Trusted By Learners</h4>
-                    <ul className="trust-badges">
-                      <li>✓ Educational Only</li>
-                      <li>✓ Independent Platform</li>
-                      <li>✓ Brevo-Focused Guides</li>
-                      <li>✓ Ad-Free Learning</li>
-                    </ul>
-                  </div>
-
-                </div>
-
                 <div className="mt-12 pt-8 border-t text-center text-sm">
                     <p>&copy; {new Date().getFullYear()} EmailEducate. All Rights Reserved.</p>
                 </div>

@@ -1,57 +1,136 @@
+
 "use client";
 
-import { SidebarTrigger } from "@/components/ui/sidebar";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import { Logo } from "@/components/Logo";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { User } from "lucide-react";
+import Link from "next/link";
+import Script from "next/script";
 
 export function AppHeader() {
   return (
-    <header className="sticky top-0 z-10 flex h-16 items-center gap-4 border-b bg-background/80 px-4 backdrop-blur-sm md:px-6">
-      <div className="md:hidden">
-        <SidebarTrigger />
-      </div>
-      <div className="hidden md:flex items-center gap-2">
-        <Logo className="size-7 text-primary" />
-        <h1 className="text-xl font-semibold tracking-tight">EmailEducate</h1>
-      </div>
-      <div className="flex w-full items-center justify-end gap-4">
-         <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="relative h-10 w-10 rounded-full">
-                    <Avatar className="h-10 w-10">
-                        <AvatarFallback>
-                            <User />
-                        </AvatarFallback>
-                    </Avatar>
-                </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56" align="end" forceMount>
-                <DropdownMenuLabel className="font-normal">
-                    <div className="flex flex-col space-y-1">
-                        <p className="text-sm font-medium leading-none">Guest</p>
-                        <p className="text-xs leading-none text-muted-foreground">
-                            guest@example.com
-                        </p>
-                    </div>
-                </DropdownMenuLabel>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem asChild>
-                    <Link href="/">Log out</Link>
-                </DropdownMenuItem>
-            </DropdownMenuContent>
-        </DropdownMenu>
-      </div>
-    </header>
+    <>
+      <header className="ee-nav">
+        <div className="ee-nav-container">
+          <a href="/" className="ee-logo">
+            <Logo className="size-8" />
+            <span>EmailEducate</span>
+          </a>
+
+          <nav className="ee-menu">
+            <Link href="/" className="ee-link">
+              Home
+            </Link>
+            <Link href="/legal/about-us" className="ee-link">
+              About
+            </Link>
+
+            <div className="ee-dropdown">
+              <button className="ee-drop-btn">Insights ▾</button>
+              <div className="ee-drop-menu">
+                <Link href="/blogs" className="ee-drop-item">
+                  Email Marketing
+                </Link>
+                <Link href="/articles/brevo-marketing-automation" className="ee-drop-item">
+                  Automation
+                </Link>
+                <Link href="/articles/brevo-crm-contacts" className="ee-drop-item">
+                  CRM & Contacts
+                </Link>
+                <Link href="/articles/brevo-deliverability" className="ee-drop-item">
+                  Deliverability
+                </Link>
+              </div>
+            </div>
+
+            <div className="ee-dropdown">
+              <button className="ee-drop-btn">Tools Comparison ▾</button>
+              <div className="ee-drop-menu">
+                <Link
+                  href="/articles/tools-comparison/brevo-vs-mailchimp-2026"
+                  className="ee-drop-item"
+                >
+                  Brevo vs Mailchimp
+                </Link>
+                <Link
+                  href="/articles/tools-comparison/brevo-vs-mailerlite-2026"
+                  className="ee-drop-item"
+                >
+                  Brevo vs MailerLite
+                </Link>
+                <Link
+                  href="/articles/tools-comparison/brevo-vs-convertkit-2026"
+                  className="ee-drop-item"
+                >
+                  Brevo vs ConvertKit
+                </Link>
+                <Link
+                  href="/articles/tools-comparison/brevo-vs-getresponse-2026"
+                  className="ee-drop-item"
+                >
+                  Brevo vs GetResponse
+                </Link>
+              </div>
+            </div>
+
+            <div className="ee-dropdown">
+              <button className="ee-drop-btn">Integrations ▾</button>
+              <div className="ee-drop-menu">
+                <a href="https://www.brevo.com/integrations/wordpress" target="_blank" rel="noopener noreferrer" className="ee-drop-item">WordPress</a>
+                <a href="https://www.brevo.com/integrations/woocommerce" target="_blank" rel="noopener noreferrer" className="ee-drop-item">WooCommerce</a>
+                <a href="https://www.brevo.com/integrations/shopify" target="_blank" rel="noopener noreferrer" className="ee-drop-item">Shopify</a>
+                <a href="https://www.brevo.com/integrations/zapier/" target="_blank" rel="noopener noreferrer" className="ee-drop-item">Zapier</a>
+              </div>
+            </div>
+
+            <div className="ee-dropdown">
+                <button className="ee-drop-btn">Tutorials ▾</button>
+                <div className="ee-drop-menu">
+                    <Link href="/articles/brevo-email-campaigns" className="ee-drop-item">Campaigns</Link>
+                    <Link href="/articles/brevo-marketing-automation" className="ee-drop-item">Automation</Link>
+                    <Link href="/articles/brevo-crm-contacts" className="ee-drop-item">CRM Setup</Link>
+                    <Link href="/articles/brevo-deliverability" className="ee-drop-item">Inbox Placement</Link>
+                </div>
+            </div>
+
+
+            <Link href="/legal/contact-us" className="ee-link">
+              Contact
+            </Link>
+          </nav>
+
+          <Link href="/signup" className="ee-nav-btn">
+            Sign Up
+          </Link>
+
+          <button className="ee-mobile-toggle" onClick={() => {
+              const menu = document.getElementById("mobileMenu");
+              if (menu) {
+                menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+              }
+          }}>
+            ☰
+          </button>
+        </div>
+
+        <div className="ee-mobile-menu" id="mobileMenu">
+          <Link href="/" className="ee-mobile-item">
+            Home
+          </Link>
+          <Link href="/legal/about-us" className="ee-mobile-item">
+            About
+          </Link>
+          <Link href="/blogs" className="ee-mobile-item">
+            Insights
+          </Link>
+          <Link href="/legal/contact-us" className="ee-mobile-item">
+            Contact
+          </Link>
+          <Link href="/signup" className="ee-mobile-btn">
+            Sign Up
+          </Link>
+        </div>
+      </header>
+    </>
   );
 }
+
+    

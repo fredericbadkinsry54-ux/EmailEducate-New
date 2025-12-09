@@ -16,7 +16,6 @@ export default function TermsOfService() {
             <nav className="hidden md:flex gap-6">
                 <Link href="/" className="font-medium text-foreground/80 hover:text-foreground transition-colors">Home</Link>
                 <Link href="/legal/about-us" className="font-medium text-foreground/80 hover:text-foreground transition-colors">About</Link>
-                <Link href="/blogs" className="font-medium text-foreground/80 hover:text-foreground transition-colors">Blogs</Link>
                 <Link href="/legal/contact-us" className="font-medium text-foreground/80 hover:text-foreground transition-colors">Contact</Link>
             </nav>
         </div>

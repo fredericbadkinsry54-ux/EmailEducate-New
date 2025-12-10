@@ -17,7 +17,7 @@ export default function DisclaimerPage() {
 
           <div className="legal-card">
             <h2>
-              📘 Educational & Informational Content
+              Educational & Informational Content
             </h2>
             <p>
               The content on EmailEducate is created for educational and informational purposes only.
@@ -28,7 +28,7 @@ export default function DisclaimerPage() {
 
           <div className="legal-card">
             <h2>
-              📊 No Guarantees of Results
+              No Guarantees of Results
             </h2>
             <p>
               While we aim to provide honest strategies and useful reviews, marketing and automation
@@ -39,7 +39,7 @@ export default function DisclaimerPage() {
 
           <div className="legal-card">
             <h2>
-              🔗 External Links and Third-Party Tools
+              External Links and Third-Party Tools
             </h2>
             <p>
               Our articles may include links to third-party tools such as Brevo, Systeme.io, Mailchimp,
@@ -50,7 +50,7 @@ export default function DisclaimerPage() {
 
           <div className="legal-card">
             <h2>
-              ⚖️ Financial & Legal Disclaimer
+              Financial & Legal Disclaimer
             </h2>
             <p>
               EmailEducate is not a financial, legal, or professional advisory platform.
@@ -61,7 +61,7 @@ export default function DisclaimerPage() {
 
           <div className="legal-card">
             <h2>
-              ⚠️ Your Responsibility
+              Your Responsibility
             </h2>
             <p>
               By using this website, you acknowledge that you are responsible for your own actions,
@@ -73,7 +73,7 @@ export default function DisclaimerPage() {
 
           <div className="legal-card">
             <h2>
-              🕒 Last Updated
+              Last Updated
             </h2>
             <p>
               This disclaimer was last updated on December 6, 2025.
@@ -84,5 +84,3 @@ export default function DisclaimerPage() {
     </div>
   );
 }
-
-    

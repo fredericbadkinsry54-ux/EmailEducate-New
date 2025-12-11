@@ -1376,14 +1376,14 @@ a.card-link {
 }
 
 /* Soft breathing animation */
-.brevo-badge-pro {
-  animation: brevoPulse 3s ease-in-out infinite;
-}
-
 @keyframes brevoPulse {
   0% { box-shadow: 0 4px 10px rgba(0, 168, 132, 0.20); }
   50% { box-shadow: 0 4px 14px rgba(0, 168, 132, 0.32); }
   100% { box-shadow: 0 4px 10px rgba(0, 168, 132, 0.20); }
+}
+
+.brevo-badge-pro {
+  animation: brevoPulse 3s ease-in-out infinite;
 }
 
 .no-badge-section .brevo-badge-pro {

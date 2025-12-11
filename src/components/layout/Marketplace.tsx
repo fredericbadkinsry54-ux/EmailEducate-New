@@ -43,7 +43,7 @@ export function Marketplace() {
             Upgrade Your Stack With <span className="brevo-badge-pro">Brevo</span> Integrations
           </h2>
           <p className="text-base sm:text-lg text-gray-600 text-center max-w-2xl mx-auto">
-            Discover seamless connections between <span className="brevo-animated">Brevo</span> and top platforms — helping you automate faster and manage your business with clarity.
+            Discover seamless connections between <span className="brevo-auto">Brevo</span> and top platforms — helping you automate faster and manage your business with clarity.
           </p>
         </div>
 
@@ -57,8 +57,8 @@ export function Marketplace() {
               rel="noopener noreferrer"
             >
               <div>
-                <p className="text-xs font-semibold text-gray-400 mb-1">BREVO</p>
-                <h3 className="text-lg font-semibold">{item.name}</h3>
+                <span className="brevo-badge-pro">Brevo</span>
+                <h3 className="text-lg font-semibold mt-2">{item.name}</h3>
                 <p className="text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: item.description }} />
               </div>
             </Link>
@@ -72,7 +72,7 @@ export function Marketplace() {
             rel="noopener noreferrer"
             className="main-btn no-underline"
           >
-            Explore All <span className="brevo-animated">Brevo</span> Integrations →
+            Explore All <span className="brevo-auto">Brevo</span> Integrations →
           </Link>
         </div>
       </div>

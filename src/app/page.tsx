@@ -33,7 +33,7 @@ export default function Home() {
                 <div className="hero-container">
                     <h1 className="hero-title">
                     Learn Email Marketing Faster Using 
-                    <span className="brevo-badge">Brevo’s</span> Best Features
+                    <span className="brevo-badge-pro">Brevo’s</span> Best Features
                     </h1>
                     <p className="hero-subtitle">
                     Clear, practical lessons that help you understand campaigns, segmentation,

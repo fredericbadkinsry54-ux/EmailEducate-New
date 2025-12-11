@@ -281,7 +281,6 @@
   animation: fade-in-up 0.8s ease forwards;
 }
 
-/* === Brevo glass badge + hover animation === */
 .brevo-badge {
   background: rgba(0, 180, 120, 0.12);
   color: #00A884;
@@ -1305,4 +1304,95 @@ a.card-link {
 
 .brevo-heading-badge:hover::after {
   left: 110%;
+}
+
+.brevo-auto {
+    display: inline-block;
+    padding: 2px 8px;
+    background: linear-gradient(135deg, #00c48c, #009f6b);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgba(0, 150, 110, 0.25);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform .25s ease, box-shadow .25s ease;
+    animation: gradientMove 6s ease infinite;
+}
+
+.brevo-auto::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-25deg);
+  transition: left 0.7s ease;
+}
+
+.brevo-auto:hover::after {
+    left: 125%;
+}
+
+.brevo-auto:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 150, 110, 0.35);
+}
+
+.brevo-badge-pro {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 10px;
+  background: linear-gradient(
+      135deg,
+      rgba(0, 168, 132, 0.22),
+      rgba(0, 168, 132, 0.10)
+  );
+  border: 1px solid rgba(0, 168, 132, 0.25);
+  color: #00A884;
+  font-weight: 700;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow:
+      inset 0px 1px 3px rgba(255, 255, 255, 0.6),
+      0 4px 10px rgba(0, 168, 132, 0.25);
+  transition: all 0.28s ease;
+  position: relative;
+  cursor: default;
+}
+
+/* Gloss reflection shine */
+.brevo-badge-pro::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  height: 40%;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 8px;
+  filter: blur(5px);
+  opacity: 0.55;
+}
+
+/* Hover animation */
+.brevo-badge-pro:hover {
+  transform: scale(1.05);
+  box-shadow:
+      inset 0px 1px 3px rgba(255, 255, 255, 0.6),
+      0 6px 16px rgba(0, 168, 132, 0.35);
+}
+
+/* Soft breathing animation */
+.brevo-badge-pro {
+  animation: brevoPulse 3s ease-in-out infinite;
+}
+
+@keyframes brevoPulse {
+  0% { box-shadow: 0 4px 10px rgba(0, 168, 132, 0.20); }
+  50% { box-shadow: 0 4px 14px rgba(0, 168, 132, 0.32); }
+  100% { box-shadow: 0 4px 10px rgba(0, 168, 132, 0.20); }
 }

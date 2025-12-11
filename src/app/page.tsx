@@ -37,7 +37,7 @@ export default function Home() {
                     </h1>
                     <p className="hero-subtitle">
                     Clear, practical lessons that help you understand campaigns, segmentation,
-                    automation, and CRM inside <strong>Brevo</strong> — without complexity
+                    automation, and CRM inside <strong style={{ color: '#059669' }}>Brevo</strong> — without complexity
                     or technical confusion.
                     </p>
                     <a href="https://www.brevo.com" target="_blank" rel="noopener noreferrer" className="hero-btn">Visit Brevo</a>
@@ -85,5 +85,3 @@ export default function Home() {
         </div>
     );
 }
-
-    

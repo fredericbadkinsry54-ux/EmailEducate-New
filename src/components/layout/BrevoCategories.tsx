@@ -72,7 +72,7 @@ export function BrevoCategories() {
                     </div>
                     <h3 className="text-lg font-semibold text-green-900" dangerouslySetInnerHTML={{ __html: category.title.replace(/Brevo/g, '<span class="brevo-auto">Brevo</span>') }}></h3>
                   </div>
-                  <p className="text-sm text-green-900/80 leading-relaxed mb-3.5 flex-grow" dangerouslySetInnerHTML={{ __html: category.description.replace(/Brevo/g, '<span class="brevo-auto">Brevo</span>') }} />
+                  <p className="text-sm text-green-900/80 leading-relaxed mb-3.5 flex-grow">{category.description.replace(/Brevo/g, 'Brevo')}</p>
                   <div className="flex items-center gap-2.5 mt-auto">
                     <span className="font-bold text-green-700 group-hover:underline">Explore →</span>
                     <small className="text-green-800/80 text-xs" dangerouslySetInnerHTML={{ __html: category.tags.replace(/Brevo/g, '<span class="brevo-auto">Brevo</span>') }}></small>

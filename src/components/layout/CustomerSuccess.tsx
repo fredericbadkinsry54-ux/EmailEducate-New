@@ -61,7 +61,7 @@ export function CustomerSuccess() {
       <div className="text-center mt-12">
         <Link href="https://www.brevo.com/success-stories/" target="_blank"
           className="inline-block px-8 py-3 rounded-full border border-green-600 text-green-700 hover:bg-green-600 hover:text-white transition-all duration-300">
-          View All <span className="brevo-auto">Brevo</span> Success Stories →
+          View All Brevo Success Stories →
         </Link>
       </div>
     </section>

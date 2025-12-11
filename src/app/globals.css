@@ -1413,3 +1413,17 @@ a.card-link {
 .no-badge-section .brevo-auto::after {
     display: none !important;
 }
+
+.no-badge-section .brevo-auto {
+  background: none !important;
+  color: #0BAF84 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  font-weight: 600;
+  box-shadow: none !important;
+  animation: none !important;
+}
+
+.no-badge-section .brevo-auto::after {
+  display: none !important;
+}

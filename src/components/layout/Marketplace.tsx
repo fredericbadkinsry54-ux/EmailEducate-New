@@ -72,7 +72,7 @@ export function Marketplace() {
             rel="noopener noreferrer"
             className="main-btn no-underline"
           >
-            Explore All <span className="brevo-auto">Brevo</span> Integrations →
+            Explore All Brevo Integrations →
           </Link>
         </div>
       </div>

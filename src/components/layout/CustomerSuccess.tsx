@@ -36,7 +36,7 @@ export function CustomerSuccess() {
       <div className="max-w-5xl mx-auto text-center mb-14 px-4">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
           How Businesses Grow Faster With 
-          <span className="text-[#00B894] brevo-highlight"> Brevo</span>
+          <span className="brevo-badge-pro"> Brevo</span>
         </h2>
         <p className="text-base sm:text-lg text-gray-600 text-center max-w-2xl mx-auto">
           Explore real examples of brands using Brevo automation, segmentation, and CRM 

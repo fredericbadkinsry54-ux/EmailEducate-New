@@ -14,11 +14,13 @@ export function BrevoAiConnect() {
         <h2 className="mt-5 text-4xl font-extrabold text-[#0f2a22] leading-tight">
           Connect Your AI Tools <br /> Directly to <span className="brevo-auto">Brevo</span>
         </h2>
-        <p className="mt-5 text-lg leading-relaxed text-[#24483e]">
-          <span className="brevo-auto">Brevo</span>'s MCP Server lets your existing AI assistants talk directly to <span className="brevo-auto">Brevo</span>. 
-          This gives your tools the context they need to analyze data, manage contacts, 
-          run reports, and handle campaigns — all inside your preferred AI environment.
-        </p>
+        <div className="no-badge-section">
+          <p className="mt-5 text-lg leading-relaxed text-[#24483e]">
+            <span className="brevo-auto">Brevo</span>'s MCP Server lets your existing AI assistants talk directly to <span className="brevo-auto">Brevo</span>. 
+            This gives your tools the context they need to analyze data, manage contacts, 
+            run reports, and handle campaigns — all inside your preferred AI environment.
+          </p>
+        </div>
         <h3 className="mt-8 text-xl font-bold text-[#0f2a22]">
           Full <span className="brevo-auto">Brevo</span> functionality at your AI’s fingertips
         </h3>

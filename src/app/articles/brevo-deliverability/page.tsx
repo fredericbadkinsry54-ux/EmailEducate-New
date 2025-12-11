@@ -50,9 +50,11 @@ export default function BrevoDeliverabilityCategoryPage() {
                         <Link key={index} href={article.link} className="block no-underline group">
                             <Card className="bg-white shadow-md hover:shadow-lg transition-shadow duration-300 border border-green-200/80 group-hover:border-green-400/50">
                                 <CardContent className="p-6">
-                                    <h2 className="text-xl font-bold text-green-900 group-hover:text-green-700 transition-colors" dangerouslySetInnerHTML={{ __html: article.title.replace(/Brevo/g, '<span class="brevo-auto">Brevo</span>') }}>
+                                    <h2 className="text-xl font-bold text-green-900 group-hover:text-green-700 transition-colors">
+                                        {article.title}
                                     </h2>
-                                    <p className="text-green-900/80 mt-2 mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: article.description.replace(/Brevo/g, '<span class="brevo-auto">Brevo</span>') }}>
+                                    <p className="text-green-900/80 mt-2 mb-4 leading-relaxed">
+                                        {article.description}
                                     </p>
                                     <div className="flex items-center gap-2 text-green-700 font-semibold">
                                         <span>Read article</span>

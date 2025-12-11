@@ -74,7 +74,7 @@ export default function Home() {
                             and use CRM features the right way — all through practical lessons powered by <span className="brevo-auto">Brevo</span>.
                         </p>
                         <a href="https://www.brevo.com" className="inline-block px-10 py-4 bg-[#0DA56F] text-white text-lg font-semibold rounded-xl shadow-xl hover:bg-[#0c8b5d] transition-all duration-200 main-btn">
-                            Start Learning <span className="brevo-auto">Brevo</span>
+                            Start Learning Brevo
                         </a>
                         <p className="text-sm text-gray-600 mt-4">
                             No credit card required — just practical learning.

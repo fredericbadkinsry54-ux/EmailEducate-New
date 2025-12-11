@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function BrevoAiConnect() {
   return (
-    <section className="w-full py-24 bg-[#f2faf5] flex flex-col md:flex-row justify-center items-center gap-12 md:gap-20 text-center md:text-left relative overflow-hidden px-5 no-badge-section">
+    <section className="w-full py-24 bg-[#f2faf5] flex flex-col md:flex-row justify-center items-center gap-12 md:gap-20 text-center md:text-left relative overflow-hidden px-5">
       
       {/* Text Block */}
       <div className="max-w-xl z-10">

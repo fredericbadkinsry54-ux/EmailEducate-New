@@ -50,7 +50,7 @@ export function BrevoRecommendation() {
               href="https://www.brevo.com/"
               className="inline-block px-10 py-4 bg-[#0DA56F] text-white text-lg font-semibold rounded-xl shadow-lg hover:bg-[#0c8b5d] transition-all duration-200"
             >
-              Start Learning <span className="brevo-auto">Brevo</span>
+              Start Learning Brevo
             </a>
           </div>
         </div>

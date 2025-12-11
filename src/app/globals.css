@@ -299,52 +299,41 @@
 
 
 /* === Brevo Heading Badge (Only for Headings) === */
-.brevo-heading {
+.brevo-heading-badge {
   display: inline-block;
-  padding: 0.15rem 0.5rem;
-  border-radius: 999px;
-  background: linear-gradient(135deg, #00b894, #00d6a3);
+  padding: 2px 8px;
+  background: linear-gradient(135deg, #00c48c, #009f6b);
   color: #fff;
   font-weight: 700;
-  text-shadow: 0 0 4px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  box-shadow: 0 3px 8px rgba(0, 150, 110, 0.25);
   position: relative;
   overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+  transition: transform .25s ease, box-shadow .25s ease;
 }
 
-/* Reflection Effect */
-.brevo-heading::after {
+/* Glossy reflection */
+.brevo-heading-badge::after {
   content: "";
   position: absolute;
-  top: -40%;
-  left: -80%;
-  width: 60%;
-  height: 200%;
-  background: linear-gradient(
-    120deg,
-    transparent 0%,
-    rgba(255,255,255,0.8) 50%,
-    transparent 100%
-  );
-  opacity: 0;
-  transform: skewX(-25deg);
+  top: 0;
+  left: -60%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.35);
+  transform: skewX(-20deg);
+  transition: .4s;
 }
 
-/* Hover Animation */
-.brevo-heading:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 184, 148, 0.35);
+/* Hover animation */
+.brevo-heading-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 150, 110, 0.35);
 }
 
-.brevo-heading:hover::after {
-  opacity: 1;
-  animation: brevo-swipe 0.7s ease-out;
-}
-
-@keyframes brevo-swipe {
-  0% { transform: translateX(0) skewX(-25deg); opacity: 0; }
-  30% { opacity: 1; }
-  100% { transform: translateX(260%) skewX(-25deg); opacity: 0; }
+.brevo-heading-badge:hover::after {
+  left: 110%;
 }
 
 .hero-highlight {
@@ -1395,4 +1384,32 @@ a.card-link {
   0% { box-shadow: 0 4px 10px rgba(0, 168, 132, 0.20); }
   50% { box-shadow: 0 4px 14px rgba(0, 168, 132, 0.32); }
   100% { box-shadow: 0 4px 10px rgba(0, 168, 132, 0.20); }
+}
+
+.no-badge-section .brevo-badge-pro {
+    background: none !important;
+    color: #0BAF84 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    font-weight: 600;
+    box-shadow: none !important;
+    animation: none !important;
+}
+
+.no-badge-section .brevo-badge-pro::after {
+    display: none !important;
+}
+
+.no-badge-section .brevo-auto {
+    background: none !important;
+    color: #0BAF84 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    font-weight: 600;
+    box-shadow: none !important;
+    animation: none !important;
+}
+
+.no-badge-section .brevo-auto::after {
+    display: none !important;
 }

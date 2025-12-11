@@ -46,7 +46,7 @@ const brevoCategories = [
 
 export function BrevoCategories() {
   return (
-    <section id="brevo-categories" className="py-14 px-4 bg-green-50/50">
+    <section id="brevo-categories" className="py-14 px-4 bg-green-50/50 no-badge-section">
       <div className="max-w-7xl mx-auto">
         <header className="text-center mb-7">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-3">

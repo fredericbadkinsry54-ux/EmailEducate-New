@@ -46,12 +46,12 @@ const brevoCategories = [
 
 export function BrevoCategories() {
   return (
-    <section id="brevo-categories" className="py-14 px-4 bg-green-50/50 no-badge-section">
+    <section id="brevo-categories" className="py-14 px-4 bg-green-50/50">
       <div className="max-w-7xl mx-auto">
         <header className="text-center mb-7">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-3">
             Structured Email Marketing Education, Built on
-            <span className="brevo-badge-pro">Brevo</span>
+            <span className="brevo-badge-pro ml-2">Brevo</span>
           </h2>
           <p className="text-base sm:text-lg text-gray-600 text-center max-w-2xl mx-auto">
             Learn every major Brevo capability through organized categories that simplify complex topics into practical, actionable steps.

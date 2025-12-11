@@ -1,6 +1,7 @@
 
 "use client";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const plans = [
     {
@@ -75,10 +76,13 @@ export function Pricing() {
 
             <div className="flex flex-nowrap justify-start md:justify-center gap-[35px] w-full overflow-x-auto pb-2.5 max-w-6xl mx-auto px-4">
                 {plans.map((plan, index) => (
-                    <div
+                    <Link
                         key={index}
+                        href="https://www.brevo.com/pricing/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className={cn(
-                            "bg-white border-2 rounded-2xl p-6 shadow-lg transition-transform duration-300 hover:-translate-y-2 w-[260px] min-w-[260px] flex-shrink-0",
+                            "bg-white border-2 rounded-2xl p-6 shadow-lg transition-transform duration-300 hover:-translate-y-2 w-[260px] min-w-[260px] flex-shrink-0 card-link",
                             plan.borderColor,
                             {
                                 "shadow-2xl transform scale-105": plan.isPopular,
@@ -97,7 +101,7 @@ export function Pricing() {
                                 </li>
                             ))}
                         </ul>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </section>

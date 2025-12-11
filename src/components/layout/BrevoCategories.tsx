@@ -51,7 +51,7 @@ export function BrevoCategories() {
         <header className="text-center mb-7">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-3">
             Structured Email Marketing Education, Built on
-            <span className="text-[#00B894] brevo-highlight">Brevo</span>
+            <span className="brevo-badge-pro">Brevo</span>
           </h2>
           <p className="text-base sm:text-lg text-gray-600 text-center max-w-2xl mx-auto">
             Learn every major Brevo capability through organized categories that simplify complex topics into practical, actionable steps.

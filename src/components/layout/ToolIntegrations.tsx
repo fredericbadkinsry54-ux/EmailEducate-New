@@ -51,7 +51,7 @@ export function ToolIntegrations() {
         <div className="mx-auto max-w-2xl lg:text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
               Top Email Marketing Tools Compared With 
-              <span className="text-[#00B894] brevo-highlight">Brevo</span>
+              <span className="brevo-badge-pro">Brevo</span>
             </h2>
             <p className="text-base sm:text-lg text-gray-600 text-center max-w-2xl mx-auto">
               A clear comparison between Brevo and other leading email marketing platforms — 

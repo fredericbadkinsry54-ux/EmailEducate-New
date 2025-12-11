@@ -278,9 +278,9 @@ export default function BrevoVsConvertkitArticle() {
 
           <section>
             <h2 className="text-xl font-bold text-green-900 mb-3">Next Steps — Compare More Tools</h2>
-            <p>Email Educate provides complete comparison guides, automation templates, and Brevo-optimized workflows to help you grow smarter.</p>
+            <p>Email Educate provides complete tool comparisons, automation templates, and Brevo-optimized workflows to help you grow smarter.</p>
             <div className="flex gap-4 flex-wrap mt-4">
-              <Link href="/contact/" className="inline-block bg-green-600 text-white py-3 px-4 rounded-xl no-underline font-bold">Get Brevo Growth Templates</Link>
+              <Link href="/legal/contact-us/" className="inline-block bg-green-600 text-white py-3 px-4 rounded-xl no-underline font-bold">Get Brevo Growth Templates</Link>
               <Link href="/articles/tools-comparison/" className="inline-block border-2 border-green-600 text-green-900 py-2.5 px-4 rounded-xl no-underline font-bold bg-transparent">See More Comparisons</Link>
             </div>
             <div className="text-sm text-gray-500 mt-2">Pro tip: Choose the tool built for your future, not just your current skill level.</div>

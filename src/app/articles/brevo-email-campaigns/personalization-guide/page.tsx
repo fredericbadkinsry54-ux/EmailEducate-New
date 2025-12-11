@@ -326,7 +326,7 @@ export default function BrevoPersonalizationGuideArticle() {
             <h2 id="cta" className="text-[#064e3b] text-lg font-bold mb-3">Next Steps — Put Personalization to Work</h2>
             <p>If you want, Email Educate can provide a ready checklist and three Brevo template examples you can import: a personalized welcome series, an abandoned cart flow, and a content drip. Use them as a starting point and adapt the copy to your audience.</p>
             <div className="flex gap-3 items-center mt-3 flex-wrap">
-              <Link href="/legal/contact-us" className="inline-block bg-[#16a34a] text-white py-3 px-4 rounded-xl no-underline font-bold shadow-md hover:opacity-90">Get Personalized Brevo Templates</Link>
+              <Link href="/legal/contact-us/" className="inline-block bg-[#16a34a] text-white py-3 px-4 rounded-xl no-underline font-bold shadow-md hover:opacity-90">Get Personalized Brevo Templates</Link>
               <Link href="/articles/brevo-email-campaigns" className="inline-block border-2 border-[#16a34a] text-[#064e3b] py-2.5 px-4 rounded-xl no-underline font-bold bg-transparent hover:bg-green-50">Explore More Brevo Guides</Link>
             </div>
             <div className="text-xs text-[#6b7280] mt-2">Pro tip: Tag every conversion event with UTMs and event labels so you can connect Brevo activity to your analytics platform and measure real impact.</div>

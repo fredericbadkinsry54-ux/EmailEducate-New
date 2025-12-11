@@ -245,7 +245,7 @@ export default function BrevoAutomationTriggersArticle() {
             <h2 className="text-xl font-bold text-green-900 mb-3">Next Steps — Build Smarter Automations</h2>
             <p>Email Educate provides beginner-friendly workflow templates that you can plug directly into Brevo. Start simple, test your triggers, and expand step by step.</p>
             <div className="flex gap-3 flex-wrap mt-4">
-              <Link href="/contact/" className="inline-block bg-green-600 text-white py-3 px-4 rounded-xl no-underline font-bold">Get Automation Templates</Link>
+              <Link href="/legal/contact-us/" className="inline-block bg-green-600 text-white py-3 px-4 rounded-xl no-underline font-bold">Get Automation Templates</Link>
               <Link href="/articles/brevo-marketing-automation/" className="inline-block border-2 border-green-600 text-green-900 py-2.5 px-4 rounded-xl no-underline font-bold bg-transparent">More Automation Tutorials</Link>
             </div>
             <div className="text-xs text-gray-500 mt-2">Pro tip: Always test triggers with a dummy contact before activating your workflow.</div>

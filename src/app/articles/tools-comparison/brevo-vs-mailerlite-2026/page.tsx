@@ -229,7 +229,7 @@ export default function BrevoVsMailerLiteArticle() {
           <section>
             <h2 className="text-xl font-bold text-green-900 mb-3">Recommendation</h2>
             <div className="bg-green-50 border-l-4 border-green-600 p-4 rounded-lg font-bold text-green-900">
-              For beginners who plan to grow into automation, segmentation, deliverability improvement, and CRM-driven journeys, Brevo is the stronger choice for 2026. It stays simple at the start but becomes more powerful as your list and strategy expand.
+              For beginners who plan to grow into automation, segmentation, deliverability, and CRM-driven journeys, Brevo is the stronger choice for 2026. It stays simple at the start but becomes more powerful as your list and strategy expand.
             </div>
           </section>
 
@@ -237,7 +237,7 @@ export default function BrevoVsMailerLiteArticle() {
             <h2 className="text-xl font-bold text-green-900 mb-3">Next Steps — Master Brevo Faster</h2>
             <p>Email Educate provides beginner-friendly guides, templates, automation flows, and CRM structures to help you grow smoothly.</p>
             <div className="flex gap-4 flex-wrap mt-4">
-              <Link href="/contact/" className="inline-block bg-green-600 text-white py-3 px-4 rounded-xl no-underline font-bold">Get Beginner Brevo Templates</Link>
+              <Link href="/legal/contact-us/" className="inline-block bg-green-600 text-white py-3 px-4 rounded-xl no-underline font-bold">Get Beginner Brevo Templates</Link>
               <Link href="/articles/tools-comparison/" className="inline-block border-2 border-green-600 text-green-900 py-2.5 px-4 rounded-xl no-underline font-bold bg-transparent">More Comparison Guides</Link>
             </div>
             <div className="text-sm text-gray-500 mt-2">Pro tip: If you expect your list to grow fast, choose the tool that scales without inflating costs — this is where Brevo stands out.</div>

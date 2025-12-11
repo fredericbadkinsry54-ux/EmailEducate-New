@@ -276,7 +276,7 @@ export default function BrevoEmailCampaignsArticle() {
             <h2 id="cta" className="text-[#064e3b] text-lg font-bold mb-3">Next Steps</h2>
             <p>If you want, Email Educate can provide ready-to-use <strong>Brevo</strong> templates and a checklist to launch your first high-converting campaign in under 48 hours. Replace placeholders with your content, import contacts, and test the workflow.</p>
             <div className="flex gap-3 items-center mt-3">
-              <Link href="/legal/contact-us" className="inline-block bg-[#16a34a] text-white py-3 px-4 rounded-xl no-underline font-bold shadow-md hover:opacity-90">Get Brevo Template & Checklist</Link>
+              <Link href="/legal/contact-us/" className="inline-block bg-[#16a34a] text-white py-3 px-4 rounded-xl no-underline font-bold shadow-md hover:opacity-90">Get Brevo Template & Checklist</Link>
               <Link href="/articles/brevo-email-campaigns" className="inline-block border-2 border-[#16a34a] text-[#064e3b] py-2.5 px-4 rounded-xl no-underline font-bold bg-transparent hover:bg-green-50">See more Brevo campaign guides</Link>
             </div>
             <div className="text-xs text-[#6b7280] mt-2">Pro tip: Add UTM parameters to every CTA in your campaign to track conversions in Google Analytics or your preferred analytics tool.</div>

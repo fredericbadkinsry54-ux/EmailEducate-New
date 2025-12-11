@@ -298,7 +298,7 @@ export default function BrevoAbTestingGuideArticle() {
             <h2 className="text-xl font-bold text-green-900 mb-3">Next Steps — Improve Your Testing Workflow</h2>
             <p>If you want, Email Educate can help you adopt a structured testing plan with ready-made templates for subject lines, CTAs, and email layouts that plug directly into your Brevo account.</p>
             <div className="flex gap-3 flex-wrap mt-4">
-              <Link href="/contact/" className="inline-block bg-green-600 text-white py-3 px-4 rounded-xl no-underline font-bold">Get A/B Testing Templates</Link>
+              <Link href="/legal/contact-us/" className="inline-block bg-green-600 text-white py-3 px-4 rounded-xl no-underline font-bold">Get A/B Testing Templates</Link>
               <Link href="/articles/brevo-email-campaigns/" className="inline-block border-2 border-green-600 text-green-900 py-2.5 px-4 rounded-xl no-underline font-bold bg-transparent">Explore More Brevo Guides</Link>
             </div>
             <div className="text-xs text-gray-500 mt-2">Pro tip: Always tag your test emails with UTMs for external analytics attribution.</div>

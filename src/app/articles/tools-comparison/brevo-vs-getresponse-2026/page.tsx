@@ -290,7 +290,7 @@ export default function BrevoVsGetResponseArticle() {
             <h2 className="text-xl font-bold text-green-900 mb-3">Next Steps — Explore More Comparisons</h2>
             <p>Email Educate offers complete tool breakdowns, automation templates, and Brevo-ready workflows for smarter marketing.</p>
             <div className="flex gap-4 flex-wrap mt-4">
-              <Link href="/contact/" className="inline-block bg-green-600 text-white py-3 px-4 rounded-xl no-underline font-bold">Get Brevo Workflow Templates</Link>
+              <Link href="/legal/contact-us/" className="inline-block bg-green-600 text-white py-3 px-4 rounded-xl no-underline font-bold">Get Brevo Workflow Templates</Link>
               <Link href="/articles/tools-comparison/" className="inline-block border-2 border-green-600 text-green-900 py-2.5 px-4 rounded-xl no-underline font-bold bg-transparent">View All Comparisons</Link>
             </div>
             <div className="text-sm text-gray-500 mt-2">Pro tip: Choose platforms that grow with your business — not ones that lock you into costly upgrades.</div>

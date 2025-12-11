@@ -251,7 +251,7 @@ export default function WhyEmailsLandInSpamArticle() {
             <h2 className="text-xl font-bold text-green-900 mb-3">Next Steps — Recover Inbox Placement</h2>
             <p>Email Educate offers deliverability checklists, seed testing templates, and sample re-engagement flows tailored for Brevo users. Start with authentication, then run a small, engaged-only campaign to rebuild trust.</p>
             <div className="flex gap-3 flex-wrap mt-4">
-              <Link href="/contact/" className="inline-block bg-green-600 text-white py-3 px-4 rounded-xl no-underline font-bold">Get Deliverability Help</Link>
+              <Link href="/legal/contact-us/" className="inline-block bg-green-600 text-white py-3 px-4 rounded-xl no-underline font-bold">Get Deliverability Help</Link>
               <Link href="/articles/brevo-deliverability/" className="inline-block border-2 border-green-600 text-green-900 py-2.5 px-4 rounded-xl no-underline font-bold bg-transparent">More Brevo Deliverability Guides</Link>
             </div>
             <div className="text-xs text-gray-500 mt-2">Pro tip: Always test changes on a small engaged segment before scaling — it prevents further damage and gives you fast feedback.</div>

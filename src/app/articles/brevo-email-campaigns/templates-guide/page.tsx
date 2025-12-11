@@ -197,7 +197,7 @@ export default function BrevoTemplatesGuideArticle() {
                         <h2 className="text-xl font-bold text-green-900 mb-3">Next Steps</h2>
                         <p>Email Educate provides step-by-step guides, template customization suggestions, and beginner-friendly workflows to help you use Brevo more effectively.</p>
                         <div className="flex gap-3 mt-3 flex-wrap">
-                            <Link href="/contact/" className="inline-block bg-green-600 text-white py-3 px-5 rounded-lg font-bold no-underline">Get Brevo Template Support</Link>
+                            <Link href="/legal/contact-us/" className="inline-block bg-green-600 text-white py-3 px-5 rounded-lg font-bold no-underline">Get Brevo Template Support</Link>
                             <Link href="/articles/brevo-email-campaigns/" className="inline-block border-2 border-green-600 text-green-900 py-2.5 px-5 rounded-lg font-bold no-underline bg-transparent">More Brevo Email Tutorials</Link>
                         </div>
                     </section>

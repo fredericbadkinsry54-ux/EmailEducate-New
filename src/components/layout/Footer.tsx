@@ -16,8 +16,8 @@ export function Footer() {
                         </div>
                         <p className="text-sm">Bite-sized email marketing lessons to grow your skills and business.</p>
                          <div className="footer-social">
-                            <a href="#"><Facebook /></a>
-                            <a href="#"><Instagram /></a>
+                            <a href="https://www.facebook.com/profile.php?viewas=&id=61584705578803&show_switched_toast=false&show_switched_tooltip=false&is_tour_dismissed=false&is_tour_completed=false&show_podcast_settings=false&show_community_review_changes=false&should_open_composer=false&badge_type=NEW_MEMBER&show_community_rollback_toast=false&show_community_rollback=false&show_follower_visibility_disclosure=false&bypass_exit_warning=true" target="_blank" rel="noopener noreferrer"><Facebook /></a>
+                            <a href="https://www.instagram.com/emaileducate/" target="_blank" rel="noopener noreferrer"><Instagram /></a>
                             <a href="#"><Linkedin /></a>
                         </div>
                     </div>

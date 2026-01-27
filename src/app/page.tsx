@@ -37,7 +37,15 @@ export default function Home() {
                     <p className="hero-subtitle">
                         From email campaigns to automation and CRM, Brevo helps marketers manage contacts, personalize communication, and streamline workflows without unnecessary complexity.
                     </p>
-                    <a href="https://www.brevo.com" target="_blank" rel="noopener noreferrer" className="hero-btn">Start For Free</a>
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <a href="https://www.brevo.com" target="_blank" rel="noopener noreferrer" className="hero-btn">Start For Free</a>
+                        <Button asChild size="lg" className="bg-foreground text-background hover:bg-foreground/90 hover:text-background shadow-md">
+                            <Link href="/articles/tools-comparison/brevo-vs-mailchimp-2026" className="gap-2">
+                                Brevo Review
+                                <ArrowRight />
+                            </Link>
+                        </Button>
+                    </div>
                 </div>
             </section>
             

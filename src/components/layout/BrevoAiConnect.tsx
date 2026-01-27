@@ -44,6 +44,7 @@ export function BrevoAiConnect() {
         <Link 
           href="https://www.brevo.com/features/ai/" 
           target="_blank" 
+          rel="noopener noreferrer"
           className="inline-block mt-8 bg-[#1ba97c] text-white py-3 px-7 rounded-full text-base font-semibold transition hover:bg-[#168a64]"
         >
           Find out more
@@ -53,9 +54,11 @@ export function BrevoAiConnect() {
       {/* Animated Visual */}
       <div className="relative w-[350px] h-[350px] mt-16 md:mt-0">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
-          <div className="brevo-main-button">
-            <span>Brevo</span>
-          </div>
+          <Link href="https://www.brevo.com/" target="_blank" rel="noopener noreferrer">
+            <div className="brevo-main-button">
+                <span>Brevo</span>
+            </div>
+          </Link>
         </div>
         <div className="absolute top-0 left-[140px] w-[60px] h-[60px] bg-white border-2 border-[#bce7d6] rounded-full animate-orbit" style={{animationDelay: '0s'}}></div>
         <div className="absolute top-[70px] left-[280px] w-[60px] h-[60px] bg-white border-2 border-[#bce7d6] rounded-full animate-orbit" style={{animationDelay: '1.5s'}}></div>

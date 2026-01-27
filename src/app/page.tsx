@@ -32,13 +32,10 @@ export default function Home() {
             <section className="hero">
                 <div className="hero-container">
                     <h1 className="hero-title">
-                    Learn Email Marketing Faster Using 
-                    <span className="brevo-badge-pro">Brevo’s</span> Best Features
+                        Grow Smarter Email Marketing with <span className="brevo-badge-pro">Brevo’s</span> All-in-One Tools
                     </h1>
                     <p className="hero-subtitle">
-                    Clear, practical lessons that help you understand campaigns, segmentation,
-                    automation, and CRM inside <strong style={{ color: '#059669' }}>Brevo</strong> — without complexity
-                    or technical confusion.
+                        From email campaigns to automation and CRM, Brevo helps marketers manage contacts, personalize communication, and streamline workflows without unnecessary complexity.
                     </p>
                     <a href="https://www.brevo.com" target="_blank" rel="noopener noreferrer" className="hero-btn">Visit Brevo</a>
                 </div>
@@ -67,11 +64,11 @@ export default function Home() {
 
                     <div className="relative max-w-3xl mx-auto px-6">
                         <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
-                            Start Improving Your Email Marketing With <span className="brevo-auto">Brevo</span>
+                            Start Improving Your Email Marketing With Brevo
                         </h2>
                         <p className="text-lg text-gray-700 leading-relaxed mb-10">
                             Learn how to create smarter campaigns, automate workflows, improve deliverability,
-                            and use CRM features the right way — all through practical lessons powered by <span className="brevo-auto">Brevo</span>.
+                            and use CRM features the right way — all through practical lessons powered by Brevo.
                         </p>
                         <a href="https://www.brevo.com" className="inline-block px-10 py-4 bg-[#0DA56F] text-white text-lg font-semibold rounded-xl shadow-xl hover:bg-[#0c8b5d] transition-all duration-200 main-btn">
                             Start Learning Brevo

@@ -36,21 +36,21 @@ export function CookieConsentCard() {
         <Cookie className="cookie-icon" />
       </div>
       <div className="cookie-content">
-        <h3 className="cookie-title">We Use Cookies</h3>
+        <h3 className="cookie-title">Your Privacy Matters</h3>
         <p className="cookie-description">
-          Our website uses cookies to enhance your browsing experience, analyze site traffic, and deliver personalized content. By clicking "Accept", you agree to our use of cookies.
+          We use cookies to enhance your experience and analyze site traffic. By clicking "Accept All", you agree to our use of cookies. Find out more in our{' '}
+          <Link href="/legal/cookie-policy" className="font-medium text-primary hover:underline">
+            Cookie Policy
+          </Link>.
         </p>
       </div>
       <div className="cookie-actions">
-        <Button onClick={handleAccept} className="cookie-accept-btn">
-          Accept
-        </Button>
         <Button onClick={handleDecline} variant="ghost" className="cookie-decline-btn">
           Decline
         </Button>
-        <Link href="/legal/cookie-policy" className="cookie-policy-link">
-          Cookie Policy
-        </Link>
+        <Button onClick={handleAccept} className="cookie-accept-btn">
+          Accept All
+        </Button>
       </div>
     </div>
   );

@@ -38,7 +38,7 @@ export function BrevoEnterprise() {
           href="https://www.brevo.com/?ref=emaileducate"
           className="inline-block mt-6 py-3.5 px-6 bg-green-800 text-white rounded-xl text-base font-semibold transition ease-in-out hover:bg-green-900 hover:-translate-y-0.5"
         >
-          Get a demo
+          Signup Free
         </Link>
       </div>
 

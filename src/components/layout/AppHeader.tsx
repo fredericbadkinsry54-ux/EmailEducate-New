@@ -69,9 +69,7 @@ export function AppHeader() {
             </Link>
           </nav>
 
-          <Link href="/signup" className="ee-nav-btn">
-            Sign Up
-          </Link>
+          
 
           <button className="ee-mobile-toggle" onClick={() => {
               const menu = document.getElementById("mobileMenu");
@@ -95,9 +93,6 @@ export function AppHeader() {
           </Link>
           <Link href="/legal/contact-us" className="ee-mobile-item">
             Contact
-          </Link>
-          <Link href="/signup" className="ee-mobile-btn">
-            Sign Up
           </Link>
         </div>
       </header>

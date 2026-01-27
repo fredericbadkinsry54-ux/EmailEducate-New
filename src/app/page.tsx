@@ -37,7 +37,7 @@ export default function Home() {
                     <p className="hero-subtitle">
                         From email campaigns to automation and CRM, Brevo helps marketers manage contacts, personalize communication, and streamline workflows without unnecessary complexity.
                     </p>
-                    <a href="https://www.brevo.com" target="_blank" rel="noopener noreferrer" className="hero-btn">Visit Brevo</a>
+                    <a href="https://www.brevo.com" target="_blank" rel="noopener noreferrer" className="hero-btn">Start For Free</a>
                 </div>
             </section>
             

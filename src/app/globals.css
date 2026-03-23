@@ -85,7 +85,6 @@
   }
 }
 
-/* ===================== GLOBAL SECTION BACKGROUNDS ===================== */
 section {
   background-color: #0a1628 !important;
 }
@@ -97,7 +96,6 @@ section {
   background-color: #0d1f3c !important;
 }
 
-/* ===================== PAGE ===================== */
 .page {
   max-width: 700px;
   margin: 40px auto;
@@ -111,7 +109,6 @@ section {
   color: #0DA56F;
 }
 
-/* ===================== FOOTER ===================== */
 .footer-col {
   display: flex;
   flex-direction: column;
@@ -161,7 +158,6 @@ section {
   text-decoration: underline;
 }
 
-/* ===================== LEGAL ===================== */
 .legal-container {
   max-width: 900px;
   margin: 0 auto;
@@ -219,7 +215,6 @@ section {
   margin-bottom: 6px;
 }
 
-/* ===================== ANIMATIONS ===================== */
 @keyframes check-pop {
   0% { transform: scale(0.5); opacity: 0; }
   50% { transform: scale(1.2); opacity: 1; }
@@ -278,7 +273,6 @@ section {
   animation: fade-in-up 0.8s ease forwards;
 }
 
-/* ===================== BREVO BADGES ===================== */
 .brevo-badge {
   background: rgba(0, 180, 120, 0.15);
   color: #0DA56F;
@@ -332,7 +326,6 @@ section {
   text-shadow: 0 0 12px rgba(11, 180, 122, 0.35);
 }
 
-/* ===================== HERO ===================== */
 .hero {
   background: linear-gradient(135deg, #0a1628 0%, #0d1f3c 50%, #0a2040 100%);
   padding: 110px 20px 90px;
@@ -383,7 +376,6 @@ section {
   box-shadow: 0 6px 16px rgba(13, 165, 111, 0.4);
 }
 
-/* ===================== FEATURE CARD ===================== */
 .brevo-feature-cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -445,7 +437,6 @@ section {
 }
 
 @layer components {
-  /* ===================== MARKET CARD ===================== */
   .market-card {
     background: linear-gradient(135deg, #0DA56F 0%, #08855a 100%) !important;
     border: none !important;
@@ -476,7 +467,6 @@ section {
   }
   .main-btn:hover { @apply bg-[#089866]; }
 
-  /* ===================== BUTTONS ===================== */
   .button-animated {
     position: relative;
     display: inline-flex;
@@ -512,7 +502,6 @@ section {
     color: #fff !important;
   }
 
-  /* ===================== ARTICLE CARD ===================== */
   .article-card {
     position: relative;
     background: linear-gradient(135deg, #0DA56F 0%, #08855a 100%) !important;
@@ -578,7 +567,6 @@ section {
     box-shadow: 0 10px 25px hsla(var(--primary) / 0.35);
   }
 
-  /* ===================== CATEGORY CARD ===================== */
   .cat-card {
     background: linear-gradient(135deg, #0DA56F 0%, #08855a 100%) !important;
     border: none !important;
@@ -606,7 +594,6 @@ section {
   .category-lesson-item:hover { @apply bg-muted/70; }
   .category-lesson-item.large { @apply p-4 gap-6; }
 
-  /* ===================== LOGO SCROLLER ===================== */
   .logo-scroller {
     -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
     mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
@@ -621,7 +608,6 @@ section {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ===================== PRICING ===================== */
 .pricing-section { max-width: 1200px; margin: auto; text-align: center; }
 .pricing-section h2 { font-size: 32px; font-weight: 700; color: #ffffff; margin-bottom: 10px; }
 .pricing-section p { font-size: 16px; color: rgba(255,255,255,0.65); margin-bottom: 40px; }
@@ -650,7 +636,6 @@ section {
 .plan-features li::before { content: "✔ "; color: #ffffff; font-weight: bold; }
 a.card-link { text-decoration: none; color: inherit; }
 
-/* ===================== FOOTER EXPANDED ===================== */
 .footer-expanded {
   margin-top: 40px;
   padding-top: 40px;
@@ -673,7 +658,6 @@ a.card-link { text-decoration: none; color: inherit; }
 }
 .footer-social a:hover { background: #0DA56F; color: #ffffff; }
 
-/* ===================== NAVBAR ===================== */
 .ee-nav {
   background: #0a1628;
   border-bottom: 1px solid rgba(255,255,255,0.08);
@@ -730,7 +714,6 @@ a.card-link { text-decoration: none; color: inherit; }
   .ee-mobile-toggle { display: block; }
 }
 
-/* ===================== BREVO BADGE PRO ===================== */
 .brevo-badge-pro {
   display: inline-block;
   padding: 4px 14px;
@@ -775,7 +758,6 @@ a.card-link { text-decoration: none; color: inherit; }
   font-weight: 600; box-shadow: none !important; animation: none !important;
 }
 
-/* ===================== COOKIE ===================== */
 @keyframes cookie-fade-in {
   from { transform: translateY(100%); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
@@ -806,8 +788,6 @@ a.card-link { text-decoration: none; color: inherit; }
   .cookie-actions { width: 100%; justify-content: center; }
 }
 
-/* ===================== SCROLL ANIMATIONS ===================== */
-
 @keyframes sa-word-pop {
   0% { opacity: 0; transform: scale(0.7) translateY(20px); }
   100% { opacity: 1; transform: scale(1) translateY(0); }
@@ -823,14 +803,12 @@ a.card-link { text-decoration: none; color: inherit; }
   to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-/* Word pop spans inside headings */
 .sa-word {
   display: inline-block;
   opacity: 0;
   animation: sa-word-pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
-/* Cards — hidden by default, visible when scrolled */
 .sa-card {
   opacity: 0;
   transform: translateY(28px) scale(0.97);
@@ -842,7 +820,6 @@ a.card-link { text-decoration: none; color: inherit; }
   transform: translateY(0) scale(1);
 }
 
-/* Stagger cards in grids */
 .sa-card:nth-child(1) { transition-delay: 0.05s; }
 .sa-card:nth-child(2) { transition-delay: 0.15s; }
 .sa-card:nth-child(3) { transition-delay: 0.25s; }
@@ -850,14 +827,10 @@ a.card-link { text-decoration: none; color: inherit; }
 .sa-card:nth-child(5) { transition-delay: 0.45s; }
 .sa-card:nth-child(6) { transition-delay: 0.55s; }
 
-/* Section headings */
 .sa-heading {
   overflow: visible;
 }
 
-/* ===================== STYLE 20 — SPLIT HEADLINE ===================== */
-
-/* Section h2 headings — big bold style */
 section h2.s20-heading {
   font-size: clamp(2rem, 4vw, 3rem) !important;
   font-weight: 900 !important;
@@ -866,7 +839,6 @@ section h2.s20-heading {
   letter-spacing: -0.5px;
 }
 
-/* Brevo word split — "Bre" green, "vo" white */
 .brevo-split {
   display: inline-block;
   white-space: nowrap;
@@ -884,7 +856,6 @@ section h2.s20-heading {
   -webkit-text-fill-color: #ffffff;
 }
 
-/* Override any existing badge styles on h2 */
 section h2.s20-heading .brevo-badge-pro,
 section h2.s20-heading .brevo-auto {
   background: none !important;
@@ -899,49 +870,4 @@ section h2.s20-heading .brevo-auto {
 section h2.s20-heading .brevo-badge-pro {
   -webkit-text-fill-color: #0DA56F !important;
   color: #0DA56F !important;
-}
-
-/* ===================== SCROLL ANIMATIONS ===================== */
-
-@keyframes sa-word-pop {
-  0% { opacity: 0; transform: scale(0.7) translateY(20px); }
-  100% { opacity: 1; transform: scale(1) translateY(0); }
-}
-
-@keyframes sa-fade-up {
-  from { opacity: 0; transform: translateY(32px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes sa-fade-in {
-  from { opacity: 0; transform: translateY(24px) scale(0.97); }
-  to { opacity: 1; transform: translateY(0) scale(1); }
-}
-
-.sa-word {
-  display: inline-block;
-  opacity: 0;
-  animation: sa-word-pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-}
-
-.sa-card {
-  opacity: 0;
-  transform: translateY(28px) scale(0.97);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.sa-card.sa-visible {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
-
-.sa-card:nth-child(1) { transition-delay: 0.05s; }
-.sa-card:nth-child(2) { transition-delay: 0.15s; }
-.sa-card:nth-child(3) { transition-delay: 0.25s; }
-.sa-card:nth-child(4) { transition-delay: 0.35s; }
-.sa-card:nth-child(5) { transition-delay: 0.45s; }
-.sa-card:nth-child(6) { transition-delay: 0.55s; }
-
-.sa-heading {
-  overflow: visible;
 }

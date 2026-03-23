@@ -1,9 +1,7 @@
-
 "use client";
 
 import { Logo } from "@/components/Logo";
 import Link from "next/link";
-import Script from "next/script";
 
 export function AppHeader() {
   return (
@@ -63,13 +61,10 @@ export function AppHeader() {
                 </div>
             </div>
 
-
             <Link href="/legal/contact-us" className="ee-link">
               Contact
             </Link>
           </nav>
-
-          
 
           <button className="ee-mobile-toggle" onClick={() => {
               const menu = document.getElementById("mobileMenu");
@@ -88,8 +83,8 @@ export function AppHeader() {
           <Link href="/legal/about-us" className="ee-mobile-item">
             About
           </Link>
-          <Link href="/blogs" className="ee-mobile-item">
-            Insights
+          <Link href="/articles/tools-comparison" className="ee-mobile-item">
+            Comparisons
           </Link>
           <Link href="/legal/contact-us" className="ee-mobile-item">
             Contact

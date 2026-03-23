@@ -37,7 +37,7 @@ export function BrevoEnterprise() {
           color: "#0DA56F",
           fontWeight: "700",
         }}>
-          <span className="brevo-auto">BREVO</span> ENTERPRISE
+          BREVO ENTERPRISE
         </span>
 
         <h2 style={{
@@ -74,7 +74,8 @@ export function BrevoEnterprise() {
         </ul>
 
         <Link
-          href="https://www.brevo.com/?ref=emaileducate"
+          href="https://www.brevo.com/"
+          target="_blank"
           style={{
             display: "inline-block",
             marginTop: "24px",
@@ -95,9 +96,9 @@ export function BrevoEnterprise() {
 
       <div className="w-full md:w-[55%] flex justify-center items-center h-96">
         <div className="relative w-96 h-96">
-          <div className="absolute w-36 h-36 bg-primary rounded-full flex justify-center items-center text-white text-5xl font-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
-            <Link href="https://www.brevo.com" target="_blank" className="brevo-main-btn">
-              Brevo
+          <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", zIndex: 10 }}>
+            <Link href="https://www.brevo.com" target="_blank">
+              <div className="brevo-main-button">Brevo</div>
             </Link>
           </div>
 

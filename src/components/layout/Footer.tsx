@@ -1,7 +1,5 @@
 "use client";
 import { Logo } from "@/components/Logo";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Facebook, Instagram, Mail, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
@@ -12,7 +10,6 @@ export function Footer() {
             borderTop: "1px solid rgba(13,165,111,0.15)",
             color: "rgba(255,255,255,0.7)",
         }}>
-            {/* Top CTA Bar */}
             <div style={{
                 background: "linear-gradient(135deg, #0DA56F 0%, #08855a 100%)",
                 padding: "28px 24px",
@@ -41,11 +38,8 @@ export function Footer() {
                 </div>
             </div>
 
-            {/* Main Footer */}
             <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "64px 24px 40px" }}>
                 <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr", gap: "48px" }} className="footer-grid">
-
-                    {/* Brand Column */}
                     <div>
                         <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "16px" }}>
                             <Logo className="size-8 text-primary" />
@@ -55,7 +49,6 @@ export function Footer() {
                             Your free resource for mastering Brevo and email marketing — from campaigns to automation, CRM, and beyond.
                         </p>
 
-                        {/* Trust badges */}
                         <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginBottom: "24px" }}>
                             {["Brevo Affiliate Partner", "100% Free Educational Content", "No Spam — Ever"].map((t, i) => (
                                 <div key={i} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
@@ -65,10 +58,9 @@ export function Footer() {
                             ))}
                         </div>
 
-                        {/* Social */}
                         <div style={{ display: "flex", gap: "10px" }}>
                             {[
-                                { href: "https://www.facebook.com/profile.php?id=61584705578803", icon: <Facebook size={16} /> },
+                                { href: "https://www.facebook.com/profile.php?viewas=&id=61584705578803&show_switched_toast=false&show_switched_tooltip=false&is_tour_dismissed=false&is_tour_completed=false&show_podcast_settings=false&show_community_review_changes=false&should_open_composer=false&badge_type=NEW_MEMBER&show_community_rollback_toast=false&show_community_rollback=false&show_follower_visibility_disclosure=false&bypass_exit_warning=true", icon: <Facebook size={16} /> },
                                 { href: "https://www.instagram.com/emaileducate/", icon: <Instagram size={16} /> },
                             ].map((s, i) => (
                                 <a key={i} href={s.href} target="_blank" rel="noopener noreferrer" style={{
@@ -87,7 +79,6 @@ export function Footer() {
                         </div>
                     </div>
 
-                    {/* Categories */}
                     <div>
                         <h3 style={{ color: "#ffffff", fontWeight: "700", fontSize: "14px", letterSpacing: "1px", textTransform: "uppercase", marginBottom: "20px" }}>
                             Learn Brevo
@@ -101,7 +92,7 @@ export function Footer() {
                                 { label: "Tools Comparison", href: "/articles/tools-comparison" },
                             ].map((l, i) => (
                                 <li key={i}>
-                                    <a href={l.href} style={{
+                                    <Link href={l.href} style={{
                                         color: "rgba(255,255,255,0.6)",
                                         fontSize: "14px",
                                         textDecoration: "none",
@@ -109,18 +100,14 @@ export function Footer() {
                                         display: "flex",
                                         alignItems: "center",
                                         gap: "6px",
-                                    }}
-                                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = "#0DA56F"; (e.currentTarget as HTMLElement).style.paddingLeft = "4px"; }}
-                                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.6)"; (e.currentTarget as HTMLElement).style.paddingLeft = "0"; }}
-                                    >
+                                    }}>
                                         {l.label}
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
                     </div>
 
-                    {/* Legal */}
                     <div>
                         <h3 style={{ color: "#ffffff", fontWeight: "700", fontSize: "14px", letterSpacing: "1px", textTransform: "uppercase", marginBottom: "20px" }}>
                             Legal
@@ -136,23 +123,19 @@ export function Footer() {
                                 { label: "Cookie Policy", href: "/legal/cookie-policy" },
                             ].map((l, i) => (
                                 <li key={i}>
-                                    <a href={l.href} style={{
+                                    <Link href={l.href} style={{
                                         color: "rgba(255,255,255,0.6)",
                                         fontSize: "14px",
                                         textDecoration: "none",
                                         transition: "0.2s ease",
-                                    }}
-                                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = "#0DA56F"; (e.currentTarget as HTMLElement).style.paddingLeft = "4px"; }}
-                                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.6)"; (e.currentTarget as HTMLElement).style.paddingLeft = "0"; }}
-                                    >
+                                    }}>
                                         {l.label}
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
                     </div>
 
-                    {/* Newsletter */}
                     <div>
                         <h3 style={{ color: "#ffffff", fontWeight: "700", fontSize: "14px", letterSpacing: "1px", textTransform: "uppercase", marginBottom: "20px" }}>
                             Stay Updated
@@ -160,7 +143,7 @@ export function Footer() {
                         <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.6)", marginBottom: "16px", lineHeight: "1.6" }}>
                             Get weekly Brevo tutorials and email marketing tips — free.
                         </p>
-                        <form style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                        <form style={{ display: "flex", flexDirection: "column", gap: "10px" }} onSubmit={(e) => e.preventDefault()}>
                             <input
                                 type="email"
                                 placeholder="Enter your email"
@@ -194,10 +177,7 @@ export function Footer() {
                                 Subscribe <Mail size={14} />
                             </button>
                         </form>
-                        <p style={{ fontSize: "12px", color: "rgba(255,255,255,0.4)", marginTop: "10px" }}>
-                            No spam. Unsubscribe anytime.</p>
                         
-                        {/* Contact Email */}
                         <div style={{
                             marginTop: "20px",
                             padding: "12px 14px",
@@ -213,14 +193,9 @@ export function Footer() {
                                 textDecoration: "none",
                             }}>contact@emaileducate.online</a>
                         </div>
-                        <p style={{ display: "none" }}>
-                        </p>
-
-
                     </div>
                 </div>
 
-                {/* Bottom Bar */}
                 <div style={{
                     marginTop: "48px",
                     paddingTop: "24px",

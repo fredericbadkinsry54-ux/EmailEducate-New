@@ -13,10 +13,10 @@ export function Pricing() {
     return (
         <section className="py-16 px-5" style={{ background: "linear-gradient(135deg, #0a1628 0%, #0d1f3c 100%)" }}>
             <h2 className="text-center text-3xl font-bold mb-2" style={{ color: "#ffffff" }}>
-                <span className="brevo-auto">Brevo</span> Pricing Explained Simply
+                Brevo Pricing Explained Simply
             </h2>
             <p className="text-center mb-10 text-lg max-w-2xl mx-auto" style={{ color: "rgba(255,255,255,0.7)" }}>
-                A clear, easy breakdown of <span style={{ color: "#0DA56F", fontWeight: "600" }}>Brevo's</span> pricing and core features — helping you choose the right plan for your email marketing, automation, and CRM needs.
+                A clear, easy breakdown of Brevo's pricing and core features — helping you choose the right plan for your email marketing, automation, and CRM needs.
             </p>
 
             <div className="flex flex-nowrap justify-start md:justify-center gap-[35px] w-full overflow-x-auto pb-2.5 max-w-6xl mx-auto px-4">
@@ -32,14 +32,6 @@ export function Pricing() {
                             color: "#ffffff",
                             textDecoration: "none",
                             transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                        }}
-                        onMouseEnter={e => {
-                            (e.currentTarget as HTMLElement).style.transform = plan.isPopular ? "scale(1.05) translateY(-5px)" : "translateY(-5px)";
-                            (e.currentTarget as HTMLElement).style.boxShadow = "0 14px 32px rgba(13, 165, 111, 0.50)";
-                        }}
-                        onMouseLeave={e => {
-                            (e.currentTarget as HTMLElement).style.transform = plan.isPopular ? "scale(1.05)" : "translateY(0)";
-                            (e.currentTarget as HTMLElement).style.boxShadow = plan.isPopular ? "0 14px 36px rgba(13, 165, 111, 0.55)" : "0 8px 24px rgba(13, 165, 111, 0.35)";
                         }}
                     >
                         {plan.isPopular && (

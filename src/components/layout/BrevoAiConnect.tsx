@@ -7,7 +7,6 @@ export function BrevoAiConnect() {
     <section className="w-full py-24 flex flex-col md:flex-row justify-center items-center gap-12 md:gap-20 text-center md:text-left relative overflow-hidden px-5"
       style={{ background: "linear-gradient(135deg, #0a1628 0%, #0d1f3c 100%)" }}
     >
-      {/* Option A — Giant BREVO watermark background */}
       <div style={{
         position: "absolute",
         inset: 0,
@@ -27,7 +26,6 @@ export function BrevoAiConnect() {
         }}>BREVO</span>
       </div>
 
-      {/* Text Block */}
       <div className="max-w-xl z-10">
         <span style={{
           fontSize: "13px",
@@ -39,7 +37,7 @@ export function BrevoAiConnect() {
           borderRadius: "50px",
           display: "inline-block",
         }}>
-          <span className="brevo-auto">BREVO</span> MCP SERVER
+          BREVO MCP SERVER
         </span>
 
         <h2 className="mt-5 text-4xl font-extrabold leading-tight" style={{ color: "#ffffff" }}>
@@ -52,11 +50,7 @@ export function BrevoAiConnect() {
           manage contacts, run reports, and handle campaigns — all inside your preferred AI environment.
         </p>
 
-        <h3 className="mt-8 text-xl font-bold" style={{ color: "#ffffff" }}>
-          Full <span className="brevo-auto">Brevo</span> functionality at your AI's fingertips
-        </h3>
-
-        <ul className="mt-4 space-y-3 text-left max-w-md mx-auto md:mx-0">
+        <ul className="mt-8 space-y-3 text-left max-w-md mx-auto md:mx-0">
           {[
             "Contact and company management",
             "Deals, pipelines, and tasks",
@@ -91,7 +85,6 @@ export function BrevoAiConnect() {
         </Link>
       </div>
 
-      {/* Option C — Diagonal slanted BREVO text on right side */}
       <div className="relative z-10" style={{
         width: "350px",
         height: "350px",
@@ -104,7 +97,6 @@ export function BrevoAiConnect() {
         border: "1px solid rgba(13,165,111,0.1)",
         flexShrink: 0,
       }}>
-        {/* Diagonal slanted BREVO text */}
         <div style={{
           transform: "rotate(-30deg)",
           whiteSpace: "nowrap",
@@ -123,7 +115,6 @@ export function BrevoAiConnect() {
           ))}
         </div>
 
-        {/* Center Brevo button on top */}
         <div style={{
           position: "absolute",
           top: "50%",

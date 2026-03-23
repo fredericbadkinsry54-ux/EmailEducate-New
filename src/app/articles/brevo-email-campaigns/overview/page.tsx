@@ -151,7 +151,7 @@ export default function BrevoEmailCampaignsArticle() {
               <li>Send-time optimization</li>
             </ul>
             <h3 className="font-bold text-xl mb-2">Best Practice</h3>
-            <p className="mb-4">Use AI for speed and inspiration. Always review and adjust manually.</p>
+            <p>Use AI for speed and inspiration. Always review and adjust manually.</p>
             <h3 className="font-bold text-xl mb-2">When Not to Use AI</h3>
             <p>High-stakes messaging such as legal notices or sensitive customer communication.</p>
           </section>

@@ -9,7 +9,6 @@ export function CookieConsentCard() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Check if the user has already consented
     const consent = localStorage.getItem('cookie_consent');
     if (!consent) {
       setIsVisible(true);

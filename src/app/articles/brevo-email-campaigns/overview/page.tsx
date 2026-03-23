@@ -1,4 +1,3 @@
-
 'use client';
 
 import Link from "next/link";
@@ -31,9 +30,6 @@ export default function BrevoEmailCampaignsArticle() {
             animation: fadeInUp 900ms ease forwards;
             animation-delay: 120ms;
           }
-          .shadow-inner-sm {
-            box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.05);
-          }
           hr {
             border: 0;
             height: 1px;
@@ -60,8 +56,8 @@ export default function BrevoEmailCampaignsArticle() {
           
           <hr />
 
-          <section aria-labelledby="contact-management" className="bg-white p-5 rounded-xl shadow-lg my-5">
-            <h2 id="contact-management" className="text-[#064e3b] text-2xl font-bold mb-3">1. Contact Management and Sales CRM: The System Backbone</h2>
+          <section className="bg-white p-5 rounded-xl shadow-lg my-5">
+            <h2 className="text-[#064e3b] text-2xl font-bold mb-3">1. Contact Management and Sales CRM: The System Backbone</h2>
             <p className="mb-4">Brevo allows unlimited contact storage on all plans. This single decision removes one of the biggest growth constraints found in most email platforms.</p>
             <h3 className="font-bold text-xl mb-2">What the Sales CRM Does</h3>
             <p className="mb-4">Brevo includes a native Sales CRM that tracks contacts, deals, and tasks across the sales lifecycle. It is not an add-on and does not require a paid upgrade.</p>
@@ -81,8 +77,8 @@ export default function BrevoEmailCampaignsArticle() {
 
           <hr />
 
-          <section aria-labelledby="multi-channel" className="bg-white p-5 rounded-xl shadow-lg my-5">
-            <h2 id="multi-channel" className="text-[#064e3b] text-2xl font-bold mb-3">2. Multi-Channel Messaging: Email, SMS, and WhatsApp</h2>
+          <section className="bg-white p-5 rounded-xl shadow-lg my-5">
+            <h2 className="text-[#064e3b] text-2xl font-bold mb-3">2. Multi-Channel Messaging: Email, SMS, and WhatsApp</h2>
             <p className="mb-4">Customers do not live in one channel. Brevo is designed to reflect that.</p>
             <h3 className="font-bold text-xl mb-2">Email Campaigns</h3>
             <p className="mb-4">Email campaigns in Brevo support newsletters, automation sequences, personalization, and A/B testing.</p>
@@ -96,7 +92,7 @@ export default function BrevoEmailCampaignsArticle() {
             <h3 className="font-bold text-xl mb-2">SMS Messaging</h3>
             <p className="mb-4">SMS is best used for time-sensitive communication such as alerts, confirmations, and short promotions.</p>
             <p><strong>Rule:</strong> Do not copy-paste email content into SMS. Keep it short and action-driven.</p>
-            <h3 className="font-bold text-xl mb-2">WhatsApp Campaigns</h3>
+            <h3>WhatsApp Campaigns</h3>
             <p className="mb-4">WhatsApp allows richer, two-way communication using media, buttons, and replies.</p>
             <h3 className="font-bold text-xl mb-2">Why Multi-Channel Matters</h3>
             <p>Using multiple channels increases reach and reliability. When one channel underperforms, another compensates.</p>
@@ -104,8 +100,8 @@ export default function BrevoEmailCampaignsArticle() {
           
           <hr />
 
-          <section aria-labelledby="transactional" className="bg-white p-5 rounded-xl shadow-lg my-5">
-            <h2 id="transactional" className="text-[#064e3b] text-2xl font-bold mb-3">3. Transactional Messaging via SMTP and API</h2>
+          <section className="bg-white p-5 rounded-xl shadow-lg my-5">
+            <h2 className="text-[#064e3b] text-2xl font-bold mb-3">3. Transactional Messaging via SMTP and API</h2>
             <p className="mb-4">Transactional emails are operational messages triggered by user actions.</p>
             <h3 className="font-bold text-xl mb-2">What Brevo Provides</h3>
             <ul className="list-disc list-inside space-y-2 mb-4">
@@ -125,8 +121,8 @@ export default function BrevoEmailCampaignsArticle() {
           
           <hr />
 
-          <section aria-labelledby="automation" className="bg-white p-5 rounded-xl shadow-lg my-5">
-            <h2 id="automation" className="text-[#064e3b] text-2xl font-bold mb-3">4. Automation and Visual Workflows</h2>
+          <section className="bg-white p-5 rounded-xl shadow-lg my-5">
+            <h2 className="text-[#064e3b] text-2xl font-bold mb-3">4. Automation and Visual Workflows</h2>
             <p className="mb-4">Automation is where Brevo becomes a system instead of a tool.</p>
             <h3 className="font-bold text-xl mb-2">How Automation Works</h3>
             <p className="mb-4">Workflows are built using triggers, conditions, and actions.</p>
@@ -145,8 +141,8 @@ export default function BrevoEmailCampaignsArticle() {
 
           <hr />
 
-          <section aria-labelledby="ai-tools" className="bg-white p-5 rounded-xl shadow-lg my-5">
-            <h2 id="ai-tools" className="text-[#064e3b] text-2xl font-bold mb-3">5. AI Tools: Use with Intention</h2>
+          <section className="bg-white p-5 rounded-xl shadow-lg my-5">
+            <h2 className="text-[#064e3b] text-2xl font-bold mb-3">5. AI Tools: Use with Intention</h2>
             <p className="mb-4">Brevo includes AI tools to support, not replace, marketer judgment.</p>
             <h3 className="font-bold text-xl mb-2">AI Capabilities</h3>
             <ul className="list-disc list-inside space-y-2 mb-4">
@@ -162,8 +158,8 @@ export default function BrevoEmailCampaignsArticle() {
 
           <hr />
 
-          <section aria-labelledby="segmentation" className="bg-white p-5 rounded-xl shadow-lg my-5">
-            <h2 id="segmentation" className="text-[#064e3b] text-2xl font-bold mb-3">6. Segmentation and Audience Logic</h2>
+          <section className="bg-white p-5 rounded-xl shadow-lg my-5">
+            <h2 className="text-[#064e3b] text-2xl font-bold mb-3">6. Segmentation and Audience Logic</h2>
             <p className="mb-4">Segmentation determines relevance. Poor segmentation breaks even the best automation.</p>
             <h3 className="font-bold text-xl mb-2">Segmentation Options</h3>
             <ul className="list-disc list-inside space-y-2 mb-4">
@@ -179,8 +175,8 @@ export default function BrevoEmailCampaignsArticle() {
 
           <hr />
 
-          <section aria-labelledby="analytics" className="bg-white p-5 rounded-xl shadow-lg my-5">
-            <h2 id="analytics" className="text-[#064e3b] text-2xl font-bold mb-3">7. Analytics and Performance Tracking</h2>
+          <section className="bg-white p-5 rounded-xl shadow-lg my-5">
+            <h2 className="text-[#064e3b] text-2xl font-bold mb-3">7. Analytics and Performance Tracking</h2>
             <p className="mb-4">Brevo provides reporting for campaigns, automation, and engagement.</p>
             <h3 className="font-bold text-xl mb-2">Key Metrics</h3>
             <ul className="list-disc list-inside space-y-2 mb-4">
@@ -192,11 +188,11 @@ export default function BrevoEmailCampaignsArticle() {
             <h3 className="font-bold text-xl mb-2">Advanced Insights</h3>
             <p>Heatmaps and A/B testing reports help refine design and messaging decisions.</p>
           </section>
-          
+
           <hr />
 
-          <section aria-labelledby="lead-capture" className="bg-white p-5 rounded-xl shadow-lg my-5">
-            <h2 id="lead-capture" className="text-[#064e3b] text-2xl font-bold mb-3">8. Lead Capture: Forms and Landing Pages</h2>
+          <section className="bg-white p-5 rounded-xl shadow-lg my-5">
+            <h2 className="text-[#064e3b] text-2xl font-bold mb-3">8. Lead Capture: Forms and Landing Pages</h2>
             <h3 className="font-bold text-xl mb-2">Forms</h3>
             <p className="mb-4">Forms collect subscribers directly into your CRM.</p>
             <p><strong>Recommendation:</strong> Always enable double opt-in.</p>
@@ -206,8 +202,8 @@ export default function BrevoEmailCampaignsArticle() {
 
           <hr />
           
-          <section aria-labelledby="integrations" className="bg-white p-5 rounded-xl shadow-lg my-5">
-            <h2 id="integrations" className="text-[#064e3b] text-2xl font-bold mb-3">9. Integrations and Developer Access</h2>
+          <section className="bg-white p-5 rounded-xl shadow-lg my-5">
+            <h2 className="text-[#064e3b] text-2xl font-bold mb-3">9. Integrations and Developer Access</h2>
             <p className="mb-4">Brevo integrates with ecommerce, CMS, and productivity tools.</p>
             <h3 className="font-bold text-xl mb-2">Common Integrations</h3>
             <ul className="list-disc list-inside space-y-2 mb-4">
@@ -222,8 +218,8 @@ export default function BrevoEmailCampaignsArticle() {
 
           <hr />
 
-          <section aria-labelledby="pricing-logic" className="bg-white p-5 rounded-xl shadow-lg my-5">
-            <h2 id="pricing-logic" className="text-[#064e3b] text-2xl font-bold mb-3">10. Understanding Brevo’s Pricing Logic</h2>
+          <section className="bg-white p-5 rounded-xl shadow-lg my-5">
+            <h2 className="text-[#064e3b] text-2xl font-bold mb-3">10. Understanding Brevo’s Pricing Logic</h2>
             <p className="mb-4">Brevo charges based on email volume, not stored contacts.</p>
             <h3 className="font-bold text-xl mb-2">Why This Matters</h3>
             <p className="mb-4">You can grow your list freely and control costs based on actual sending behavior.</p>
@@ -237,24 +233,20 @@ export default function BrevoEmailCampaignsArticle() {
           
           <hr />
 
-          <section aria-labelledby="verdict" className="bg-white p-5 rounded-xl shadow-lg my-5">
-            <h2 id="verdict" className="text-[#064e3b] text-2xl font-bold mb-3">Final Verdict</h2>
+          <section className="bg-white p-5 rounded-xl shadow-lg my-5">
+            <h2 className="text-[#064e3b] text-2xl font-bold mb-3">Final Verdict</h2>
             <p className="mb-4">Brevo is best suited for marketers who value structure, automation, and pricing clarity.</p>
             <p className="mb-4">It is not the simplest tool. It is not the flashiest. But when used correctly, it becomes a reliable marketing system that scales with your business.</p>
-            <p><strong>EmailEducate recommendation:</strong> Learn the system before scaling it. Brevo rewards thoughtful setup.</p>
+            <p className="font-bold text-[#064e3b]">EmailEducate recommendation: Learn the system before scaling it. Brevo rewards thoughtful setup.</p>
           </section>
 
-          <section aria-labelledby="cta" className="bg-white p-5 rounded-xl shadow-lg my-5">
-            <h2 id="cta" className="text-[#064e3b] text-xl font-bold mb-3">Next Steps</h2>
-            <p>If you want, EmailEducate can provide ready-to-use <strong>Brevo</strong> templates and a checklist to launch your first high-converting campaign in under 48 hours. Replace placeholders with your content, import contacts, and test the workflow.</p>
-            <div className="flex gap-3 items-center mt-3">
-              <Link href="/legal/contact-us/" className="inline-block bg-[#16a34a] text-white py-3 px-4 rounded-xl no-underline font-bold shadow-md hover:opacity-90">Get Brevo Template & Checklist</Link>
-              <Link href="/articles/brevo-email-campaigns" className="inline-block border-2 border-[#16a34a] text-[#064e3b] py-2.5 px-4 rounded-xl no-underline font-bold bg-transparent hover:bg-green-50">See more Brevo campaign guides</Link>
-            </div>
-            <div className="text-xs text-[#6b7280] mt-2">Pro tip: Add UTM parameters to every CTA in your campaign to track conversions in Google Analytics or your preferred analytics tool.</div>
-          </section>
+          <div className="text-center mt-12">
+            <Link href="/articles/brevo-email-campaigns" className="inline-block bg-[#16a34a] text-white py-3 px-6 rounded-xl font-bold no-underline hover:bg-[#15803d] transition-colors">
+              Back to Campaigns
+            </Link>
+          </div>
 
-          <div className="text-center text-[#6b7280] text-xs mt-4.5">
+          <div className="text-center text-gray-500 text-sm mt-6">
             © <strong>Email Educate</strong> — Expert Brevo tutorials and practical email marketing guides.
           </div>
         </div>

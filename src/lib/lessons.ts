@@ -112,7 +112,7 @@ export const lessons: Lesson[] = [
             <li>❌ Not testing your dynamic content</li>
         </ul>
         <p>Remember: relevance > data. Use personalization to help your readers, not to stalk them.</p>
-        <h3>🧭 Advanced Strategies to Try in 2025</h3>
+        <h3>🧭 Advanced Strategies to Try in 2026</h3>
         <p>🚀 1. AI-Generated Subject Lines: Brevo and Jasper AI can auto-write subject lines that adapt per audience segment.<br/>🤖 2. Predictive Send Times: Send each email when your subscriber is most likely to open — automatically.<br/>💬 3. Multi-Channel Personalization: Connect email with SMS, chatbots, and web popups for a consistent experience.<br/>🎨 4. Smart Dynamic Blocks: Show different content in one email — for example, tutorials for beginners, tools for pros.</p>
         <h3>🧾 Quick Checklist</h3>
         <ul>
@@ -214,7 +214,7 @@ export const lessons: Lesson[] = [
         <p>In this guide, you’ll learn:</p>
         <ul>
             <li>✅ What email campaigns are</li>
-            <li>✅ Why they still matter in 2025</li>
+            <li>✅ Why they still matter in 2026</li>
             <li>✅ The step-by-step process to create one</li>
             <li>✅ Common mistakes to avoid</li>
             <li>✅ And how to measure real results</li>
@@ -228,9 +228,9 @@ export const lessons: Lesson[] = [
             <li><strong>Follow-up email:</strong> encouraging the reader to continue learning</li>
         </ol>
         <p>That’s an email campaign — simple, goal-driven, and consistent.</p>
-        <h3>🔍 Why Email Campaigns Still Matter in 2025</h3>
+        <h3>🔍 Why Email Campaigns Still Matter in 2026</h3>
         <p>Despite the rise of social media, email continues to outperform every other digital marketing channel. Why? Because it’s personal, permission-based, and predictable.</p>
-        <p>📊 According to 2025 marketing reports:</p>
+        <p>📊 According to 2026 marketing reports:</p>
         <ul>
             <li>Email generates an average ROI of $36 for every $1 spent.</li>
             <li>Educational campaigns see higher open and engagement rates than promotional ones.</li>

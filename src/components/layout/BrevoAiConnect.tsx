@@ -4,66 +4,139 @@ import Link from "next/link";
 
 export function BrevoAiConnect() {
   return (
-    <section className="w-full py-24 bg-[#f2faf5] flex flex-col md:flex-row justify-center items-center gap-12 md:gap-20 text-center md:text-left relative overflow-hidden px-5">
-      
+    <section className="w-full py-24 flex flex-col md:flex-row justify-center items-center gap-12 md:gap-20 text-center md:text-left relative overflow-hidden px-5"
+      style={{ background: "linear-gradient(135deg, #0a1628 0%, #0d1f3c 100%)" }}
+    >
+      {/* Option A — Giant BREVO watermark background */}
+      <div style={{
+        position: "absolute",
+        inset: 0,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        overflow: "hidden",
+        pointerEvents: "none",
+      }}>
+        <span style={{
+          fontSize: "220px",
+          fontWeight: "900",
+          color: "rgba(13,165,111,0.05)",
+          letterSpacing: "-6px",
+          userSelect: "none",
+          whiteSpace: "nowrap",
+        }}>BREVO</span>
+      </div>
+
       {/* Text Block */}
       <div className="max-w-xl z-10">
-        <span className="text-sm font-bold text-[#1ba97c] bg-[#e6f9f0] py-2 px-4 rounded-full">
+        <span style={{
+          fontSize: "13px",
+          fontWeight: "700",
+          background: "rgba(13,165,111,0.2)",
+          border: "1px solid rgba(13,165,111,0.3)",
+          color: "#0DA56F",
+          padding: "6px 16px",
+          borderRadius: "50px",
+          display: "inline-block",
+        }}>
           <span className="brevo-auto">BREVO</span> MCP SERVER
         </span>
-        <h2 className="mt-5 text-4xl font-extrabold text-[#0f2a22] leading-tight">
+
+        <h2 className="mt-5 text-4xl font-extrabold leading-tight" style={{ color: "#ffffff" }}>
           Connect Your AI Tools <br /> Directly to <span className="brevo-auto">Brevo</span>
         </h2>
-        <div className="no-badge-section">
-          <p className="mt-5 text-lg leading-relaxed text-[#24483e]">
-            Brevo's MCP Server lets your existing AI assistants talk directly to Brevo. 
-            This gives your tools the context they need to analyze data, 
-            manage contacts, run reports, and handle campaigns — all inside your preferred AI environment.
-          </p>
-        </div>
-        <h3 className="mt-8 text-xl font-bold text-[#0f2a22]">
-          Full <span className="brevo-auto">Brevo</span> functionality at your AI’s fingertips
+
+        <p className="mt-5 text-lg leading-relaxed" style={{ color: "rgba(255,255,255,0.75)" }}>
+          Brevo's MCP Server lets your existing AI assistants talk directly to Brevo.
+          This gives your tools the context they need to analyze data,
+          manage contacts, run reports, and handle campaigns — all inside your preferred AI environment.
+        </p>
+
+        <h3 className="mt-8 text-xl font-bold" style={{ color: "#ffffff" }}>
+          Full <span className="brevo-auto">Brevo</span> functionality at your AI's fingertips
         </h3>
+
         <ul className="mt-4 space-y-3 text-left max-w-md mx-auto md:mx-0">
-          <li className="flex items-start gap-3 text-[#1c3d34]">
-            <span className="text-[#1ba97c] mt-1">✔</span> Contact and company management
-          </li>
-          <li className="flex items-start gap-3 text-[#1c3d34]">
-            <span className="text-[#1ba97c] mt-1">✔</span> Deals, pipelines, and tasks
-          </li>
-          <li className="flex items-start gap-3 text-[#1c3d34]">
-            <span className="text-[#1ba97c] mt-1">✔</span> Contact attributes and smart segmentation
-          </li>
-          <li className="flex items-start gap-3 text-[#1c3d34]">
-            <span className="text-[#1ba97c] mt-1">✔</span> Campaign creation + A/B testing
-          </li>
-          <li className="flex items-start gap-3 text-[#1c3d34]">
-            <span className="text-[#1ba97c] mt-1">✔</span> Cross-channel analytics
-          </li>
+          {[
+            "Contact and company management",
+            "Deals, pipelines, and tasks",
+            "Contact attributes and smart segmentation",
+            "Campaign creation + A/B testing",
+            "Cross-channel analytics",
+          ].map((item, i) => (
+            <li key={i} className="flex items-start gap-3" style={{ color: "rgba(255,255,255,0.85)" }}>
+              <span style={{ color: "#0DA56F", marginTop: "2px" }}>✔</span> {item}
+            </li>
+          ))}
         </ul>
-        <Link 
-          href="https://www.brevo.com/features/ai/" 
-          target="_blank" 
+
+        <Link
+          href="https://www.brevo.com/features/ai/"
+          target="_blank"
           rel="noopener noreferrer"
-          className="inline-block mt-8 bg-[#1ba97c] text-white py-3 px-7 rounded-full text-base font-semibold transition hover:bg-[#168a64]"
+          style={{
+            display: "inline-block",
+            marginTop: "32px",
+            background: "#0DA56F",
+            color: "#ffffff",
+            padding: "12px 28px",
+            borderRadius: "50px",
+            fontSize: "15px",
+            fontWeight: "600",
+            textDecoration: "none",
+            boxShadow: "0 4px 14px rgba(13,165,111,0.35)",
+          }}
         >
           Find out more
         </Link>
       </div>
 
-      {/* Animated Visual */}
-      <div className="relative w-[350px] h-[350px] mt-16 md:mt-0">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+      {/* Option C — Diagonal slanted BREVO text on right side */}
+      <div className="relative z-10" style={{
+        width: "350px",
+        height: "350px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        overflow: "hidden",
+        borderRadius: "24px",
+        background: "rgba(13,165,111,0.04)",
+        border: "1px solid rgba(13,165,111,0.1)",
+        flexShrink: 0,
+      }}>
+        {/* Diagonal slanted BREVO text */}
+        <div style={{
+          transform: "rotate(-30deg)",
+          whiteSpace: "nowrap",
+          userSelect: "none",
+          pointerEvents: "none",
+        }}>
+          {["BREVO", "BREVO", "BREVO", "BREVO", "BREVO", "BREVO"].map((text, i) => (
+            <div key={i} style={{
+              fontSize: "48px",
+              fontWeight: "900",
+              color: "rgba(13,165,111,0.12)",
+              letterSpacing: "10px",
+              marginBottom: "12px",
+              lineHeight: "1",
+            }}>{text} {text} {text}</div>
+          ))}
+        </div>
+
+        {/* Center Brevo button on top */}
+        <div style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          zIndex: 10,
+        }}>
           <Link href="https://www.brevo.com/" target="_blank" rel="noopener noreferrer">
             <div className="brevo-main-button">
-                <span>Brevo</span>
+              <span>Brevo</span>
             </div>
           </Link>
         </div>
-        <div className="absolute top-0 left-[140px] w-[60px] h-[60px] bg-white border-2 border-[#bce7d6] rounded-full animate-orbit" style={{animationDelay: '0s'}}></div>
-        <div className="absolute top-[70px] left-[280px] w-[60px] h-[60px] bg-white border-2 border-[#bce7d6] rounded-full animate-orbit" style={{animationDelay: '1.5s'}}></div>
-        <div className="absolute top-[240px] left-[260px] w-[60px] h-[60px] bg-white border-2 border-[#bce7d6] rounded-full animate-orbit" style={{animationDelay: '3s'}}></div>
-        <div className="absolute top-[300px] left-[100px] w-[60px] h-[60px] bg-white border-2 border-[#bce7d6] rounded-full animate-orbit" style={{animationDelay: '4.5s'}}></div>
       </div>
 
     </section>

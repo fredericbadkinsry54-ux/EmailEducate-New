@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import { BrevoCampaignIcon } from "./icons/BrevoCampaignIcon";
 import { BrevoAutomationIcon } from "./icons/BrevoAutomationIcon";
@@ -17,7 +16,7 @@ const brevoCategories = [
   {
     icon: <BrevoAutomationIcon />,
     title: "Brevo Marketing Automation",
-    description: "Design workflows, triggers, and customer journeys using Brevo’s automation builder — from welcome flows to cart recovery.",
+    description: "Design workflows, triggers, and customer journeys using Brevo's automation builder — from welcome flows to cart recovery.",
     link: "/articles/brevo-marketing-automation",
     tags: "(Workflows & Triggers)",
   },
@@ -31,7 +30,7 @@ const brevoCategories = [
   {
     icon: <BrevoCrmIcon />,
     title: "Brevo CRM & Contacts Management",
-    description: "Segment contacts, sync CRMs, and build personalized journeys using Brevo’s contacts and tagging features.",
+    description: "Segment contacts, sync CRMs, and build personalized journeys using Brevo's contacts and tagging features.",
     link: "/articles/brevo-crm-contacts",
     tags: "(Segmentation & Integrations)",
   },
@@ -62,20 +61,58 @@ export function BrevoCategories() {
           {brevoCategories.map((category, index) => (
             <article
               key={index}
-              className="bg-white rounded-xl p-5 shadow-md border border-green-200/80 transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg group"
+              style={{
+                background: "linear-gradient(135deg, #0DA56F 0%, #08855a 100%)",
+                boxShadow: "0 8px 24px rgba(13, 165, 111, 0.35)",
+                borderRadius: "18px",
+                border: "none",
+                transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                color: "#ffffff",
+              }}
+              onMouseEnter={e => {
+                (e.currentTarget as HTMLElement).style.transform = "translateY(-5px)";
+                (e.currentTarget as HTMLElement).style.boxShadow = "0 14px 32px rgba(13, 165, 111, 0.45)";
+              }}
+              onMouseLeave={e => {
+                (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
+                (e.currentTarget as HTMLElement).style.boxShadow = "0 8px 24px rgba(13, 165, 111, 0.35)";
+              }}
             >
-              <Link href={category.link} className="no-underline text-inherit block h-full">
+              <Link href={category.link} className="no-underline block h-full p-5" style={{ color: "#ffffff" }}>
                 <div className="flex flex-col h-full">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="bg-gradient-to-b from-green-50 to-green-100 w-12 h-12 rounded-lg flex items-center justify-center">
+                    <div style={{
+                      background: "rgba(255,255,255,0.2)",
+                      width: "48px",
+                      height: "48px",
+                      borderRadius: "10px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      flexShrink: 0,
+                    }}>
                       {category.icon}
                     </div>
-                    <h3 className="text-lg font-semibold text-green-900" dangerouslySetInnerHTML={{ __html: category.title.replace(/Brevo/g, '<span class="brevo-auto">Brevo</span>') }}></h3>
+                    <h3
+                      className="text-lg font-semibold"
+                      style={{ color: "#ffffff" }}
+                      dangerouslySetInnerHTML={{
+                        __html: category.title.replace(/Brevo/g, '<span style="color:#ffffff;font-weight:700;">Brevo</span>')
+                      }}
+                    />
                   </div>
-                  <p className="text-sm text-green-900/80 leading-relaxed mb-3.5 flex-grow">{category.description.replace(/Brevo/g, 'Brevo')}</p>
+                  <p className="text-sm leading-relaxed mb-3.5 flex-grow" style={{ color: "rgba(255,255,255,0.88)" }}>
+                    {category.description}
+                  </p>
                   <div className="flex items-center gap-2.5 mt-auto">
-                    <span className="font-bold text-green-700 group-hover:underline">Explore →</span>
-                    <small className="text-green-800/80 text-xs" dangerouslySetInnerHTML={{ __html: category.tags.replace(/Brevo/g, '<span class="brevo-auto">Brevo</span>') }}></small>
+                    <span className="font-bold" style={{ color: "#ffffff" }}>Explore →</span>
+                    <small
+                      className="text-xs"
+                      style={{ color: "rgba(255,255,255,0.75)" }}
+                      dangerouslySetInnerHTML={{
+                        __html: category.tags.replace(/Brevo/g, '<span style="color:#ffffff;font-weight:700;">Brevo</span>')
+                      }}
+                    />
                   </div>
                 </div>
               </Link>

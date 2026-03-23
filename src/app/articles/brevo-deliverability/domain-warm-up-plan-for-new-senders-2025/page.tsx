@@ -32,7 +32,7 @@ export default function DomainWarmUpPlanArticle() {
           }
         `}</style>
         <div className="max-w-4xl mx-auto py-10 px-4">
-          <h1 className="fade-title">Domain Warm-Up Plan for New Senders in 2025</h1>
+          <h1 className="fade-title">Domain Warm-Up Plan for New Senders in 2026</h1>
           <div className="text-gray-500 text-sm mb-4">Category: <strong>Brevo Deliverability & Inbox Success</strong> — Written by Email Educate</div>
 
           <div className="bg-white p-5 rounded-xl shadow-lg mb-5">

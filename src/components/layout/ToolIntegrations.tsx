@@ -1,4 +1,3 @@
-
 "use client";
 
 import { cn } from "@/lib/utils";
@@ -46,8 +45,30 @@ export function ToolIntegrations() {
   }, []);
 
   return (
-    <section className="bg-background text-foreground py-20 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="bg-background text-foreground py-20 sm:py-32" style={{ position: "relative", overflow: "hidden" }}>
+
+      {/* Giant BREVO watermark background */}
+      <div style={{
+        position: "absolute",
+        inset: 0,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        pointerEvents: "none",
+        zIndex: 0,
+        overflow: "hidden",
+      }}>
+        <span style={{
+          fontSize: "280px",
+          fontWeight: "900",
+          color: "rgba(13,165,111,0.05)",
+          letterSpacing: "-8px",
+          userSelect: "none",
+          whiteSpace: "nowrap",
+        }}>BREVO</span>
+      </div>
+
+      <div className="mx-auto max-w-7xl px-6 lg:px-8" style={{ position: "relative", zIndex: 1 }}>
         <div className="mx-auto max-w-2xl lg:text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
               Top Email Marketing Tools Compared With 

@@ -39,7 +39,7 @@ export function CookieConsentCard() {
         <h3 className="cookie-title">Your Privacy Matters</h3>
         <p className="cookie-description">
           We use cookies to enhance your experience and analyze site traffic. By clicking "Accept All", you agree to our use of cookies. Find out more in our{' '}
-          <Link href="/legal/cookie-policy" className="font-medium text-primary hover:underline">
+          <Link href="/legal/cookie-policy" className="font-medium text-[#0DA56F] hover:underline">
             Cookie Policy
           </Link>.
         </p>
@@ -48,7 +48,7 @@ export function CookieConsentCard() {
         <Button onClick={handleDecline} variant="ghost" className="cookie-decline-btn">
           Decline
         </Button>
-        <Button onClick={handleAccept} className="cookie-accept-btn">
+        <Button onClick={handleAccept} className="cookie-accept-btn font-bold px-6">
           Accept All
         </Button>
       </div>

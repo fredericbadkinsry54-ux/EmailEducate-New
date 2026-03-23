@@ -21,9 +21,9 @@ const articles = [
         link: "/articles/brevo-deliverability/why-emails-land-in-spam-and-how-to-fix-it-brevo-guide"
     },
     {
-        title: "Domain Warm-Up Plan for New Senders in 2025",
+        title: "Domain Warm-Up Plan for New Senders in 2026",
         description: "A complete domain warm-up plan for new email senders. Learn how to build sending reputation safely using Brevo, with a structured warm-up roadmap designed for strong inbox placement in 2026.",
-        link: "/articles/brevo-deliverability/domain-warm-up-plan-for-new-senders-2025"
+        link: "/articles/brevo-deliverability/domain-warm-up-plan-for-new-senders-2026"
     },
     {
         title: "List Hygiene: How to Clean Your Contacts for Better Inboxing",

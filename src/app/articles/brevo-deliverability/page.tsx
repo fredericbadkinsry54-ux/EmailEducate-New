@@ -1,77 +1,54 @@
-
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+"use client";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { AppHeader } from "@/components/layout/AppHeader";
 
 const articles = [
-    {
-        title: "How to Improve Inbox Placement Using Brevo Tools",
-        description: "A complete 2026-ready guide on improving email inbox placement using Brevo tools. Learn best practices for deliverability, IP warming, authentication, and reputation protection.",
-        link: "/articles/brevo-deliverability/how-to-improve-inbox-placement-using-brevo-tools"
-    },
-    {
-        title: "SPF, DKIM, DMARC Setup Guide for Better Deliverability",
-        description: "A complete 2026-friendly guide to setting up SPF, DKIM, and DMARC for strong email authentication and improved inbox placement using Brevo.",
-        link: "/articles/brevo-deliverability/spf-dkim-dmarc-setup-guide"
-    },
-    {
-        title: "Why Emails Land in Spam & How to Fix It (Brevo Guide)",
-        description: "Understand the common reasons emails go to spam and practical Brevo-focused fixes. Learn authentication, content best practices, and list hygiene to improve inbox placement.",
-        link: "/articles/brevo-deliverability/why-emails-land-in-spam-and-how-to-fix-it-brevo-guide"
-    },
-    {
-        title: "Domain Warm-Up Plan for New Senders in 2026",
-        description: "A complete domain warm-up plan for new email senders. Learn how to build sending reputation safely using Brevo, with a structured warm-up roadmap designed for strong inbox placement in 2026.",
-        link: "/articles/brevo-deliverability/domain-warm-up-plan-for-new-senders-2026"
-    },
-    {
-        title: "List Hygiene: How to Clean Your Contacts for Better Inboxing",
-        description: "A complete 2026-ready guide to list hygiene and contact cleaning. Learn how to improve inbox placement by removing cold contacts, suppressing bad data, and optimizing list quality using Brevo.",
-        link: "/articles/brevo-deliverability/list-hygiene-how-to-clean-your-contacts-for-better-inboxing"
-    }
+    { title: "Domain Warm-Up Plan for New Senders Using Brevo", description: "Follow this step-by-step domain warm-up plan to build sender reputation and maximize email deliverability with Brevo.", link: "/articles/brevo-deliverability/domain-warm-up-plan-for-new-s" },
+    { title: "How to Improve Inbox Placement with Brevo", description: "Discover proven strategies to improve your inbox placement rate and avoid spam folders using Brevo's deliverability tools.", link: "/articles/brevo-deliverability/how-to-improve-inbox-placemen" },
+    { title: "List Hygiene: How to Clean Your Contact List in Brevo", description: "Learn how to maintain a clean, healthy email list in Brevo by removing inactive subscribers and reducing bounce rates.", link: "/articles/brevo-deliverability/list-hygiene-how-to-clean-your-c" },
+    { title: "SPF, DKIM & DMARC Setup Guide for Brevo", description: "A complete guide to setting up SPF, DKIM, and DMARC authentication records for your Brevo account to improve deliverability.", link: "/articles/brevo-deliverability/spf-dkim-dmarc-setup-guide" },
+    { title: "Why Emails Land in Spam and How to Fix It with Brevo", description: "Understand the top reasons your emails end up in spam and learn how to use Brevo's tools to fix deliverability issues.", link: "/articles/brevo-deliverability/why-emails-land-in-spam-and-ho" },
 ];
 
-export default function BrevoDeliverabilityCategoryPage() {
+export default function BrevoDeliverabilityPage() {
     return (
-        <div className="bg-green-50/30 min-h-screen font-sans">
-            <header className="bg-gradient-to-b from-green-100 to-green-50/50 py-16 text-center border-b border-green-200">
-                <div className="max-w-4xl mx-auto px-4">
-                    <h1 className="text-3xl md:text-4xl font-extrabold text-green-900 mb-2"><span className="brevo-auto">Brevo</span> Deliverability & Inbox Success</h1>
-                    <p className="text-lg text-green-800/90">
-                        Everything you need to know about email deliverability and inbox placement when using <span className="brevo-auto">Brevo</span>.
+        <div style={{ background: "#0a1628", minHeight: "100vh" }}>
+            <AppHeader />
+            <header style={{ background: "linear-gradient(135deg, #0a1628 0%, #0d1f3c 100%)", padding: "80px 24px 60px", textAlign: "center", borderBottom: "1px solid rgba(13,165,111,0.15)", position: "relative", overflow: "hidden" }}>
+                <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", pointerEvents: "none", overflow: "hidden" }}>
+                    <span style={{ fontSize: "220px", fontWeight: "900", color: "rgba(13,165,111,0.04)", letterSpacing: "-6px", userSelect: "none", whiteSpace: "nowrap" }}>BREVO</span>
+                </div>
+                <div style={{ position: "relative", maxWidth: "800px", margin: "0 auto" }}>
+                    <span style={{ background: "rgba(13,165,111,0.2)", color: "#0DA56F", fontSize: "12px", fontWeight: "700", padding: "5px 16px", borderRadius: "20px", letterSpacing: "1.5px", display: "inline-block", marginBottom: "20px" }}>LEARN BREVO</span>
+                    <h1 style={{ fontSize: "2.8rem", fontWeight: "900", color: "#ffffff", marginBottom: "16px", lineHeight: "1.2" }}>
+                        <span style={{ color: "#0DA56F" }}>Bre</span>vo Deliverability & Inbox Success
+                    </h1>
+                    <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "1.1rem", maxWidth: "600px", margin: "0 auto" }}>
+                        Learn how to maximize inbox placement, set up domains, warm up IPs, and keep your list healthy using Brevo.
                     </p>
                 </div>
             </header>
-
-            <main className="max-w-3xl mx-auto py-12 px-4">
-                <div className="space-y-6">
+            <main style={{ maxWidth: "800px", margin: "0 auto", padding: "48px 24px" }}>
+                <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
                     {articles.map((article, index) => (
-                        <Link key={index} href={article.link} className="block no-underline group">
-                            <Card className="bg-white shadow-md hover:shadow-lg transition-shadow duration-300 border border-green-200/80 group-hover:border-green-400/50">
-                                <CardContent className="p-6">
-                                    <h2 className="text-xl font-bold text-green-900 group-hover:text-green-700 transition-colors">
-                                        {article.title}
-                                    </h2>
-                                    <p className="text-green-900/80 mt-2 mb-4 leading-relaxed">
-                                        {article.description}
-                                    </p>
-                                    <div className="flex items-center gap-2 text-green-700 font-semibold">
-                                        <span>Read article</span>
-                                        <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-                                    </div>
-                                </CardContent>
-                            </Card>
+                        <Link key={index} href={article.link} style={{ textDecoration: "none", display: "block" }}>
+                            <div style={{ background: "linear-gradient(135deg, #0DA56F 0%, #08855a 100%)", borderRadius: "18px", padding: "28px", boxShadow: "0 8px 24px rgba(13,165,111,0.3)", transition: "transform 0.3s ease, box-shadow 0.3s ease", cursor: "pointer" }}
+                                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; (e.currentTarget as HTMLElement).style.boxShadow = "0 14px 32px rgba(13,165,111,0.45)"; }}
+                                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; (e.currentTarget as HTMLElement).style.boxShadow = "0 8px 24px rgba(13,165,111,0.3)"; }}
+                            >
+                                <h2 style={{ fontSize: "18px", fontWeight: "700", color: "#ffffff", marginBottom: "10px", lineHeight: "1.4" }}>{article.title}</h2>
+                                <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "14px", lineHeight: "1.7", marginBottom: "16px" }}>{article.description}</p>
+                                <div style={{ display: "flex", alignItems: "center", gap: "6px", color: "#ffffff", fontWeight: "600", fontSize: "14px" }}>
+                                    <span>Read article</span>
+                                    <ArrowRight size={16} />
+                                </div>
+                            </div>
                         </Link>
                     ))}
                 </div>
-
-                <div className="text-center mt-12">
-                     <Button asChild className="button-animated">
-                        <Link href="/">
-                            <span>Back to Home</span>
-                        </Link>
-                    </Button>
+                <div style={{ textAlign: "center", marginTop: "48px" }}>
+                    <Link href="/" style={{ display: "inline-block", background: "rgba(13,165,111,0.15)", border: "1px solid rgba(13,165,111,0.4)", color: "#0DA56F", padding: "12px 32px", borderRadius: "10px", fontWeight: "600", fontSize: "15px", textDecoration: "none" }}>← Back to Home</Link>
                 </div>
             </main>
         </div>

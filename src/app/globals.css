@@ -85,6 +85,7 @@
   }
 }
 
+/* ===================== GLOBAL SECTION BACKGROUNDS ===================== */
 section {
   background-color: #0a1628 !important;
 }
@@ -96,6 +97,7 @@ section {
   background-color: #0d1f3c !important;
 }
 
+/* ===================== PAGE ===================== */
 .page {
   max-width: 700px;
   margin: 40px auto;
@@ -109,6 +111,7 @@ section {
   color: #0DA56F;
 }
 
+/* ===================== FOOTER ===================== */
 .footer-col {
   display: flex;
   flex-direction: column;
@@ -158,6 +161,7 @@ section {
   text-decoration: underline;
 }
 
+/* ===================== LEGAL ===================== */
 .legal-container {
   max-width: 900px;
   margin: 0 auto;
@@ -215,6 +219,7 @@ section {
   margin-bottom: 6px;
 }
 
+/* ===================== ANIMATIONS ===================== */
 @keyframes check-pop {
   0% { transform: scale(0.5); opacity: 0; }
   50% { transform: scale(1.2); opacity: 1; }
@@ -273,6 +278,7 @@ section {
   animation: fade-in-up 0.8s ease forwards;
 }
 
+/* ===================== BREVO BADGES ===================== */
 .brevo-badge {
   background: rgba(0, 180, 120, 0.15);
   color: #0DA56F;
@@ -326,6 +332,7 @@ section {
   text-shadow: 0 0 12px rgba(11, 180, 122, 0.35);
 }
 
+/* ===================== HERO ===================== */
 .hero {
   background: linear-gradient(135deg, #0a1628 0%, #0d1f3c 50%, #0a2040 100%);
   padding: 110px 20px 90px;
@@ -376,6 +383,7 @@ section {
   box-shadow: 0 6px 16px rgba(13, 165, 111, 0.4);
 }
 
+/* ===================== FEATURE CARD ===================== */
 .brevo-feature-cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -437,6 +445,7 @@ section {
 }
 
 @layer components {
+  /* ===================== MARKET CARD ===================== */
   .market-card {
     background: linear-gradient(135deg, #0DA56F 0%, #08855a 100%) !important;
     border: none !important;
@@ -467,6 +476,7 @@ section {
   }
   .main-btn:hover { @apply bg-[#089866]; }
 
+  /* ===================== BUTTONS ===================== */
   .button-animated {
     position: relative;
     display: inline-flex;
@@ -502,6 +512,7 @@ section {
     color: #fff !important;
   }
 
+  /* ===================== ARTICLE CARD ===================== */
   .article-card {
     position: relative;
     background: linear-gradient(135deg, #0DA56F 0%, #08855a 100%) !important;
@@ -567,6 +578,7 @@ section {
     box-shadow: 0 10px 25px hsla(var(--primary) / 0.35);
   }
 
+  /* ===================== CATEGORY CARD ===================== */
   .cat-card {
     background: linear-gradient(135deg, #0DA56F 0%, #08855a 100%) !important;
     border: none !important;
@@ -594,6 +606,7 @@ section {
   .category-lesson-item:hover { @apply bg-muted/70; }
   .category-lesson-item.large { @apply p-4 gap-6; }
 
+  /* ===================== LOGO SCROLLER ===================== */
   .logo-scroller {
     -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
     mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
@@ -608,6 +621,7 @@ section {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* ===================== PRICING ===================== */
 .pricing-section { max-width: 1200px; margin: auto; text-align: center; }
 .pricing-section h2 { font-size: 32px; font-weight: 700; color: #ffffff; margin-bottom: 10px; }
 .pricing-section p { font-size: 16px; color: rgba(255,255,255,0.65); margin-bottom: 40px; }
@@ -636,6 +650,7 @@ section {
 .plan-features li::before { content: "✔ "; color: #ffffff; font-weight: bold; }
 a.card-link { text-decoration: none; color: inherit; }
 
+/* ===================== FOOTER EXPANDED ===================== */
 .footer-expanded {
   margin-top: 40px;
   padding-top: 40px;
@@ -658,6 +673,7 @@ a.card-link { text-decoration: none; color: inherit; }
 }
 .footer-social a:hover { background: #0DA56F; color: #ffffff; }
 
+/* ===================== NAVBAR ===================== */
 .ee-nav {
   background: #0a1628;
   border-bottom: 1px solid rgba(255,255,255,0.08);
@@ -714,6 +730,7 @@ a.card-link { text-decoration: none; color: inherit; }
   .ee-mobile-toggle { display: block; }
 }
 
+/* ===================== BREVO BADGE PRO ===================== */
 .brevo-badge-pro {
   display: inline-block;
   padding: 4px 14px;
@@ -758,6 +775,7 @@ a.card-link { text-decoration: none; color: inherit; }
   font-weight: 600; box-shadow: none !important; animation: none !important;
 }
 
+/* ===================== COOKIE ===================== */
 @keyframes cookie-fade-in {
   from { transform: translateY(100%); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
@@ -787,6 +805,103 @@ a.card-link { text-decoration: none; color: inherit; }
   .cookie-consent-card { flex-direction: column; text-align: center; gap: 1rem; bottom: 10px; left: 10px; right: 10px; }
   .cookie-actions { width: 100%; justify-content: center; }
 }
+
+/* ===================== SCROLL ANIMATIONS ===================== */
+
+@keyframes sa-word-pop {
+  0% { opacity: 0; transform: scale(0.7) translateY(20px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@keyframes sa-fade-up {
+  from { opacity: 0; transform: translateY(32px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes sa-fade-in {
+  from { opacity: 0; transform: translateY(24px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Word pop spans inside headings */
+.sa-word {
+  display: inline-block;
+  opacity: 0;
+  animation: sa-word-pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Cards — hidden by default, visible when scrolled */
+.sa-card {
+  opacity: 0;
+  transform: translateY(28px) scale(0.97);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.sa-card.sa-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Stagger cards in grids */
+.sa-card:nth-child(1) { transition-delay: 0.05s; }
+.sa-card:nth-child(2) { transition-delay: 0.15s; }
+.sa-card:nth-child(3) { transition-delay: 0.25s; }
+.sa-card:nth-child(4) { transition-delay: 0.35s; }
+.sa-card:nth-child(5) { transition-delay: 0.45s; }
+.sa-card:nth-child(6) { transition-delay: 0.55s; }
+
+/* Section headings */
+.sa-heading {
+  overflow: visible;
+}
+
+/* ===================== STYLE 20 — SPLIT HEADLINE ===================== */
+
+/* Section h2 headings — big bold style */
+section h2.s20-heading {
+  font-size: clamp(2rem, 4vw, 3rem) !important;
+  font-weight: 900 !important;
+  color: #ffffff !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.5px;
+}
+
+/* Brevo word split — "Bre" green, "vo" white */
+.brevo-split {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.brevo-split-bre {
+  color: #0DA56F !important;
+  font-weight: 900;
+  -webkit-text-fill-color: #0DA56F;
+}
+
+.brevo-split-vo {
+  color: #ffffff !important;
+  font-weight: 900;
+  -webkit-text-fill-color: #ffffff;
+}
+
+/* Override any existing badge styles on h2 */
+section h2.s20-heading .brevo-badge-pro,
+section h2.s20-heading .brevo-auto {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  animation: none !important;
+  font-size: inherit !important;
+  font-weight: 900 !important;
+}
+
+section h2.s20-heading .brevo-badge-pro {
+  -webkit-text-fill-color: #0DA56F !important;
+  color: #0DA56F !important;
+}
+
+/* ===================== SCROLL ANIMATIONS ===================== */
 
 @keyframes sa-word-pop {
   0% { opacity: 0; transform: scale(0.7) translateY(20px); }
@@ -831,43 +946,254 @@ a.card-link { text-decoration: none; color: inherit; }
   overflow: visible;
 }
 
-section h2.s20-heading {
-  font-size: clamp(2rem, 4vw, 3rem) !important;
-  font-weight: 900 !important;
+/* ===================== ARTICLE PAGE GLOBAL FIX ===================== */
+
+/* All article section cards — force dark navy + visible text */
+.bg-white,
+[class*="bg-white"],
+section.bg-white,
+div.bg-white {
+  background: linear-gradient(135deg, #0DA56F 0%, #08855a 100%) !important;
   color: #ffffff !important;
-  line-height: 1.2 !important;
-  letter-spacing: -0.5px;
-}
-
-.brevo-split {
-  display: inline-block;
-  white-space: nowrap;
-}
-
-.brevo-split-bre {
-  color: #0DA56F !important;
-  font-weight: 900;
-  -webkit-text-fill-color: #0DA56F;
-}
-
-.brevo-split-vo {
-  color: #ffffff !important;
-  font-weight: 900;
-  -webkit-text-fill-color: #ffffff;
-}
-
-section h2.s20-heading .brevo-badge-pro,
-section h2.s20-heading .brevo-auto {
-  background: none !important;
   border: none !important;
-  padding: 0 !important;
-  box-shadow: none !important;
-  animation: none !important;
-  font-size: inherit !important;
-  font-weight: 900 !important;
+  border-radius: 18px !important;
+  box-shadow: 0 8px 24px rgba(13, 165, 111, 0.35) !important;
 }
 
-section h2.s20-heading .brevo-badge-pro {
-  -webkit-text-fill-color: #0DA56F !important;
+/* Fix all text inside white cards */
+.bg-white p,
+.bg-white h1,
+.bg-white h2,
+.bg-white h3,
+.bg-white h4,
+.bg-white li,
+.bg-white span,
+.bg-white strong,
+.bg-white ol,
+.bg-white ul {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.bg-white h1,
+.bg-white h2,
+.bg-white h3 {
+  color: #ffffff !important;
+}
+
+/* Fix text color overrides that use hex colors */
+[class*="text-[#064e3b]"],
+[class*="text-[#0f172a]"],
+[class*="text-[#16a34a]"],
+[class*="text-green-900"],
+[class*="text-green-800"],
+[class*="text-green-700"] {
+  color: #ffffff !important;
+}
+
+[class*="text-[#6b7280]"],
+[class*="text-gray-600"],
+[class*="text-gray-500"],
+[class*="text-gray-700"] {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Fix Key Tip / border-left cards */
+[class*="border-l"],
+[class*="border-left"],
+.border-l-4,
+.border-l-2 {
+  background: rgba(13, 165, 111, 0.15) !important;
+  border-color: #0DA56F !important;
+  color: #ffffff !important;
+}
+
+/* Fix sub-cards inside articles (feature grids) */
+[class*="rounded-xl"],
+[class*="rounded-lg"] {
+  border-color: rgba(13, 165, 111, 0.3) !important;
+}
+
+/* Article page background */
+[class*="bg-[#f8fdf8]"],
+[class*="bg-muted"],
+[class*="bg-green-50"] {
+  background: #0a1628 !important;
+}
+
+/* Fix article h2 colors */
+article h2,
+.prose h2,
+[class*="text-2xl"].font-bold,
+[class*="text-3xl"].font-bold {
+  color: #ffffff !important;
+}
+
+/* Fix drop cap */
+.float-left {
+  color: #ffffff !important;
+}
+
+/* HR styling */
+hr {
+  border-color: rgba(13, 165, 111, 0.2) !important;
+  background: rgba(13, 165, 111, 0.2) !important;
+}
+
+/* ===================== ARTICLE SUB-CARDS FIX ===================== */
+
+/* Nested white cards inside green sections — dark navy */
+.bg-white .bg-white,
+.bg-white [class*="bg-white"],
+.bg-white [class*="bg-gray"],
+.bg-white [class*="bg-red"],
+.bg-white [class*="bg-pink"],
+[class*="rounded-xl"] [class*="rounded-xl"],
+[class*="rounded-lg"] [class*="rounded-lg"],
+[class*="rounded-xl"] [class*="rounded-lg"] {
+  background: rgba(0, 0, 0, 0.25) !important;
+  border: 1px solid rgba(255,255,255,0.2) !important;
+  border-radius: 12px !important;
+  color: #ffffff !important;
+}
+
+/* Nested card text */
+.bg-white .bg-white *,
+.bg-white [class*="bg-white"] *,
+.bg-white [class*="bg-gray"] *,
+.bg-white [class*="bg-red"] *,
+.bg-white [class*="bg-pink"] * {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+/* Pros & Cons grid inner cards */
+[class*="grid"] > div,
+[class*="grid"] > section {
+  background: rgba(0,0,0,0.2) !important;
+  border: 1px solid rgba(255,255,255,0.15) !important;
+  border-radius: 12px !important;
+  color: #ffffff !important;
+}
+
+/* Pricing table fix */
+table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  background: transparent !important;
+}
+
+table thead tr,
+table thead th,
+thead tr,
+thead th {
+  background: rgba(0,0,0,0.3) !important;
+  color: #ffffff !important;
+  border-color: rgba(255,255,255,0.2) !important;
+  padding: 12px !important;
+}
+
+table tbody tr,
+table tbody td,
+tbody tr,
+tbody td {
+  background: rgba(0,0,0,0.15) !important;
+  color: rgba(255,255,255,0.9) !important;
+  border-color: rgba(255,255,255,0.1) !important;
+  padding: 12px !important;
+}
+
+table tbody tr:nth-child(even),
+tbody tr:nth-child(even) {
+  background: rgba(0,0,0,0.25) !important;
+}
+
+/* Price column green color */
+[class*="text-green"],
+[class*="text-emerald"],
+[class*="text-teal"] {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+/* Key Tip boxes */
+[class*="border-l-4"],
+[class*="border-l-2"],
+.border-l-4,
+.border-l-2 {
+  background: rgba(0,0,0,0.2) !important;
+  border-left: 4px solid rgba(255,255,255,0.6) !important;
+  padding: 14px 18px !important;
+  border-radius: 0 12px 12px 0 !important;
+  color: #ffffff !important;
+}
+
+.border-l-4 *,
+.border-l-2 * {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+/* Article hero title fix */
+[class*="text-[#064e3b]"],
+[class*="font-extrabold"].animate-fade-in-up {
+  color: #ffffff !important;
+}
+
+/* ===================== ARTICLE H1 TITLE FIX ===================== */
+
+/* All article page h1 titles — force white */
+h1 {
+  color: #ffffff !important;
+}
+
+/* Specific dark green color overrides */
+[class*="text-[#064e3b]"],
+[class*="text-[#0f5132]"],
+[class*="text-[#0a7f42]"],
+[class*="text-green-900"],
+[class*="text-green-800"],
+[class*="text-green-700"],
+[class*="text-[#0a7c59]"],
+[class*="text-[#0DA56F]"] {
+  color: #ffffff !important;
+}
+
+/* Category subtitle under h1 */
+[class*="text-[#6b7280]"],
+[class*="text-gray-500"],
+[class*="text-gray-600"] {
+  color: rgba(255,255,255,0.6) !important;
+}
+
+/* Strong/bold inside category line */
+.text-sm strong,
+.text-xs strong {
   color: #0DA56F !important;
+}
+
+/* ===================== ARTICLE LAYOUT WITH SIDEBAR ===================== */
+.article-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  align-items: start;
+}
+
+.article-main {
+  min-width: 0;
+}
+
+.article-sidebar {
+  position: sticky;
+  top: 100px;
+}
+
+@media (max-width: 1024px) {
+  .article-layout {
+    grid-template-columns: 1fr;
+  }
+  .article-sidebar {
+    position: static;
+    order: -1;
+  }
 }

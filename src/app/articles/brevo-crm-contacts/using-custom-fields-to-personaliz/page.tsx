@@ -7,7 +7,7 @@ export default function ArticlePage() {
       <AppHeader />
       <div style={{ background: "linear-gradient(135deg,#0a1628,#0d1f3c)", padding: "60px 24px 40px", borderBottom: "1px solid rgba(13,165,111,0.15)" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <h1 style={{ fontSize: "2.2rem", fontWeight: "900", color: "#ffffff", lineHeight: "1.3" }}>Brevo vs GetResponse 2026</h1>
+          <h1 style={{ fontSize: "2.2rem", fontWeight: "900", color: "#ffffff", lineHeight: "1.3" }}>Using Custom Fields to Personalize Communication</h1>
           <p style={{ color: "rgba(255,255,255,0.55)", marginTop: "12px" }}>Written by <strong style={{ color: "#0DA56F" }}>Email Educate</strong></p>
         </div>
       </div>
@@ -15,7 +15,7 @@ export default function ArticlePage() {
         {["Introduction","Why This Matters","Step by Step Guide","Best Practices","Final Verdict"].map((sec,i) => (
           <div key={i} style={{ background: "linear-gradient(135deg,#0DA56F,#08855a)", borderRadius: "18px", padding: "28px", marginBottom: "20px", boxShadow: "0 8px 24px rgba(13,165,111,0.3)" }}>
             <h2 style={{ color: "#ffffff", fontSize: "20px", fontWeight: "800", marginBottom: "14px" }}>{sec}</h2>
-            <p style={{ color: "rgba(255,255,255,0.9)", lineHeight: "1.8" }}>This section covers practical insights about Brevo vs GetResponse 2026 to help you achieve better email marketing results with Brevo.</p>
+            <p style={{ color: "rgba(255,255,255,0.9)", lineHeight: "1.8" }}>This section covers practical insights about Using Custom Fields to Personalize Communication to help you achieve better email marketing results with Brevo.</p>
           </div>
         ))}
         <div style={{ textAlign: "center", marginTop: "40px" }}>

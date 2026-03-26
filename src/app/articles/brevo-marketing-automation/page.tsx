@@ -1,56 +1,81 @@
-"use client";
+
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { AppHeader } from "@/components/layout/AppHeader";
 
 const articles = [
-    { title: "Abandoned Cart Automation: How to Recover Lost Sales with Brevo", description: "Learn how to set up abandoned cart email automation in Brevo to recover lost sales and boost your ecommerce revenue.", link: "/articles/brevo-marketing-automation/abandoned-cart-automation-reco" },
-    { title: "Automated Welcome Series: The Perfect First Impression with Brevo", description: "Create a high-converting automated welcome email series using Brevo to onboard new subscribers and build lasting relationships.", link: "/articles/brevo-marketing-automation/automated-welcome-series-perfe" },
-    { title: "Brevo Automation Triggers Explained: How to Start the Right Workflow", description: "Understand all Brevo automation triggers — from sign-ups to purchases — and learn when to use each one effectively.", link: "/articles/brevo-marketing-automation/brevo-automation-triggers-explai" },
-    { title: "How to Build Your First Automation Workflow in Brevo", description: "A step-by-step beginner's guide to creating your first marketing automation workflow in Brevo from scratch.", link: "/articles/brevo-marketing-automation/how-to-build-your-first-automati" },
-    { title: "How to Use Tags and Segments in Brevo Automation", description: "Master Brevo tags and segments to create highly targeted automated campaigns that reach the right people at the right time.", link: "/articles/brevo-marketing-automation/how-to-use-tags-and-segments-i" },
+    {
+        title: "How to Build Your First Automation Workflow in Brevo",
+        description: "A complete step-by-step guide to building your first automation workflow in Brevo. Learn triggers, actions, segmentation, timing, and optimization in a beginner-friendly way.",
+        link: "/articles/brevo-marketing-automation/how-to-build-your-first-automation-workflow-in-brevo"
+    },
+    {
+        title: "Brevo Automation Triggers Explained for Beginners",
+        description: "A complete beginner-friendly guide to understanding Brevo automation triggers. Learn how event-based, behavior-based, and contact-based triggers work to build high-performing automation workflows.",
+        link: "/articles/brevo-marketing-automation/brevo-automation-triggers-explained-for-beginners"
+    },
+    {
+        title: "Automated Welcome Series: The Perfect 3-Email Sequence",
+        description: "Learn how to create a high-performing 3-email welcome series in Brevo. This beginner-friendly guide explains structure, timing, messaging, segmentation, and workflow setup.",
+        link: "/articles/brevo-marketing-automation/automated-welcome-series-perfect-3-email-sequence"
+    },
+    {
+        title: "Abandoned Cart Automation: Recover More Sales with Brevo",
+        description: "Learn how to recover lost sales using Brevo’s abandoned cart automation. A complete 2026-ready guide for ecommerce brands to build high-performing recovery workflows.",
+        link: "/articles/brevo-marketing-automation/abandoned-cart-automation-recover-more-sales-with-brevo"
+    },
+    {
+        title: "How to Use Tags and Segments Inside Automation Workflows",
+        description: "Learn how to use tags and segments inside Brevo automation workflows. A complete beginner-friendly 2026 guide to behavior-based personalization and smart email triggers.",
+        link: "/articles/brevo-marketing-automation/how-to-use-tags-and-segments-inside-automation-workflows"
+    }
 ];
 
-export default function BrevoMarketingAutomationPage() {
+export default function BrevoMarketingAutomationCategoryPage() {
     return (
-        <div style={{ background: "#0a1628", minHeight: "100vh" }}>
-            <AppHeader />
-            <header style={{ background: "linear-gradient(135deg, #0a1628 0%, #0d1f3c 100%)", padding: "80px 24px 60px", textAlign: "center", borderBottom: "1px solid rgba(13,165,111,0.15)", position: "relative", overflow: "hidden" }}>
-                <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", pointerEvents: "none", overflow: "hidden" }}>
-                    <span style={{ fontSize: "220px", fontWeight: "900", color: "rgba(13,165,111,0.04)", letterSpacing: "-6px", userSelect: "none", whiteSpace: "nowrap" }}>BREVO</span>
-                </div>
-                <div style={{ position: "relative", maxWidth: "800px", margin: "0 auto" }}>
-                    <span style={{ background: "rgba(13,165,111,0.2)", color: "#0DA56F", fontSize: "12px", fontWeight: "700", padding: "5px 16px", borderRadius: "20px", letterSpacing: "1.5px", display: "inline-block", marginBottom: "20px" }}>LEARN BREVO</span>
-                    <h1 style={{ fontSize: "2.8rem", fontWeight: "900", color: "#ffffff", marginBottom: "16px", lineHeight: "1.2" }}>
-                        <span style={{ color: "#0DA56F" }}>Bre</span>vo Marketing Automation
-                    </h1>
-                    <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "1.1rem", maxWidth: "600px", margin: "0 auto" }}>
-                        Master Brevo automation — build workflows, triggers, drip sequences, and automated journeys that convert.
+        <div className="bg-green-50/30 min-h-screen font-sans">
+            <header className="bg-gradient-to-b from-green-100 to-green-50/50 py-16 text-center border-b border-green-200">
+                <div className="max-w-4xl mx-auto px-4">
+                    <h1 className="text-3xl md:text-4xl font-extrabold text-green-900 mb-2"><span className="brevo-auto">Brevo</span> Marketing Automation</h1>
+                    <p className="text-lg text-green-800/90">
+                        Everything you need to know to create, manage, and optimize your marketing automation using <span className="brevo-auto">Brevo</span>.
                     </p>
                 </div>
             </header>
-            <main style={{ maxWidth: "800px", margin: "0 auto", padding: "48px 24px" }}>
-                <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+
+            <main className="max-w-3xl mx-auto py-12 px-4">
+                <div className="space-y-6">
                     {articles.map((article, index) => (
-                        <Link key={index} href={article.link} style={{ textDecoration: "none", display: "block" }}>
-                            <div style={{ background: "linear-gradient(135deg, #0DA56F 0%, #08855a 100%)", borderRadius: "18px", padding: "28px", boxShadow: "0 8px 24px rgba(13,165,111,0.3)", transition: "transform 0.3s ease, box-shadow 0.3s ease", cursor: "pointer" }}
-                                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; (e.currentTarget as HTMLElement).style.boxShadow = "0 14px 32px rgba(13,165,111,0.45)"; }}
-                                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; (e.currentTarget as HTMLElement).style.boxShadow = "0 8px 24px rgba(13,165,111,0.3)"; }}
-                            >
-                                <h2 style={{ fontSize: "18px", fontWeight: "700", color: "#ffffff", marginBottom: "10px", lineHeight: "1.4" }}>{article.title}</h2>
-                                <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "14px", lineHeight: "1.7", marginBottom: "16px" }}>{article.description}</p>
-                                <div style={{ display: "flex", alignItems: "center", gap: "6px", color: "#ffffff", fontWeight: "600", fontSize: "14px" }}>
-                                    <span>Read article</span>
-                                    <ArrowRight size={16} />
-                                </div>
-                            </div>
+                        <Link key={index} href={article.link} className="block no-underline group">
+                            <Card className="bg-white shadow-md hover:shadow-lg transition-shadow duration-300 border border-green-200/80 group-hover:border-green-400/50">
+                                <CardContent className="p-6">
+                                    <h2 className="text-xl font-bold text-green-900 group-hover:text-green-700 transition-colors">
+                                        {article.title}
+                                    </h2>
+                                    <p className="text-green-900/80 mt-2 mb-4 leading-relaxed">
+                                        {article.description}
+                                    </p>
+                                    <div className="flex items-center gap-2 text-green-700 font-semibold">
+                                        <span>Read article</span>
+                                        <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                                    </div>
+                                </CardContent>
+                            </Card>
                         </Link>
                     ))}
                 </div>
-                <div style={{ textAlign: "center", marginTop: "48px" }}>
-                    <Link href="/" style={{ display: "inline-block", background: "rgba(13,165,111,0.15)", border: "1px solid rgba(13,165,111,0.4)", color: "#0DA56F", padding: "12px 32px", borderRadius: "10px", fontWeight: "600", fontSize: "15px", textDecoration: "none" }}>← Back to Home</Link>
+
+                <div className="text-center mt-12">
+                     <Button asChild className="button-animated">
+                        <Link href="/">
+                            <span>Back to Home</span>
+                        </Link>
+                    </Button>
                 </div>
             </main>
         </div>
     );
 }
+
+    

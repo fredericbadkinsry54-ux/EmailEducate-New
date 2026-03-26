@@ -823,14 +823,12 @@ a.card-link { text-decoration: none; color: inherit; }
   to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-/* Word pop spans inside headings */
 .sa-word {
   display: inline-block;
   opacity: 0;
   animation: sa-word-pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
-/* Cards — hidden by default, visible when scrolled */
 .sa-card {
   opacity: 0;
   transform: translateY(28px) scale(0.97);
@@ -842,7 +840,6 @@ a.card-link { text-decoration: none; color: inherit; }
   transform: translateY(0) scale(1);
 }
 
-/* Stagger cards in grids */
 .sa-card:nth-child(1) { transition-delay: 0.05s; }
 .sa-card:nth-child(2) { transition-delay: 0.15s; }
 .sa-card:nth-child(3) { transition-delay: 0.25s; }
@@ -850,14 +847,12 @@ a.card-link { text-decoration: none; color: inherit; }
 .sa-card:nth-child(5) { transition-delay: 0.45s; }
 .sa-card:nth-child(6) { transition-delay: 0.55s; }
 
-/* Section headings */
 .sa-heading {
   overflow: visible;
 }
 
 /* ===================== STYLE 20 — SPLIT HEADLINE ===================== */
 
-/* Section h2 headings — big bold style */
 section h2.s20-heading {
   font-size: clamp(2rem, 4vw, 3rem) !important;
   font-weight: 900 !important;
@@ -866,7 +861,6 @@ section h2.s20-heading {
   letter-spacing: -0.5px;
 }
 
-/* Brevo word split — "Bre" green, "vo" white */
 .brevo-split {
   display: inline-block;
   white-space: nowrap;
@@ -884,7 +878,6 @@ section h2.s20-heading {
   -webkit-text-fill-color: #ffffff;
 }
 
-/* Override any existing badge styles on h2 */
 section h2.s20-heading .brevo-badge-pro,
 section h2.s20-heading .brevo-auto {
   background: none !important;
@@ -901,57 +894,10 @@ section h2.s20-heading .brevo-badge-pro {
   color: #0DA56F !important;
 }
 
-/* ===================== SCROLL ANIMATIONS ===================== */
-
-@keyframes sa-word-pop {
-  0% { opacity: 0; transform: scale(0.7) translateY(20px); }
-  100% { opacity: 1; transform: scale(1) translateY(0); }
-}
-
-@keyframes sa-fade-up {
-  from { opacity: 0; transform: translateY(32px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes sa-fade-in {
-  from { opacity: 0; transform: translateY(24px) scale(0.97); }
-  to { opacity: 1; transform: translateY(0) scale(1); }
-}
-
-.sa-word {
-  display: inline-block;
-  opacity: 0;
-  animation: sa-word-pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-}
-
-.sa-card {
-  opacity: 0;
-  transform: translateY(28px) scale(0.97);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.sa-card.sa-visible {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
-
-.sa-card:nth-child(1) { transition-delay: 0.05s; }
-.sa-card:nth-child(2) { transition-delay: 0.15s; }
-.sa-card:nth-child(3) { transition-delay: 0.25s; }
-.sa-card:nth-child(4) { transition-delay: 0.35s; }
-.sa-card:nth-child(5) { transition-delay: 0.45s; }
-.sa-card:nth-child(6) { transition-delay: 0.55s; }
-
-.sa-heading {
-  overflow: visible;
-}
-
-
 /* ============================================================
    COMPREHENSIVE ARTICLE PAGES FIX — ALL CARDS, TEXT, TABLES
    ============================================================ */
 
-/* 1. Page background */
 [class*="bg-[#f8fdf8]"],
 [class*="bg-green-50"],
 [class*="bg-muted"],
@@ -959,12 +905,10 @@ section h2.s20-heading .brevo-badge-pro {
   background: #0a1628 !important;
 }
 
-/* 2. All h1 titles white */
 h1, [class*="font-extrabold"] {
   color: #ffffff !important;
 }
 
-/* 3. ALL white/light cards → green gradient */
 .bg-white,
 [class*="bg-white"] {
   background: linear-gradient(135deg, #0DA56F 0%, #08855a 100%) !important;
@@ -974,7 +918,6 @@ h1, [class*="font-extrabold"] {
   color: #ffffff !important;
 }
 
-/* 4. All text inside green cards → white */
 .bg-white *,
 [class*="bg-white"] * {
   color: rgba(255,255,255,0.92) !important;
@@ -985,7 +928,6 @@ h1, [class*="font-extrabold"] {
   color: #ffffff !important;
 }
 
-/* 5. Nested sub-cards inside green cards → dark semi-transparent */
 .bg-white .bg-white,
 .bg-white [class*="bg-white"],
 .bg-white [class*="bg-gray"],
@@ -1006,7 +948,6 @@ h1, [class*="font-extrabold"] {
   color: rgba(255,255,255,0.9) !important;
 }
 
-/* 6. Key Tip border-left boxes */
 [class*="border-l-4"],
 [class*="border-l-2"],
 .border-l-4, .border-l-2 {
@@ -1021,7 +962,6 @@ h1, [class*="font-extrabold"] {
   color: rgba(255,255,255,0.9) !important;
 }
 
-/* 7. Pricing & data tables */
 table { background: transparent !important; width: 100% !important; border-collapse: collapse !important; }
 thead tr, thead th { background: rgba(0,0,0,0.35) !important; color: #ffffff !important; border-color: rgba(255,255,255,0.15) !important; padding: 12px !important; }
 tbody tr, tbody td { background: rgba(0,0,0,0.15) !important; color: rgba(255,255,255,0.9) !important; border-color: rgba(255,255,255,0.08) !important; padding: 12px !important; }
@@ -1029,10 +969,8 @@ tbody tr:nth-child(even), tbody tr:nth-child(even) td { background: rgba(0,0,0,0
 table * { color: rgba(255,255,255,0.9) !important; }
 [class*="text-green"], [class*="text-emerald"] { color: rgba(255,255,255,0.9) !important; }
 
-/* 8. HR dividers */
 hr { border-color: rgba(13,165,111,0.2) !important; background: rgba(13,165,111,0.2) !important; }
 
-/* 9. Dark color text overrides */
 [class*="text-[#064e3b]"],
 [class*="text-[#0f172a]"],
 [class*="text-green-900"],
@@ -1054,7 +992,6 @@ hr { border-color: rgba(13,165,111,0.2) !important; background: rgba(13,165,111,
   color: rgba(255,255,255,0.65) !important;
 }
 
-/* 10. Grid cards */
 [class*="grid"] > div {
   color: rgba(255,255,255,0.9) !important;
 }
@@ -1065,7 +1002,6 @@ hr { border-color: rgba(13,165,111,0.2) !important; background: rgba(13,165,111,
   color: #ffffff !important;
 }
 
-/* 11. Article Layout with Sidebar */
 .article-layout {
   display: grid;
   grid-template-columns: 1fr 320px;
@@ -1088,7 +1024,6 @@ hr { border-color: rgba(13,165,111,0.2) !important; background: rgba(13,165,111,
   .article-sidebar { position: static; order: -1; }
 }
 
-/* 12. Legal pages cards */
 .legal-card {
   background: linear-gradient(135deg, #0DA56F 0%, #08855a 100%) !important;
   border-radius: 18px !important;
@@ -1108,7 +1043,6 @@ hr { border-color: rgba(13,165,111,0.2) !important; background: rgba(13,165,111,
   color: rgba(255,255,255,0.9) !important;
 }
 
-/* 13. Feature cards (BrevoRecommendation) */
 .brevo-feature-cards {
   display: flex;
   flex-direction: column;
@@ -1134,7 +1068,6 @@ hr { border-color: rgba(13,165,111,0.2) !important; background: rgba(13,165,111,
   margin: 0 !important;
 }
 
-/* 14. Blockquotes */
 blockquote {
   background: rgba(13,165,111,0.08) !important;
   border-left: 3px solid #0DA56F !important;
@@ -1145,8 +1078,84 @@ blockquote {
 
 blockquote * { color: rgba(255,255,255,0.9) !important; }
 
-/* 15. List items */
 .bg-white ol, .bg-white ul,
 .bg-white li, [class*="bg-white"] li {
   color: rgba(255,255,255,0.9) !important;
+}
+
+/* ===================== ARTICLE PROSE TEXT FIX ===================== */
+.article-main p,
+.article-main li,
+.article-main strong,
+.article-main em,
+.article-main span:not(.brevo-badge):not(.brevo-badge-pro):not(.brevo-auto) {
+  color: rgba(255, 255, 255, 0.88) !important;
+}
+
+.article-main h1,
+.article-main h2,
+.article-main h3,
+.article-main h4,
+.article-main h5 {
+  color: #ffffff !important;
+}
+
+.prose,
+.prose-invert,
+[class*="prose"] {
+  color: rgba(255, 255, 255, 0.88) !important;
+  --tw-prose-body: rgba(255, 255, 255, 0.88) !important;
+  --tw-prose-headings: #ffffff !important;
+  --tw-prose-bold: #ffffff !important;
+  --tw-prose-counters: rgba(255, 255, 255, 0.7) !important;
+  --tw-prose-bullets: #0DA56F !important;
+  --tw-prose-links: #0DA56F !important;
+}
+
+[class*="prose"] p,
+[class*="prose"] li,
+[class*="prose"] strong,
+[class*="prose"] em,
+[class*="prose"] span {
+  color: rgba(255, 255, 255, 0.88) !important;
+}
+
+[class*="prose"] h1,
+[class*="prose"] h2,
+[class*="prose"] h3,
+[class*="prose"] h4 {
+  color: #ffffff !important;
+}
+
+/* ===================== PINK / ROSE CARDS FIX ===================== */
+[class*="bg-pink-"],
+[class*="bg-rose-"],
+[class*="bg-red-50"],
+[class*="bg-red-100"] {
+  background: linear-gradient(135deg, #0DA56F 0%, #08855a 100%) !important;
+  border: none !important;
+  border-radius: 18px !important;
+  box-shadow: 0 8px 24px rgba(13,165,111,0.3) !important;
+  color: #ffffff !important;
+}
+
+[class*="bg-pink-"] *,
+[class*="bg-rose-"] *,
+[class*="bg-red-50"] *,
+[class*="bg-red-100"] * {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+[class*="bg-pink-"] h2, [class*="bg-pink-"] h3,
+[class*="bg-rose-"] h2, [class*="bg-rose-"] h3,
+[class*="bg-red-50"] h2, [class*="bg-red-50"] h3,
+[class*="bg-red-100"] h2, [class*="bg-red-100"] h3 {
+  color: #ffffff !important;
+}
+
+[class*="bg-pink-"] li::marker,
+[class*="bg-rose-"] li::marker,
+[class*="bg-red-50"] li::marker,
+[class*="bg-red-100"] li::marker {
+  color: #ffffff !important;
 }

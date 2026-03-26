@@ -37,7 +37,7 @@ export function Footer() {
                             Your free resource for mastering Brevo and email marketing — from campaigns to automation, CRM, and beyond.
                         </p>
                         <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginBottom: "22px" }}>
-                            {["Brevo Affiliate Partner", "100% Free Educational Content", "No Spam — Ever"].map((t, i) => (
+                            {["100% Free Educational Content", "No Spam — Ever"].map((t, i) => (
                                 <div key={i} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                                     <span style={{ color: "#0DA56F", fontSize: "11px" }}>✔</span>
                                     <span style={{ fontSize: "12px", color: "rgba(255,255,255,0.55)" }}>{t}</span>

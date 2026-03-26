@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
@@ -34,11 +33,13 @@ const articles = [
 
 export default function ToolsComparisonCategoryPage() {
     return (
-        <div className="bg-green-50/30 min-h-screen font-sans">
-            <header className="bg-gradient-to-b from-green-100 to-green-50/50 py-16 text-center border-b border-green-200">
+        <div className="min-h-screen font-sans" style={{ backgroundColor: "#0a1628" }}>
+            <header style={{ background: "linear-gradient(to bottom, #0d1f3c, #0a1628)", padding: "64px 0", textAlign: "center", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
                 <div className="max-w-4xl mx-auto px-4">
-                    <h1 className="text-3xl md:text-4xl font-extrabold text-green-900 mb-2">Tools Comparison</h1>
-                    <p className="text-lg text-green-800/90">
+                    <h1 style={{ fontSize: "clamp(1.8rem, 4vw, 2.5rem)", fontWeight: 800, color: "#ffffff", marginBottom: "12px" }}>
+                        Tools Comparison
+                    </h1>
+                    <p style={{ fontSize: "1.1rem", color: "rgba(255,255,255,0.75)", lineHeight: 1.6 }}>
                         Comparing <span className="brevo-auto">Brevo</span> with popular email marketing tools like Mailchimp, MailerLite, ConvertKit, ActiveCampaign, and more.
                     </p>
                 </div>
@@ -48,26 +49,24 @@ export default function ToolsComparisonCategoryPage() {
                 <div className="space-y-6">
                     {articles.map((article, index) => (
                         <Link key={index} href={article.link} className="block no-underline group">
-                            <Card className="bg-white shadow-md hover:shadow-lg transition-shadow duration-300 border border-green-200/80 group-hover:border-green-400/50">
-                                <CardContent className="p-6">
-                                    <h2 className="text-xl font-bold text-green-900 group-hover:text-green-700 transition-colors">
-                                        {article.title}
-                                    </h2>
-                                    <p className="text-green-900/80 mt-2 mb-4 leading-relaxed">
-                                        {article.description}
-                                    </p>
-                                    <div className="flex items-center gap-2 text-green-700 font-semibold">
-                                        <span>Read article</span>
-                                        <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-                                    </div>
-                                </CardContent>
-                            </Card>
+                            <div className="article-card" style={{ padding: "24px", borderRadius: "18px", transition: "transform 0.3s ease, box-shadow 0.3s ease" }}>
+                                <h2 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#ffffff", marginBottom: "10px" }}>
+                                    {article.title}
+                                </h2>
+                                <p style={{ color: "rgba(255,255,255,0.88)", marginBottom: "16px", lineHeight: 1.65 }}>
+                                    {article.description}
+                                </p>
+                                <div style={{ display: "flex", alignItems: "center", gap: "8px", color: "#ffffff", fontWeight: 600 }}>
+                                    <span>Read article</span>
+                                    <ArrowRight size={16} />
+                                </div>
+                            </div>
                         </Link>
                     ))}
                 </div>
 
                 <div className="text-center mt-12">
-                     <Button asChild className="button-animated">
+                    <Button asChild className="button-animated">
                         <Link href="/">
                             <span>Back to Home</span>
                         </Link>

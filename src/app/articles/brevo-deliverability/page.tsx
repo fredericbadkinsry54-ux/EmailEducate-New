@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
@@ -19,11 +18,6 @@ const articles = [
         title: "Why Emails Land in Spam & How to Fix It (Brevo Guide)",
         description: "Understand the common reasons emails go to spam and practical Brevo-focused fixes. Learn authentication, content best practices, and list hygiene to improve inbox placement.",
         link: "/articles/brevo-deliverability/why-emails-land-in-spam-and-how-to-fix-it-brevo-guide"
-    },
-    {
-        title: "Domain Warm-Up Plan for New Senders in 2026",
-        description: "A complete domain warm-up plan for new email senders. Learn how to build sending reputation safely using Brevo, with a structured warm-up roadmap designed for strong inbox placement in 2026.",
-        link: "/articles/brevo-deliverability/domain-warm-up-plan-for-new-senders-2026"
     },
     {
         title: "List Hygiene: How to Clean Your Contacts for Better Inboxing",

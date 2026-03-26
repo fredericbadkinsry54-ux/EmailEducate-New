@@ -946,229 +946,126 @@ section h2.s20-heading .brevo-badge-pro {
   overflow: visible;
 }
 
-/* ===================== ARTICLE PAGE GLOBAL FIX ===================== */
 
-/* All article section cards — force dark navy + visible text */
-.bg-white,
-[class*="bg-white"],
-section.bg-white,
-div.bg-white {
-  background: linear-gradient(135deg, #0DA56F 0%, #08855a 100%) !important;
-  color: #ffffff !important;
-  border: none !important;
-  border-radius: 18px !important;
-  box-shadow: 0 8px 24px rgba(13, 165, 111, 0.35) !important;
-}
+/* ============================================================
+   COMPREHENSIVE ARTICLE PAGES FIX — ALL CARDS, TEXT, TABLES
+   ============================================================ */
 
-/* Fix all text inside white cards */
-.bg-white p,
-.bg-white h1,
-.bg-white h2,
-.bg-white h3,
-.bg-white h4,
-.bg-white li,
-.bg-white span,
-.bg-white strong,
-.bg-white ol,
-.bg-white ul {
-  color: rgba(255, 255, 255, 0.95) !important;
-}
-
-.bg-white h1,
-.bg-white h2,
-.bg-white h3 {
-  color: #ffffff !important;
-}
-
-/* Fix text color overrides that use hex colors */
-[class*="text-[#064e3b]"],
-[class*="text-[#0f172a]"],
-[class*="text-[#16a34a]"],
-[class*="text-green-900"],
-[class*="text-green-800"],
-[class*="text-green-700"] {
-  color: #ffffff !important;
-}
-
-[class*="text-[#6b7280]"],
-[class*="text-gray-600"],
-[class*="text-gray-500"],
-[class*="text-gray-700"] {
-  color: rgba(255, 255, 255, 0.75) !important;
-}
-
-/* Fix Key Tip / border-left cards */
-[class*="border-l"],
-[class*="border-left"],
-.border-l-4,
-.border-l-2 {
-  background: rgba(13, 165, 111, 0.15) !important;
-  border-color: #0DA56F !important;
-  color: #ffffff !important;
-}
-
-/* Fix sub-cards inside articles (feature grids) */
-[class*="rounded-xl"],
-[class*="rounded-lg"] {
-  border-color: rgba(13, 165, 111, 0.3) !important;
-}
-
-/* Article page background */
+/* 1. Page background */
 [class*="bg-[#f8fdf8]"],
+[class*="bg-green-50"],
 [class*="bg-muted"],
-[class*="bg-green-50"] {
+[class*="bg-surface"] {
   background: #0a1628 !important;
 }
 
-/* Fix article h2 colors */
-article h2,
-.prose h2,
-[class*="text-2xl"].font-bold,
-[class*="text-3xl"].font-bold {
+/* 2. All h1 titles white */
+h1, [class*="font-extrabold"] {
   color: #ffffff !important;
 }
 
-/* Fix drop cap */
-.float-left {
+/* 3. ALL white/light cards → green gradient */
+.bg-white,
+[class*="bg-white"] {
+  background: linear-gradient(135deg, #0DA56F 0%, #08855a 100%) !important;
+  border: none !important;
+  border-radius: 18px !important;
+  box-shadow: 0 8px 24px rgba(13,165,111,0.3) !important;
   color: #ffffff !important;
 }
 
-/* HR styling */
-hr {
-  border-color: rgba(13, 165, 111, 0.2) !important;
-  background: rgba(13, 165, 111, 0.2) !important;
+/* 4. All text inside green cards → white */
+.bg-white *,
+[class*="bg-white"] * {
+  color: rgba(255,255,255,0.92) !important;
 }
 
-/* ===================== ARTICLE SUB-CARDS FIX ===================== */
+.bg-white h1, .bg-white h2, .bg-white h3,
+[class*="bg-white"] h1, [class*="bg-white"] h2, [class*="bg-white"] h3 {
+  color: #ffffff !important;
+}
 
-/* Nested white cards inside green sections — dark navy */
+/* 5. Nested sub-cards inside green cards → dark semi-transparent */
 .bg-white .bg-white,
 .bg-white [class*="bg-white"],
 .bg-white [class*="bg-gray"],
 .bg-white [class*="bg-red"],
 .bg-white [class*="bg-pink"],
-[class*="rounded-xl"] [class*="rounded-xl"],
-[class*="rounded-lg"] [class*="rounded-lg"],
-[class*="rounded-xl"] [class*="rounded-lg"] {
-  background: rgba(0, 0, 0, 0.25) !important;
-  border: 1px solid rgba(255,255,255,0.2) !important;
-  border-radius: 12px !important;
-  color: #ffffff !important;
-}
-
-/* Nested card text */
-.bg-white .bg-white *,
-.bg-white [class*="bg-white"] *,
-.bg-white [class*="bg-gray"] *,
-.bg-white [class*="bg-red"] *,
-.bg-white [class*="bg-pink"] * {
-  color: rgba(255,255,255,0.9) !important;
-}
-
-/* Pros & Cons grid inner cards */
-[class*="grid"] > div,
-[class*="grid"] > section {
-  background: rgba(0,0,0,0.2) !important;
+.bg-white [class*="bg-muted"],
+[class*="bg-white"] [class*="rounded-xl"],
+[class*="bg-white"] [class*="rounded-lg"] {
+  background: rgba(0,0,0,0.22) !important;
   border: 1px solid rgba(255,255,255,0.15) !important;
   border-radius: 12px !important;
-  color: #ffffff !important;
+  box-shadow: none !important;
 }
 
-/* Pricing table fix */
-table {
-  width: 100% !important;
-  border-collapse: collapse !important;
-  background: transparent !important;
-}
-
-table thead tr,
-table thead th,
-thead tr,
-thead th {
-  background: rgba(0,0,0,0.3) !important;
-  color: #ffffff !important;
-  border-color: rgba(255,255,255,0.2) !important;
-  padding: 12px !important;
-}
-
-table tbody tr,
-table tbody td,
-tbody tr,
-tbody td {
-  background: rgba(0,0,0,0.15) !important;
-  color: rgba(255,255,255,0.9) !important;
-  border-color: rgba(255,255,255,0.1) !important;
-  padding: 12px !important;
-}
-
-table tbody tr:nth-child(even),
-tbody tr:nth-child(even) {
-  background: rgba(0,0,0,0.25) !important;
-}
-
-/* Price column green color */
-[class*="text-green"],
-[class*="text-emerald"],
-[class*="text-teal"] {
+.bg-white .bg-white *,
+[class*="bg-white"] [class*="rounded-xl"] *,
+[class*="bg-white"] [class*="rounded-lg"] * {
   color: rgba(255,255,255,0.9) !important;
 }
 
-/* Key Tip boxes */
+/* 6. Key Tip border-left boxes */
 [class*="border-l-4"],
 [class*="border-l-2"],
-.border-l-4,
-.border-l-2 {
-  background: rgba(0,0,0,0.2) !important;
-  border-left: 4px solid rgba(255,255,255,0.6) !important;
-  padding: 14px 18px !important;
-  border-radius: 0 12px 12px 0 !important;
-  color: #ffffff !important;
-}
-
-.border-l-4 *,
-.border-l-2 * {
+.border-l-4, .border-l-2 {
+  background: rgba(13,165,111,0.08) !important;
+  border-left: 3px solid #0DA56F !important;
+  border-radius: 0 10px 10px 0 !important;
   color: rgba(255,255,255,0.9) !important;
 }
 
-/* Article hero title fix */
-[class*="text-[#064e3b]"],
-[class*="font-extrabold"].animate-fade-in-up {
-  color: #ffffff !important;
+[class*="border-l-4"] *,
+[class*="border-l-2"] * {
+  color: rgba(255,255,255,0.9) !important;
 }
 
-/* ===================== ARTICLE H1 TITLE FIX ===================== */
+/* 7. Pricing & data tables */
+table { background: transparent !important; width: 100% !important; border-collapse: collapse !important; }
+thead tr, thead th { background: rgba(0,0,0,0.35) !important; color: #ffffff !important; border-color: rgba(255,255,255,0.15) !important; padding: 12px !important; }
+tbody tr, tbody td { background: rgba(0,0,0,0.15) !important; color: rgba(255,255,255,0.9) !important; border-color: rgba(255,255,255,0.08) !important; padding: 12px !important; }
+tbody tr:nth-child(even), tbody tr:nth-child(even) td { background: rgba(0,0,0,0.25) !important; }
+table * { color: rgba(255,255,255,0.9) !important; }
+[class*="text-green"], [class*="text-emerald"] { color: rgba(255,255,255,0.9) !important; }
 
-/* All article page h1 titles — force white */
-h1 {
-  color: #ffffff !important;
-}
+/* 8. HR dividers */
+hr { border-color: rgba(13,165,111,0.2) !important; background: rgba(13,165,111,0.2) !important; }
 
-/* Specific dark green color overrides */
+/* 9. Dark color text overrides */
 [class*="text-[#064e3b]"],
-[class*="text-[#0f5132]"],
-[class*="text-[#0a7f42]"],
+[class*="text-[#0f172a]"],
 [class*="text-green-900"],
 [class*="text-green-800"],
 [class*="text-green-700"],
-[class*="text-[#0a7c59]"],
-[class*="text-[#0DA56F]"] {
+[class*="text-gray-900"],
+[class*="text-gray-800"],
+[class*="text-gray-700"],
+[class*="text-slate-700"],
+[class*="text-slate-800"] {
   color: #ffffff !important;
 }
 
-/* Category subtitle under h1 */
 [class*="text-[#6b7280]"],
 [class*="text-gray-500"],
-[class*="text-gray-600"] {
-  color: rgba(255,255,255,0.6) !important;
+[class*="text-gray-600"],
+[class*="text-slate-500"],
+[class*="text-slate-600"] {
+  color: rgba(255,255,255,0.65) !important;
 }
 
-/* Strong/bold inside category line */
-.text-sm strong,
-.text-xs strong {
-  color: #0DA56F !important;
+/* 10. Grid cards */
+[class*="grid"] > div {
+  color: rgba(255,255,255,0.9) !important;
 }
 
-/* ===================== ARTICLE LAYOUT WITH SIDEBAR ===================== */
+[class*="grid"] > div h2,
+[class*="grid"] > div h3,
+[class*="grid"] > div h4 {
+  color: #ffffff !important;
+}
+
+/* 11. Article Layout with Sidebar */
 .article-layout {
   display: grid;
   grid-template-columns: 1fr 320px;
@@ -1179,9 +1076,7 @@ h1 {
   align-items: start;
 }
 
-.article-main {
-  min-width: 0;
-}
+.article-main { min-width: 0; }
 
 .article-sidebar {
   position: sticky;
@@ -1189,53 +1084,69 @@ h1 {
 }
 
 @media (max-width: 1024px) {
-  .article-layout {
-    grid-template-columns: 1fr;
-  }
-  .article-sidebar {
-    position: static;
-    order: -1;
-  }
+  .article-layout { grid-template-columns: 1fr !important; }
+  .article-sidebar { position: static; order: -1; }
 }
 
-/* ===================== ARTICLE SUB-CARDS VISIBILITY FIX ===================== */
+/* 12. Legal pages cards */
+.legal-card {
+  background: linear-gradient(135deg, #0DA56F 0%, #08855a 100%) !important;
+  border-radius: 18px !important;
+  padding: 28px !important;
+  margin-bottom: 20px !important;
+  box-shadow: 0 8px 24px rgba(13,165,111,0.3) !important;
+}
 
-/* All article inner cards - force visible */
-article .bg-white, article [class*="bg-white"],
-article [class*="bg-gray"], article [class*="bg-muted"],
-article [class*="rounded-xl"], article [class*="rounded-lg"],
-.prose [class*="rounded"], .prose [class*="bg-white"] {
-  background: rgba(13,165,111,0.12) !important;
-  border: 1px solid rgba(13,165,111,0.3) !important;
+.legal-card h2 {
   color: #ffffff !important;
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  margin-bottom: 14px !important;
 }
 
-article h1, article h2, article h3, article h4,
-article p, article li, article span, article strong {
-  color: rgba(255,255,255,0.92) !important;
+.legal-card p, .legal-card li, .legal-card span {
+  color: rgba(255,255,255,0.9) !important;
 }
 
-/* Sub-card headings */
-article [class*="rounded"] h1,
-article [class*="rounded"] h2,
-article [class*="rounded"] h3 {
+/* 13. Feature cards (BrevoRecommendation) */
+.brevo-feature-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.feature-card {
+  background: linear-gradient(135deg, #0DA56F 0%, #08855a 100%) !important;
+  border-radius: 18px !important;
+  padding: 28px !important;
+  box-shadow: 0 8px 24px rgba(13,165,111,0.3) !important;
+}
+
+.feature-card h3 {
   color: #ffffff !important;
+  font-size: 18px !important;
   font-weight: 700 !important;
+  margin-bottom: 10px !important;
 }
 
-/* Feature grid cards */
-[class*="grid"] > div > h3,
-[class*="grid"] > div > p {
-  color: rgba(255,255,255,0.9) !important;
+.feature-card p {
+  color: rgba(255,255,255,0.88) !important;
+  margin: 0 !important;
 }
 
-/* Key Tip boxes */
-blockquote, [class*="border-l"] {
-  background: rgba(13,165,111,0.1) !important;
+/* 14. Blockquotes */
+blockquote {
+  background: rgba(13,165,111,0.08) !important;
   border-left: 3px solid #0DA56F !important;
+  border-radius: 0 10px 10px 0 !important;
+  padding: 14px 18px !important;
   color: rgba(255,255,255,0.9) !important;
 }
 
-blockquote *, [class*="border-l"] * {
+blockquote * { color: rgba(255,255,255,0.9) !important; }
+
+/* 15. List items */
+.bg-white ol, .bg-white ul,
+.bg-white li, [class*="bg-white"] li {
   color: rgba(255,255,255,0.9) !important;
 }

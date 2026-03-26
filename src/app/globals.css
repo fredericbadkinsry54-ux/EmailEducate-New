@@ -1197,3 +1197,45 @@ h1 {
     order: -1;
   }
 }
+
+/* ===================== ARTICLE SUB-CARDS VISIBILITY FIX ===================== */
+
+/* All article inner cards - force visible */
+article .bg-white, article [class*="bg-white"],
+article [class*="bg-gray"], article [class*="bg-muted"],
+article [class*="rounded-xl"], article [class*="rounded-lg"],
+.prose [class*="rounded"], .prose [class*="bg-white"] {
+  background: rgba(13,165,111,0.12) !important;
+  border: 1px solid rgba(13,165,111,0.3) !important;
+  color: #ffffff !important;
+}
+
+article h1, article h2, article h3, article h4,
+article p, article li, article span, article strong {
+  color: rgba(255,255,255,0.92) !important;
+}
+
+/* Sub-card headings */
+article [class*="rounded"] h1,
+article [class*="rounded"] h2,
+article [class*="rounded"] h3 {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+/* Feature grid cards */
+[class*="grid"] > div > h3,
+[class*="grid"] > div > p {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+/* Key Tip boxes */
+blockquote, [class*="border-l"] {
+  background: rgba(13,165,111,0.1) !important;
+  border-left: 3px solid #0DA56F !important;
+  color: rgba(255,255,255,0.9) !important;
+}
+
+blockquote *, [class*="border-l"] * {
+  color: rgba(255,255,255,0.9) !important;
+}

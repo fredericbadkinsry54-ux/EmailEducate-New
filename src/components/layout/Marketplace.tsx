@@ -1,12 +1,12 @@
 import Link from 'next/link';
 
 const integrations = [
-  { name: 'WordPress', description: 'CMS + Email Marketing. Transform your website into a customer-ready email engine.', link: 'https://www.brevo.com/integrations/wordpress/' },
-  { name: 'WooCommerce', description: 'Ecommerce + Email Marketing. Sync customer data & recover abandoned carts.', link: 'https://www.brevo.com/integrations/woocommerce/' },
-  { name: 'Shopify', description: 'Ecommerce + Automation. Trigger personalized campaigns via Brevo.', link: 'https://www.brevo.com/integrations/shopify/' },
-  { name: 'BigCommerce', description: 'Scale your store with advanced workflows connected to Brevo.', link: 'https://www.brevo.com/integrations/bigcommerce/' },
-  { name: 'PandaDoc', description: 'Auto-sync docs & contacts. Faster workflow automation.', link: 'https://www.brevo.com/integrations/pandadoc/' },
-  { name: 'HubSpot', description: 'Two-way CRM + Marketing Sync. Connect HubSpot with Brevo for automated contact updates and smarter campaigns.', link: 'https://www.brevo.com/integrations/hubspot/' },
+  { name: 'WordPress', description: 'CMS + Email Marketing. Transform your website into a customer-ready email engine.', link: 'https://get.brevo.com/4o18rd1h33kd/integrations/wordpress/' },
+  { name: 'WooCommerce', description: 'Ecommerce + Email Marketing. Sync customer data & recover abandoned carts.', link: 'https://get.brevo.com/4o18rd1h33kd/integrations/woocommerce/' },
+  { name: 'Shopify', description: 'Ecommerce + Automation. Trigger personalized campaigns via Brevo.', link: 'https://get.brevo.com/4o18rd1h33kd/integrations/shopify/' },
+  { name: 'BigCommerce', description: 'Scale your store with advanced workflows connected to Brevo.', link: 'https://get.brevo.com/4o18rd1h33kd/integrations/bigcommerce/' },
+  { name: 'PandaDoc', description: 'Auto-sync docs & contacts. Faster workflow automation.', link: 'https://get.brevo.com/4o18rd1h33kd/integrations/pandadoc/' },
+  { name: 'HubSpot', description: 'Two-way CRM + Marketing Sync. Connect HubSpot with Brevo for automated contact updates and smarter campaigns.', link: 'https://get.brevo.com/4o18rd1h33kd/integrations/hubspot/' },
 ];
 
 export function Marketplace() {
@@ -66,7 +66,7 @@ export function Marketplace() {
         </div>
 
         <div className="text-center mt-12">
-          <Link href="https://www.brevo.com/integrations/" target="_blank" rel="noopener noreferrer"
+          <Link href="https://get.brevo.com/4o18rd1h33kd/integrations/" target="_blank" rel="noopener noreferrer"
             style={{
               display: "inline-block",
               padding: "13px 32px",

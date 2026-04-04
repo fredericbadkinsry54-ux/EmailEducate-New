@@ -65,7 +65,7 @@ export function BrevoAiConnect() {
         </ul>
 
         <Link
-          href="https://www.brevo.com/features/ai/"
+          href="https://get.brevo.com/4o18rd1h33kd/features/ai/"
           target="_blank"
           rel="noopener noreferrer"
           style={{
@@ -122,7 +122,7 @@ export function BrevoAiConnect() {
           transform: "translate(-50%, -50%)",
           zIndex: 10,
         }}>
-          <Link href="https://www.brevo.com/" target="_blank" rel="noopener noreferrer">
+          <Link href="https://get.brevo.com/4o18rd1h33kd/" target="_blank" rel="noopener noreferrer">
             <div className="brevo-main-button">
               <span>Brevo</span>
             </div>

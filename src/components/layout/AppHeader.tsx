@@ -139,7 +139,7 @@ export function AppHeader() {
             </Link>
 
             {/* CTA Button */}
-            <a href="https://www.brevo.com" target="_blank" rel="noopener noreferrer" style={{ marginLeft: "10px", background: "#0DA56F", color: "#ffffff", padding: "9px 20px", borderRadius: "8px", fontSize: "13px", fontWeight: "700", textDecoration: "none", whiteSpace: "nowrap", transition: "0.2s ease" }}
+            <a href="https://get.brevo.com/4o18rd1h33kd" target="_blank" rel="noopener noreferrer" style={{ marginLeft: "10px", background: "#0DA56F", color: "#ffffff", padding: "9px 20px", borderRadius: "8px", fontSize: "13px", fontWeight: "700", textDecoration: "none", whiteSpace: "nowrap", transition: "0.2s ease" }}
               onMouseEnter={e => (e.currentTarget as HTMLElement).style.background = "#08855a"}
               onMouseLeave={e => (e.currentTarget as HTMLElement).style.background = "#0DA56F"}>
               Try Brevo Free
@@ -173,7 +173,7 @@ export function AppHeader() {
                 {item.label}
               </Link>
             ))}
-            <a href="https://www.brevo.com" target="_blank" rel="noopener noreferrer" style={{ marginTop: "8px", background: "#0DA56F", color: "#ffffff", padding: "12px", borderRadius: "8px", fontWeight: "700", textAlign: "center", textDecoration: "none" }}>
+            <a href="https://get.brevo.com/4o18rd1h33kd" target="_blank" rel="noopener noreferrer" style={{ marginTop: "8px", background: "#0DA56F", color: "#ffffff", padding: "12px", borderRadius: "8px", fontWeight: "700", textAlign: "center", textDecoration: "none" }}>
               Try Brevo Free →
             </a>
           </div>

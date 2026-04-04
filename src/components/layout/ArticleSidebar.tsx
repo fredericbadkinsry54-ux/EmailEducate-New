@@ -176,7 +176,7 @@ export function ArticleSidebar({
                 <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "12px", marginBottom: "14px", lineHeight: "1.6" }}>
                     Start sending smarter emails — no credit card required.
                 </p>
-                <a href="https://www.brevo.com" target="_blank" rel="noopener noreferrer" style={{
+                <a href="https://get.brevo.com/4o18rd1h33kd" target="_blank" rel="noopener noreferrer" style={{
                     display: "inline-block",
                     background: "#ffffff",
                     color: "#0DA56F",

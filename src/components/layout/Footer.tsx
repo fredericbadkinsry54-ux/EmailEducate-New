@@ -14,7 +14,7 @@ export function Footer() {
                         <p style={{ color: "#ffffff", fontWeight: "800", fontSize: "17px", margin: 0, lineHeight: "1.3" }}>Ready to master Brevo?</p>
                         <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "13px", margin: "4px 0 0" }}>Start learning email marketing for free — no credit card needed.</p>
                     </div>
-                    <a href="https://www.brevo.com" target="_blank" rel="noopener noreferrer"
+                    <a href="https://get.brevo.com/4o18rd1h33kd" target="_blank" rel="noopener noreferrer"
                         style={{ display: "inline-flex", alignItems: "center", gap: "7px", background: "#ffffff", color: "#0DA56F", padding: "10px 22px", borderRadius: "9px", fontWeight: "700", fontSize: "14px", textDecoration: "none", whiteSpace: "nowrap", transition: "0.2s ease" }}
                         onMouseEnter={e => (e.currentTarget as HTMLElement).style.transform = "translateY(-1px)"}
                         onMouseLeave={e => (e.currentTarget as HTMLElement).style.transform = "translateY(0)"}>
@@ -141,7 +141,7 @@ export function Footer() {
                     </p>
                     <p style={{ fontSize: "12px", color: "rgba(255,255,255,0.35)", margin: 0 }}>
                         Built with ❤️ for email marketers — powered by{" "}
-                        <a href="https://www.brevo.com" target="_blank" rel="noopener noreferrer"
+                        <a href="https://get.brevo.com/4o18rd1h33kd" target="_blank" rel="noopener noreferrer"
                             style={{ color: "#0DA56F", textDecoration: "none", fontWeight: "600" }}>Brevo</a>
                     </p>
                 </div>

@@ -36,7 +36,7 @@ export function BrevoRecommendation() {
               </li>
             ))}
           </ul>
-          <a href="https://www.brevo.com/" style={{ display: "inline-block", padding: "14px 40px", background: "#0DA56F", color: "#ffffff", fontSize: "1.1rem", fontWeight: "600", borderRadius: "12px", boxShadow: "0 8px 24px rgba(13,165,111,0.4)", textDecoration: "none" }}>
+          <a href="https://get.brevo.com/4o18rd1h33kd/" style={{ display: "inline-block", padding: "14px 40px", background: "#0DA56F", color: "#ffffff", fontSize: "1.1rem", fontWeight: "600", borderRadius: "12px", boxShadow: "0 8px 24px rgba(13,165,111,0.4)", textDecoration: "none" }}>
             Start Learning Brevo
           </a>
         </div>

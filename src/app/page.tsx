@@ -119,7 +119,7 @@ export default function Home() {
                         display: "flex", flexWrap: "wrap", gap: "14px", justifyContent: "center", marginBottom: "48px",
                         animation: "fadeUpHero 0.7s ease forwards", opacity: 0, animationDelay: "2.3s",
                     }}>
-                        <a href="https://www.brevo.com" target="_blank" rel="noopener noreferrer" style={{ background: "#0DA56F", color: "#ffffff", padding: "13px 34px", borderRadius: "10px", fontWeight: "600", fontSize: "1rem", textDecoration: "none", boxShadow: "0 4px 16px rgba(13,165,111,0.35)" }}>
+                        <a href="https://get.brevo.com/4o18rd1h33kd" target="_blank" rel="noopener noreferrer" style={{ background: "#0DA56F", color: "#ffffff", padding: "13px 34px", borderRadius: "10px", fontWeight: "600", fontSize: "1rem", textDecoration: "none", boxShadow: "0 4px 16px rgba(13,165,111,0.35)" }}>
                             Start For Free
                         </a>
                         <Link href="/articles/tools-comparison/brevo-vs-mailchimp-2026" style={{ background: "rgba(255,255,255,0.1)", color: "#ffffff", padding: "13px 34px", borderRadius: "10px", fontWeight: "600", fontSize: "1rem", textDecoration: "none", border: "1px solid rgba(255,255,255,0.2)", display: "flex", alignItems: "center", gap: "8px" }}>
@@ -181,7 +181,7 @@ export default function Home() {
                         Learn how to create smarter campaigns, automate workflows, improve deliverability,
                         and use CRM features the right way — all through practical lessons powered by Brevo.
                     </p>
-                    <a href="https://www.brevo.com" style={{ display: "inline-block", padding: "16px 40px", background: "#0DA56F", color: "#ffffff", fontSize: "1.1rem", fontWeight: "600", borderRadius: "12px", boxShadow: "0 8px 24px rgba(13,165,111,0.4)", textDecoration: "none" }}>
+                    <a href="https://get.brevo.com/4o18rd1h33kd" style={{ display: "inline-block", padding: "16px 40px", background: "#0DA56F", color: "#ffffff", fontSize: "1.1rem", fontWeight: "600", borderRadius: "12px", boxShadow: "0 8px 24px rgba(13,165,111,0.4)", textDecoration: "none" }}>
                         Start Learning Brevo
                     </a>
                 </div>

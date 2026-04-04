@@ -2,10 +2,10 @@
 import Link from "next/link";
 
 const stories = [
-    { title: "SwissCommerce", description: "Boosted automation efficiency and scaled multi-brand communication.", link: "https://www.brevo.com/resources/success-story-swisscommerce/", delay: "200ms" },
-    { title: "involve.me", description: "Improved customer onboarding and streamlined automated messaging.", link: "https://www.brevo.com/resources/success-story-involveme/", delay: "400ms" },
-    { title: "Group22", description: "Centralized CRM + smarter workflows for high-volume operations.", link: "https://www.brevo.com/success-stories/group22/", delay: "600ms" },
-    { title: "Monette", description: "Increased customer retention with targeted customer journeys.", link: "https://www.brevo.com/resources/success-story-monette/", delay: "800ms" },
+    { title: "SwissCommerce", description: "Boosted automation efficiency and scaled multi-brand communication.", link: "https://get.brevo.com/4o18rd1h33kd/resources/success-story-swisscommerce/", delay: "200ms" },
+    { title: "involve.me", description: "Improved customer onboarding and streamlined automated messaging.", link: "https://get.brevo.com/4o18rd1h33kd/resources/success-story-involveme/", delay: "400ms" },
+    { title: "Group22", description: "Centralized CRM + smarter workflows for high-volume operations.", link: "https://get.brevo.com/4o18rd1h33kd/success-stories/group22/", delay: "600ms" },
+    { title: "Monette", description: "Increased customer retention with targeted customer journeys.", link: "https://get.brevo.com/4o18rd1h33kd/resources/success-story-monette/", delay: "800ms" },
 ];
 
 export function CustomerSuccess() {
@@ -49,7 +49,7 @@ export function CustomerSuccess() {
       </div>
 
       <div className="text-center mt-12">
-        <Link href="https://www.brevo.com/success-stories/" target="_blank"
+        <Link href="https://get.brevo.com/4o18rd1h33kd/success-stories/" target="_blank"
           style={{
             display: "inline-block",
             padding: "12px 32px",

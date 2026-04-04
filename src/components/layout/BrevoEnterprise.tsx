@@ -74,7 +74,7 @@ export function BrevoEnterprise() {
         </ul>
 
         <Link
-          href="https://www.brevo.com/"
+          href="https://get.brevo.com/4o18rd1h33kd/"
           target="_blank"
           style={{
             display: "inline-block",
@@ -97,7 +97,7 @@ export function BrevoEnterprise() {
       <div className="w-full md:w-[55%] flex justify-center items-center h-96">
         <div className="relative w-96 h-96">
           <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", zIndex: 10 }}>
-            <Link href="https://www.brevo.com" target="_blank">
+            <Link href="https://get.brevo.com/4o18rd1h33kd" target="_blank">
               <div className="brevo-main-button">Brevo</div>
             </Link>
           </div>

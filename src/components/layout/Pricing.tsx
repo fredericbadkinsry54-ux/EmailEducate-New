@@ -21,7 +21,7 @@ export function Pricing() {
 
             <div className="flex flex-nowrap justify-start md:justify-center gap-[35px] w-full overflow-x-auto pb-2.5 max-w-6xl mx-auto px-4">
                 {plans.map((plan, index) => (
-                    <Link key={index} href="https://get.brevo.com/4o18rd1h33kd/pricing/" target="_blank" rel="noopener noreferrer"
+                    <Link key={index} href="https://get.brevo.com/4o18rd1h33kd" target="_blank" rel="noopener noreferrer"
                         className={cn("w-[260px] min-w-[260px] flex-shrink-0 block", { "transform scale-105": plan.isPopular })}
                         style={{
                             background: "linear-gradient(135deg, #0DA56F 0%, #08855a 100%)",

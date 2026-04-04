@@ -74,7 +74,7 @@ export function BrevoEnterprise() {
         </ul>
 
         <Link
-          href="https://get.brevo.com/4o18rd1h33kd/"
+          href="https://get.brevo.com/4o18rd1h33kd"
           target="_blank"
           style={{
             display: "inline-block",

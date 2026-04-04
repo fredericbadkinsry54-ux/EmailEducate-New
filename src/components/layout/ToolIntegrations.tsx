@@ -84,7 +84,7 @@ export function ToolIntegrations() {
           <div className="relative flex items-center justify-center w-96 h-96">
             
             {/* Center Logo */}
-            <Link href="https://get.brevo.com/4o18rd1h33kd/" target="_blank" rel="noopener noreferrer" className="z-10">
+            <Link href="https://get.brevo.com/4o18rd1h33kd" target="_blank" rel="noopener noreferrer" className="z-10">
                 <div className="w-36 h-36 bg-card border-2 border-primary/50 rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform">
                     <span className="text-2xl font-bold text-primary"><span className="brevo-auto">Brevo</span></span>
                 </div>
